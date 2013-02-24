@@ -50,3 +50,28 @@
     <dt>Cost:</dt>
     <dd>{{batch.brewCost}}</dd>
 </dl>
+
+<h2>Scale Recipe</h2>
+fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord 
+
+<h2>Malts and Grains</h2>
+<table>
+    <tbody>
+        {% for grain in batch.grains %}
+            <tr>
+                <td>{{grain.Weight}} lbs.</td>
+                <td>{{grain.Name}}</td>
+                <td>{{grain.Percentage * 100}}%</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>{{batch.TotalGrainWeight}} lbs.</td>
+            <td>Total Grain Weight</td>
+            <td>100%</td>
+        </tr>
+    </tfoot>
+</table>
+
+{# dump(batch) #}

@@ -70,4 +70,27 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
         $this->assertEquals(92.2, $brewing->getApparentAttenuation());
         $this->assertEquals(75.3, $brewing->getRealAttenuation());
     }
+    
+    public function testGrainAggregator()
+    {
+        $brewing = new Entity\Brewing();
+
+        $brewing->setBrewgrain1('American Pale Malt (2-Row)');        
+        $brewing->setBrewgrain1weight("18.00");
+        $brewing->setBrewgrain2("German Light Munich Malt");
+        $brewing->setBrewgrain2weight("4.00");
+        $brewing->setBrewgrain3("Crystal Malt 40L" );
+        $brewing->setBrewgrain3weight("0.25");
+        
+        $grains = $brewing->getGrains();
+        $this->assertEquals(3, count($grains));
+        $this->assertArrayHasKey('Name', $grains[0]);
+        $this->assertArrayHasKey('Weight', $grains[1]);
+        $this->assertArrayHasKey('Percentage', $grains[2]);
+        $this->assertEquals(0.809, $grains[0]['Percentage']);
+        $this->assertEquals("German Light Munich Malt", $grains[1]['Name']);
+        $this->assertEquals("0.25", $grains[2]['Weight']);
+        
+        $this->assertEquals(22.25, $brewing->getTotalGrainWeight());
+    }
 }

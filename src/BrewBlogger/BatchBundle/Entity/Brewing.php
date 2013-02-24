@@ -2536,16 +2536,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain1
-     *
-     * @return string 
-     */
-    public function getBrewgrain1()
-    {
-        return $this->brewgrain1;
-    }
-
-    /**
      * Set brewgrain1weight
      *
      * @param string $brewgrain1weight
@@ -2556,16 +2546,6 @@ class Brewing
         $this->brewgrain1weight = $brewgrain1weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain1weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain1weight()
-    {
-        return $this->brewgrain1weight;
     }
 
     /**
@@ -2582,16 +2562,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain2
-     *
-     * @return string 
-     */
-    public function getBrewgrain2()
-    {
-        return $this->brewgrain2;
-    }
-
-    /**
      * Set brewgrain2weight
      *
      * @param string $brewgrain2weight
@@ -2602,16 +2572,6 @@ class Brewing
         $this->brewgrain2weight = $brewgrain2weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain2weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain2weight()
-    {
-        return $this->brewgrain2weight;
     }
 
     /**
@@ -2628,16 +2588,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain3
-     *
-     * @return string 
-     */
-    public function getBrewgrain3()
-    {
-        return $this->brewgrain3;
-    }
-
-    /**
      * Set brewgrain3weight
      *
      * @param string $brewgrain3weight
@@ -2649,17 +2599,7 @@ class Brewing
     
         return $this;
     }
-
-    /**
-     * Get brewgrain3weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain3weight()
-    {
-        return $this->brewgrain3weight;
-    }
-
+    
     /**
      * Set brewgrain4
      *
@@ -2671,16 +2611,6 @@ class Brewing
         $this->brewgrain4 = $brewgrain4;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain4
-     *
-     * @return string 
-     */
-    public function getBrewgrain4()
-    {
-        return $this->brewgrain4;
     }
 
     /**
@@ -2697,16 +2627,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain4weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain4weight()
-    {
-        return $this->brewgrain4weight;
-    }
-
-    /**
      * Set brewgrain5
      *
      * @param string $brewgrain5
@@ -2717,16 +2637,6 @@ class Brewing
         $this->brewgrain5 = $brewgrain5;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain5
-     *
-     * @return string 
-     */
-    public function getBrewgrain5()
-    {
-        return $this->brewgrain5;
     }
 
     /**
@@ -2743,16 +2653,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain5weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain5weight()
-    {
-        return $this->brewgrain5weight;
-    }
-
-    /**
      * Set brewgrain6
      *
      * @param string $brewgrain6
@@ -2763,16 +2663,6 @@ class Brewing
         $this->brewgrain6 = $brewgrain6;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain6
-     *
-     * @return string 
-     */
-    public function getBrewgrain6()
-    {
-        return $this->brewgrain6;
     }
 
     /**
@@ -2789,16 +2679,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain6weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain6weight()
-    {
-        return $this->brewgrain6weight;
-    }
-
-    /**
      * Set brewgrain7
      *
      * @param string $brewgrain7
@@ -2809,16 +2689,6 @@ class Brewing
         $this->brewgrain7 = $brewgrain7;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain7
-     *
-     * @return string 
-     */
-    public function getBrewgrain7()
-    {
-        return $this->brewgrain7;
     }
 
     /**
@@ -2835,16 +2705,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain7weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain7weight()
-    {
-        return $this->brewgrain7weight;
-    }
-
-    /**
      * Set brewgrain8
      *
      * @param string $brewgrain8
@@ -2856,17 +2716,7 @@ class Brewing
     
         return $this;
     }
-
-    /**
-     * Get brewgrain8
-     *
-     * @return string 
-     */
-    public function getBrewgrain8()
-    {
-        return $this->brewgrain8;
-    }
-
+    
     /**
      * Set brewgrain8weight
      *
@@ -2878,16 +2728,6 @@ class Brewing
         $this->brewgrain8weight = $brewgrain8weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain8weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain8weight()
-    {
-        return $this->brewgrain8weight;
     }
 
     /**
@@ -2904,16 +2744,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain9
-     *
-     * @return string 
-     */
-    public function getBrewgrain9()
-    {
-        return $this->brewgrain9;
-    }
-
-    /**
      * Set brewgrain9weight
      *
      * @param string $brewgrain9weight
@@ -2924,16 +2754,6 @@ class Brewing
         $this->brewgrain9weight = $brewgrain9weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain9weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain9weight()
-    {
-        return $this->brewgrain9weight;
     }
 
     /**
@@ -2950,16 +2770,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain10
-     *
-     * @return string 
-     */
-    public function getBrewgrain10()
-    {
-        return $this->brewgrain10;
-    }
-
-    /**
      * Set brewgrain10weight
      *
      * @param string $brewgrain10weight
@@ -2970,16 +2780,6 @@ class Brewing
         $this->brewgrain10weight = $brewgrain10weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain10weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain10weight()
-    {
-        return $this->brewgrain10weight;
     }
 
     /**
@@ -2996,16 +2796,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain11
-     *
-     * @return string 
-     */
-    public function getBrewgrain11()
-    {
-        return $this->brewgrain11;
-    }
-
-    /**
      * Set brewgrain11weight
      *
      * @param string $brewgrain11weight
@@ -3016,16 +2806,6 @@ class Brewing
         $this->brewgrain11weight = $brewgrain11weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain11weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain11weight()
-    {
-        return $this->brewgrain11weight;
     }
 
     /**
@@ -3042,16 +2822,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain12
-     *
-     * @return string 
-     */
-    public function getBrewgrain12()
-    {
-        return $this->brewgrain12;
-    }
-
-    /**
      * Set brewgrain12weight
      *
      * @param string $brewgrain12weight
@@ -3062,16 +2832,6 @@ class Brewing
         $this->brewgrain12weight = $brewgrain12weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain12weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain12weight()
-    {
-        return $this->brewgrain12weight;
     }
 
     /**
@@ -3088,16 +2848,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain13
-     *
-     * @return string 
-     */
-    public function getBrewgrain13()
-    {
-        return $this->brewgrain13;
-    }
-
-    /**
      * Set brewgrain13weight
      *
      * @param string $brewgrain13weight
@@ -3108,16 +2858,6 @@ class Brewing
         $this->brewgrain13weight = $brewgrain13weight;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain13weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain13weight()
-    {
-        return $this->brewgrain13weight;
     }
 
     /**
@@ -3134,16 +2874,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain14
-     *
-     * @return string 
-     */
-    public function getBrewgrain14()
-    {
-        return $this->brewgrain14;
-    }
-
-    /**
      * Set brewgrain14weight
      *
      * @param string $brewgrain14weight
@@ -3157,16 +2887,6 @@ class Brewing
     }
 
     /**
-     * Get brewgrain14weight
-     *
-     * @return string 
-     */
-    public function getBrewgrain14weight()
-    {
-        return $this->brewgrain14weight;
-    }
-
-    /**
      * Set brewgrain15
      *
      * @param string $brewgrain15
@@ -3177,16 +2897,6 @@ class Brewing
         $this->brewgrain15 = $brewgrain15;
     
         return $this;
-    }
-
-    /**
-     * Get brewgrain15
-     *
-     * @return string 
-     */
-    public function getBrewgrain15()
-    {
-        return $this->brewgrain15;
     }
 
     /**
@@ -8524,5 +8234,45 @@ class Brewing
     public function getRealAttenuation()
     {
         return round((1 - ($this->getRealExtract() / $this->convertGravityToPlato($this->brewog))) * 100,1);
+    }
+    
+    /**
+     * Returns an array of Grains
+     * 
+     * @todo Refactor database to normalize and make this a JOIN
+     * @return array
+     */
+    public function getGrains()
+    {
+        $grains = array();
+        $total = $this->getTotalGrainWeight();
+        for ($i=1; $i<=15; $i++)
+        {
+            $property = "brewgrain$i";
+            if (!is_null($this->{$property}) && !is_null($this->{$property . "weight"})) {
+                $grains[] = array("Name"       => $this->{$property}, 
+                                  "Weight"     => $this->{$property . "weight"},
+                                  "Percentage" => round(($this->{$property . "weight"} / $total), 3));
+            }
+        }
+        return $grains;
+    }
+    
+    /**
+     * Returns the total weight of the grains
+     * 
+     * @todo Refactor database to normalize and make this a JOIN
+     * @return float
+     */
+    public function getTotalGrainWeight()
+    {
+        $weight = 0.0;
+        for ($i=1; $i<=15; $i++)
+        {
+            if (!is_null($this->{"brewgrain" . $i . "weight"})) {
+                $weight += $this->{"brewgrain" . $i . "weight"};
+            }
+        }
+        return $weight;
     }
 }
