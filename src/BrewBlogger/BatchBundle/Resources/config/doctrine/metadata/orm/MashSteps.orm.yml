@@ -1,0 +1,80 @@
+MashSteps:
+    type: entity
+    table: mash_steps
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        stepmashprofileid:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: stepMashProfileID
+        stepname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepName
+        stepnumber:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: stepNumber
+        steptype:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepType
+        steptime:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepTime
+        steptemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepTemp
+        stepramptime:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepRampTime
+        stependtemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepEndTemp
+        stepdescription:
+            type: text
+            nullable: true
+            column: stepDescription
+        stepinfuseamt:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepInfuseAmt
+        stepdecoctionamt:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepDecoctionAmt
+        stepinfusiontemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: stepInfusionTemp
+    lifecycleCallbacks: {  }

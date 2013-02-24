@@ -1,0 +1,105 @@
+Styles:
+    type: entity
+    table: styles
+    fields:
+        id:
+            id: true
+            type: boolean
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        brewstylenum:
+            type: string
+            length: 3
+            fixed: true
+            nullable: true
+            column: brewStyleNum
+        brewstyle:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: brewStyle
+        brewstyleog:
+            type: string
+            length: 20
+            fixed: false
+            nullable: true
+            column: brewStyleOG
+        brewstyleogmax:
+            type: string
+            length: 25
+            fixed: false
+            nullable: true
+            column: brewStyleOGMax
+        brewstylefg:
+            type: string
+            length: 20
+            fixed: false
+            nullable: true
+            column: brewStyleFG
+        brewstylefgmax:
+            type: string
+            length: 25
+            fixed: false
+            nullable: true
+            column: brewStyleFGMax
+        brewstyleabv:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: brewStyleABV
+        brewstyleabvmax:
+            type: string
+            length: 25
+            fixed: false
+            nullable: true
+            column: brewStyleABVMax
+        brewstyleibu:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: brewStyleIBU
+        brewstyleibumax:
+            type: string
+            length: 25
+            fixed: false
+            nullable: true
+            column: brewStyleIBUMax
+        brewstylesrm:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: brewStyleSRM
+        brewstylesrmmax:
+            type: string
+            length: 25
+            fixed: false
+            nullable: true
+            column: brewStyleSRMMax
+        brewstyletype:
+            type: string
+            length: 25
+            fixed: false
+            nullable: true
+            column: brewStyleType
+        brewstyleinfo:
+            type: text
+            nullable: true
+            column: brewStyleInfo
+        brewstylelink:
+            type: string
+            length: 200
+            fixed: false
+            nullable: true
+            column: brewStyleLink
+        brewstylegroup:
+            type: string
+            length: 2
+            fixed: true
+            nullable: true
+            column: brewStyleGroup
+    lifecycleCallbacks: {  }

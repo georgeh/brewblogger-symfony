@@ -1,0 +1,52 @@
+<h1>{{batch.brewName}}</h1>
+
+<dl id="batchInfo">
+    <dt>Style:</dt>
+    <dd>{{batch.brewStyle}}</dd>
+    <dt>Brew Date:</dt>
+    <dd>{{batch.brewDate|date('F D,Y')}}</dd>
+    <dt>Tap Date:</dt>
+    <dd>{{batch.brewTapDate|date('F D,Y')}}</dd>
+    <dt>Yield:</dt>
+    <dd>{{batch.brewYield}}</dd>
+    <dt>Bitterness:</dt>
+    <dd>{{batch.brewBitterness}}</dd>
+    <dt>BU/GU:</dt>
+    <dd>{{batch.BUGU}}</dd>
+    <dt>Calories:</dt>
+    <dd>{{batch.Calories}}</dd>
+    <dt>ABV:</dt>
+    <dd>{{batch.ABV}}</dd>
+    <dt>ABW:</dt>
+    <dd>{{batch.ABW}}</dd>
+    <dt>Color (SRM):</dt>
+    <dd>{{batch.brewLovibond}} ({{batch.Brewcolorformula|default('Formula Unknown')}})</dd>
+    <dt>Target OG:</dt>
+    <dd>{{batch.brewTargetog}}</dd>
+    <dt>Target FG:</dt>
+    <dd>{{batch.brewTargetfg}}</dd>
+    <dt>OG:</dt>
+    <dd>{{batch.brewOg}}</dd>
+    <dt>Reading 1:</dt>
+    <dd>{{batch.brewGravity1}} ({{batch.brewGravity1days}} days)</dd>
+    <dt>Reading 2:</dt>
+    <dd>{{batch.brewGravity2}} ({{batch.brewGravity2days}} days)</dd>
+    <dt>FG:</dt>
+    <dd>{{batch.brewFg}}</dd>
+    <dt>Real Extract:</dt>
+    <dd>{{batch.RealExtract}}</dd>
+    <dt>Attenuation:</dt>
+    <dd>{{batch.ApparentAttenuation}}% (A) / {{batch.RealAttenuation}}% (R)</dd>
+    <dt>Status:</dt>
+    <dd>{{batch.brewStatus}}</dd>
+    <dt>Conditioning:</dt>
+    <dd>{{batch.brewCondition}}</dd>
+</dl>
+
+<h2>General Information</h2>
+<dl>
+    <dt>Method:</dt>
+    <dd>{{batch.brewMethod}}</dd>
+    <dt>Cost:</dt>
+    <dd>{{batch.brewCost}}</dd>
+</dl>

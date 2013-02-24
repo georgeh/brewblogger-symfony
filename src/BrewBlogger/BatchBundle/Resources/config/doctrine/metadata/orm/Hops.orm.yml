@@ -1,0 +1,54 @@
+Hops:
+    type: entity
+    table: hops
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        hopsname:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: hopsName
+        hopsgrown:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: hopsGrown
+        hopsinfo:
+            type: text
+            nullable: true
+            column: hopsInfo
+        hopsuse:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: hopsUse
+        hopsexample:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: hopsExample
+        hopsaaulow:
+            type: boolean
+            nullable: true
+            column: hopsAAULow
+        hopsaauhigh:
+            type: boolean
+            nullable: true
+            column: hopsAAUHigh
+        hopssub:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: hopsSub
+    lifecycleCallbacks: {  }

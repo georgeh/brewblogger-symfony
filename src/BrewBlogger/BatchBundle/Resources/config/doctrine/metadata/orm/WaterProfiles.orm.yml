@@ -1,0 +1,76 @@
+WaterProfiles:
+    type: entity
+    table: water_profiles
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        watername:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterName
+        wateramount:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterAmount
+        watercalcium:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterCalcium
+        waterbicarbonate:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterBicarbonate
+        watersulfate:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterSulfate
+        waterchloride:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterChloride
+        watersodium:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterSodium
+        watermagnesium:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterMagnesium
+        waterph:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterPH
+        waternotes:
+            type: text
+            nullable: true
+            column: waterNotes
+        waterbrewerid:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: waterBrewerID
+    lifecycleCallbacks: {  }

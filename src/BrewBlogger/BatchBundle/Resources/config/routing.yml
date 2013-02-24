@@ -1,0 +1,3 @@
+brew_blogger_batch_homepage:
+    pattern:  /batch/{id}
+    defaults: { _controller: BrewBloggerBatchBundle:Default:index }

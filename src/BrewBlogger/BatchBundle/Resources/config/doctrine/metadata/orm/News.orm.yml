@@ -1,0 +1,38 @@
+News:
+    type: entity
+    table: news
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        newsheadline:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: newsHeadline
+        newstext:
+            type: text
+            nullable: true
+            column: newsText
+        newsdate:
+            type: date
+            nullable: true
+            column: newsDate
+        newsprivate:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+            column: newsPrivate
+        newsposter:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: newsPoster
+    lifecycleCallbacks: {  }

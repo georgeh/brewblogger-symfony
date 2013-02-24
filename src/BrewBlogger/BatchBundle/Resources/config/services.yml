@@ -1,0 +1,7 @@
+parameters:
+#    brew_blogger_batch.example.class: BrewBlogger\BatchBundle\Example
+
+services:
+#    brew_blogger_batch.example:
+#        class: %brew_blogger_batch.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]

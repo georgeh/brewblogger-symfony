@@ -1,0 +1,49 @@
+Extract:
+    type: entity
+    table: extract
+    fields:
+        id:
+            id: true
+            type: boolean
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        extractname:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: extractName
+        extractinfo:
+            type: text
+            nullable: true
+            column: extractInfo
+        extractppg:
+            type: decimal
+            nullable: false
+            column: extractPPG
+        extractorigin:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: extractOrigin
+        extractsupplier:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: extractSupplier
+        extractlme:
+            type: boolean
+            nullable: false
+            column: extractLME
+        extractlovibondlow:
+            type: decimal
+            nullable: false
+            column: extractLovibondLow
+        extractlovibondhigh:
+            type: decimal
+            nullable: false
+            column: extractLovibondHigh
+    lifecycleCallbacks: {  }

@@ -1,0 +1,33 @@
+Upcoming:
+    type: entity
+    table: upcoming
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        upcoming:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+        upcomingdate:
+            type: date
+            nullable: true
+            column: upcomingDate
+        upcomingrecipeid:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+            column: upcomingRecipeID
+        brewbrewerid:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: brewBrewerID
+    lifecycleCallbacks: {  }

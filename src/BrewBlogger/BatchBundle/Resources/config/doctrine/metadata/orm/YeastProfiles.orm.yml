@@ -1,0 +1,102 @@
+YeastProfiles:
+    type: entity
+    table: yeast_profiles
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        yeastname:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastName
+        yeastfloc:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastFloc
+        yeastatten:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastAtten
+        yeasttolerance:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastTolerance
+        yeasttype:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastType
+        yeastform:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastForm
+        yeastamount:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastAmount
+        yeastlab:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastLab
+        yeastprodid:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastProdID
+        yeastmintemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastMinTemp
+        yeastmaxtemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastMaxTemp
+        yeastnotes:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastNotes
+        yeastbestfor:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastBestFor
+        yeastmaxreuse:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastMaxReuse
+        yeastbrewerid:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: yeastBrewerID
+    lifecycleCallbacks: {  }

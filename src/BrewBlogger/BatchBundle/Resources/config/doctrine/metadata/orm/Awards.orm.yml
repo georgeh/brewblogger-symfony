@@ -1,0 +1,58 @@
+Awards:
+    type: entity
+    table: awards
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        awardbrewid:
+            type: string
+            length: 10
+            fixed: false
+            nullable: true
+            column: awardBrewID
+        awardcontest:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: awardContest
+        awardcontesturl:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: awardContestURL
+        awarddate:
+            type: date
+            nullable: true
+            column: awardDate
+        awardstyle:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: awardStyle
+        awardplace:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: awardPlace
+        brewbrewerid:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: brewBrewerID
+        awardbrewname:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: awardBrewName
+    lifecycleCallbacks: {  }

@@ -1,0 +1,216 @@
+Users:
+    type: entity
+    table: users
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        userName:
+            type: string
+            length: 20
+            fixed: false
+            nullable: false
+            column: user_name
+        password:
+            type: string
+            length: 250
+            fixed: false
+            nullable: false
+        realfirstname:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: realFirstName
+        reallastname:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: realLastName
+        userlevel:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+            column: userLevel
+        userprofile:
+            type: text
+            nullable: true
+            column: userProfile
+        userpicurl:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userPicURL
+        userfavstyles:
+            type: text
+            nullable: true
+            column: userFavStyles
+        userfavcommercial:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userFavCommercial
+        userfavquote:
+            type: text
+            nullable: true
+            column: userFavQuote
+        userdesignations:
+            type: text
+            nullable: true
+            column: userDesignations
+        useroccupation:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userOccupation
+        userhobbies:
+            type: text
+            nullable: true
+            column: userHobbies
+        userbirthdate:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userBirthdate
+        userhometown:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userHometown
+        userbrewingsince:
+            type: date
+            nullable: true
+            column: userBrewingSince
+        userwebsitename:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userWebsiteName
+        userwebsiteurl:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userWebsiteURL
+        userinfoprivate:
+            type: string
+            length: 1
+            fixed: true
+            nullable: true
+            column: userInfoPrivate
+        userposition:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userPosition
+        userpastposition:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userPastPosition
+        useraddress:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userAddress
+        usercity:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userCity
+        userstate:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userState
+        userzip:
+            type: string
+            length: 15
+            fixed: false
+            nullable: true
+            column: userZip
+        userphoneh:
+            type: string
+            length: 15
+            fixed: false
+            nullable: true
+            column: userPhoneH
+        userphonew:
+            type: string
+            length: 15
+            fixed: false
+            nullable: true
+            column: userPhoneW
+        useremail:
+            type: string
+            length: 250
+            fixed: false
+            nullable: true
+            column: userEmail
+        defaultboiltime:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: defaultBoilTime
+        defaultequipprofile:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: defaultEquipProfile
+        defaultmashprofile:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: defaultMashProfile
+        defaultwaterprofile:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: defaultWaterProfile
+        defaultbitternessformula:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+            column: defaultBitternessFormula
+        defaultmethod:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: defaultMethod
+        defaultbatchsize:
+            type: integer
+            unsigned: false
+            nullable: true
+            column: defaultBatchSize
+        defaultwaterratio:
+            type: string
+            length: 8
+            fixed: false
+            nullable: true
+            column: defaultWaterRatio
+        defaultcolorformula:
+            type: string
+            length: 50
+            fixed: false
+            nullable: false
+            column: defaultColorFormula
+    lifecycleCallbacks: {  }

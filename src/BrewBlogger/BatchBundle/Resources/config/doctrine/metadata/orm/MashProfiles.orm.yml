@@ -1,0 +1,58 @@
+MashProfiles:
+    type: entity
+    table: mash_profiles
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: false
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        mashprofilename:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashProfileName
+        mashgraintemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashGrainTemp
+        mashtuntemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashTunTemp
+        mashspargetemp:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashSpargeTemp
+        mashph:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashPH
+        mashequipadj:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashEquipAdj
+        mashnotes:
+            type: text
+            nullable: true
+            column: mashNotes
+        mashbrewerid:
+            type: string
+            length: 255
+            fixed: false
+            nullable: true
+            column: mashBrewerID
+    lifecycleCallbacks: {  }

@@ -1,0 +1,46 @@
+Malt:
+    type: entity
+    table: malt
+    fields:
+        id:
+            id: true
+            type: integer
+            unsigned: true
+            nullable: false
+            generator:
+                strategy: IDENTITY
+        maltname:
+            type: string
+            length: 100
+            fixed: false
+            nullable: false
+            column: maltName
+        maltinfo:
+            type: text
+            nullable: true
+            column: maltInfo
+        maltppg:
+            type: decimal
+            nullable: false
+            column: maltPPG
+        maltorigin:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: maltOrigin
+        maltsupplier:
+            type: string
+            length: 100
+            fixed: false
+            nullable: true
+            column: maltSupplier
+        maltlovibondlow:
+            type: decimal
+            nullable: false
+            column: maltLovibondLow
+        maltlovibondhigh:
+            type: decimal
+            nullable: false
+            column: maltLovibondHigh
+    lifecycleCallbacks: {  }
