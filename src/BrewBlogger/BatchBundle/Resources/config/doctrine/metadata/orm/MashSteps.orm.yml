@@ -77,4 +77,11 @@ MashSteps:
             fixed: false
             nullable: true
             column: stepInfusionTemp
+    manyToOne:
+        mashProfile:
+            targetEntity: MashProfiles
+            inversedBy: steps
+            joinColumn:
+                name: stepMashProfileID
+                referencedColumnName: id
     lifecycleCallbacks: {  }

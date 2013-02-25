@@ -1,6 +1,13 @@
+ {% extends '::base.html.twig' %}
+
+{% block title %}
+{{batch.brewName}}
+{% endblock %}
+
+{% block body %}
 <h1>{{batch.brewName}}</h1>
 
-<dl id="batchInfo">
+<dl>
     <dt>Style:</dt>
     <dd>{{batch.brewStyle}}</dd>
     <dt>Brew Date:</dt>
@@ -59,19 +66,163 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
     <tbody>
         {% for grain in batch.grains %}
             <tr>
-                <td>{{grain.Weight}} lbs.</td>
+                <td>{{grain.Weight}} pounds</td>
                 <td>{{grain.Name}}</td>
-                <td>{{grain.Percentage * 100}}%</td>
+                <td>{{grain.Percentage * 100}}% of grist</td>
             </tr>
         {% endfor %}
     </tbody>
     <tfoot>
         <tr>
-            <td>{{batch.TotalGrainWeight}} lbs.</td>
+            <td>{{batch.TotalGrainWeight}} pounds</td>
             <td>Total Grain Weight</td>
             <td>100%</td>
         </tr>
     </tfoot>
 </table>
 
-{# dump(batch) #}
+<h2>Adjuncts</h2>
+<table>
+    <tbody>
+        {% for adjunct in batch.adjuncts %}
+            <tr>
+                <td>{{adjunct.Amount}} pounds</td>
+                <td>{{adjunct.Name}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Non-Fermentables</h2>
+<table>
+    <tbody>
+        {% for nonferm in batch.MiscIngredients %}
+            <tr>
+                <td>{{nonferm.Amount}}.</td>
+                <td>{{nonferm.Name}} @ {{nonferm.Time}} minutes</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Hops</h2>
+<table>
+    <tbody>
+        {% for hop in batch.Hops %}
+            <tr>
+                <td>{{hop.Weight}} ounces</td>
+                <td>
+                    {{hop.Name}}<br>
+                    {{hop.AlphaAcid}}% {{hop.Form}} @ {{hop.Time}} minutes<br>
+                    Type: {{hop.Purpose}}<br>
+                    Use: {{hop.Use}}
+                </td>
+                <td>{{hop.AAU}} AAUs</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>{{batch.TotalHops.Weight}} ounces</td>
+            <td>Total Hop Weight</td>
+            <td>{{batch.TotalHops.AAU}} AAUs</td>                
+        </tr>
+    </tfoot>
+</table>
+
+<h2>Boil</h2>
+<dl>
+    <dt>Total Boil Time:</dt>
+    <dd>{{batch.brewBoilTime}}</dd>
+</dl>
+
+<h2>Yeast</h2>
+
+<dl>
+    <dt>Name:</dt>
+    <dd>{{batch.YeastProfile.yeastName}}</dd>
+    <dt>Manufacturer:</dt>
+    <dd>{{batch.YeastProfile.yeastName}}</dd>
+    <dt>Product ID:</dt>
+    <dd>{{batch.YeastProfile.yeastProdID}}</dd>
+    <dt>Type:</dt>
+    <dd>{{batch.YeastProfile.yeastType}}</dd>
+    <dt>Flocculation:</dt>
+    <dd>{{batch.YeastProfile.yeastFloc}}</dd>
+    <dt>Attenuation:</dt>
+    <dd>{{batch.YeastProfile.yeastAtten}}%</dd>
+    <dt>Temperature Range:</dt>
+    <dd>{{batch.YeastProfile.yeastMinTemp}}-{{batch.YeastProfile.yeastMaxTemp}}&deg;F</dd>
+    <dt>Amount:</dt>
+    <dd>{{batch.brewYeastAmount}}</dd>
+</dl>
+
+<h2>Equipment Profile</h2>
+<h3>{{batch.equipmentProfile.equipProfileName}}</h3>
+<dl>
+    <dt>Batch Size:</dt>
+    <dd>{{batch.equipmentProfile.equipBatchSize}} gallons</dd>
+    <dt>Boil Volume:</dt>
+    <dd>{{batch.equipmentProfile.equipBoilVolume}} gallons</dd>
+    <dt>Evaporation Rate:</dt>
+    <dd>{{batch.equipmentProfile.equipEvapRate}}% per hour</dd>
+    <dt>Mash Tun Dead Space:</dt>
+    <dd>{{batch.equipmentProfile.equipMashTunDeadspace}} gallons</dd>
+    <dt>Efficiency:</dt>
+    <dd>{{batch.equipmentProfile.equipTypicalEfficiency}}%</dd>
+    <dt>Mash Tun Weight:</dt>
+    <dd>{{batch.equipmentProfile.equipMashTunWeight}} pounds</dd>
+    <dt>Hop Utilization:</dt>
+    <dd>{{batch.equipmentProfile.equipHopUtil}}%</dd>	
+    <dt>Mash Tun Volume:</dt>
+    <dd>{{batch.equipmentProfile.equipMashTunVolume}} gallons</dd>
+    <dt>Loss:</dt>
+    <dd>{{batch.equipmentProfile.equipLoss}} gallons</dd>	
+    <dt>Mash Tun Specific Heat:</dt>
+    <dd>{{batch.equipmentProfile.equipMashTunSpecificHeat}} Cal/gram per &deg;C</dd>
+</dl>
+
+<h2>Mash Profile</h2>
+<h3>{{batch.mashProfile.mashProfileName}}</h3>
+<dl>
+    <dt>Grain Temperature:</dt>
+    <dd>{{batch.mashProfile.mashGrainTemp}} &deg;F</dd>
+    <dt>Sparge Temperature:</dt>
+    <dd>{{batch.mashProfile.mashSpargeTemp}} &deg;F</dd>
+    <dt>PPG:</dt>
+    <dd>fnord fnord</dd>
+    <dt>Tun Temperature:</dt>
+    <dd>{{batch.mashProfile.mashTunTemp}} &deg;F</dd>
+    <dt>PH:</dt>
+    <dd>{{batch.mashProfile.mashPH}} &deg;F</dd>
+    <dt>Efficiency:</dt>
+    <dd>fnord fnord</dd>
+</dl>
+<h3>Steps</h3>
+<table>
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Time</th>
+            <th>Temp</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for step in batch.mashProfile.steps %}
+        <tr>
+            <td>{{step.stepNumber}}</td>
+            <td>{{step.stepName}}</td>
+            <td>{{step.stepType}}</td>
+            <td>{{step.stepTemp}} &deg;F</td>
+            <td>{{step.stepTime}}</td>
+            <td>{{step.stepDescription|raw}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+
+{% endblock %}

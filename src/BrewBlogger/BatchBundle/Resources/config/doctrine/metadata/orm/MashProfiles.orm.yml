@@ -55,4 +55,8 @@ MashProfiles:
             fixed: false
             nullable: true
             column: mashBrewerID
+    oneToMany:
+        steps:
+            targetEntity: MashProfiles
+            mappedBy: mashProfile
     lifecycleCallbacks: {  }

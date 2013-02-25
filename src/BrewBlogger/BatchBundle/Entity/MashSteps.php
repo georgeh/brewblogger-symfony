@@ -105,6 +105,13 @@ class MashSteps
      */
     private $stepinfusiontemp;
 
+    /**
+     * @var MashProfiles
+     * 
+     * @ORM\ManyToOne(targetEntity="MashProfiles", inversedBy="steps")
+     * @ORM\JoinColumn(name="stepMashProfileID", referencedColumnName="id")
+     */
+    private $mashProfile;
 
 
     /**

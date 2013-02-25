@@ -77,6 +77,12 @@ class MashProfiles
      */
     private $mashbrewerid;
 
+    /**
+     * @var MashSteps
+     * 
+     * @ORM\OneToMany(targetEntity="MashSteps", mappedBy="mashProfile")
+     */
+    private $steps;
 
 
     /**
@@ -271,5 +277,13 @@ class MashProfiles
     public function getMashbrewerid()
     {
         return $this->mashbrewerid;
+    }
+    
+    /**
+     * @var ArrayIterator
+     */
+    public function getSteps()
+    {
+        return $this->steps;
     }
 }

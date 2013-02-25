@@ -1982,6 +1982,30 @@ class Brewing
     private $brewarchive;
 
 
+    /**
+     * @var YeastProfiles
+     * 
+     * @ORM\ManyToOne(targetEntity="YeastProfiles")
+     * @ORM\JoinColumn(name="brewYeastProfile", referencedColumnName="id")
+     */
+    private $yeastProfile;
+    
+    
+    /**
+     * @var EquipProfiles
+     * 
+     * @ORM\ManyToOne(targetEntity="EquipProfiles")
+     * @ORM\JoinColumn(name="brewEquipProfile", referencedColumnName="id")
+     */
+    private $equipmentProfile;
+    
+    /**
+     * @var MashProfiles
+     * 
+     * @ORM\ManyToOne(targetEntity="MashProfiles")
+     * @ORM\JoinColumn(name="brewMashProfile", referencedColumnName="id")
+     */
+    private $mashProfile;
 
     /**
      * Get id
@@ -3350,16 +3374,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc1name
-     *
-     * @return string 
-     */
-    public function getBrewmisc1name()
-    {
-        return $this->brewmisc1name;
-    }
-
-    /**
      * Set brewmisc2name
      *
      * @param string $brewmisc2name
@@ -3370,16 +3384,6 @@ class Brewing
         $this->brewmisc2name = $brewmisc2name;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc2name
-     *
-     * @return string 
-     */
-    public function getBrewmisc2name()
-    {
-        return $this->brewmisc2name;
     }
 
     /**
@@ -3396,16 +3400,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc3name
-     *
-     * @return string 
-     */
-    public function getBrewmisc3name()
-    {
-        return $this->brewmisc3name;
-    }
-
-    /**
      * Set brewmisc4name
      *
      * @param string $brewmisc4name
@@ -3416,16 +3410,6 @@ class Brewing
         $this->brewmisc4name = $brewmisc4name;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc4name
-     *
-     * @return string 
-     */
-    public function getBrewmisc4name()
-    {
-        return $this->brewmisc4name;
     }
 
     /**
@@ -3442,16 +3426,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc1type
-     *
-     * @return string 
-     */
-    public function getBrewmisc1type()
-    {
-        return $this->brewmisc1type;
-    }
-
-    /**
      * Set brewmisc2type
      *
      * @param string $brewmisc2type
@@ -3462,16 +3436,6 @@ class Brewing
         $this->brewmisc2type = $brewmisc2type;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc2type
-     *
-     * @return string 
-     */
-    public function getBrewmisc2type()
-    {
-        return $this->brewmisc2type;
     }
 
     /**
@@ -3488,16 +3452,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc3type
-     *
-     * @return string 
-     */
-    public function getBrewmisc3type()
-    {
-        return $this->brewmisc3type;
-    }
-
-    /**
      * Set brewmisc4type
      *
      * @param string $brewmisc4type
@@ -3508,16 +3462,6 @@ class Brewing
         $this->brewmisc4type = $brewmisc4type;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc4type
-     *
-     * @return string 
-     */
-    public function getBrewmisc4type()
-    {
-        return $this->brewmisc4type;
     }
 
     /**
@@ -3534,16 +3478,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc1use
-     *
-     * @return string 
-     */
-    public function getBrewmisc1use()
-    {
-        return $this->brewmisc1use;
-    }
-
-    /**
      * Set brewmisc2use
      *
      * @param string $brewmisc2use
@@ -3554,16 +3488,6 @@ class Brewing
         $this->brewmisc2use = $brewmisc2use;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc2use
-     *
-     * @return string 
-     */
-    public function getBrewmisc2use()
-    {
-        return $this->brewmisc2use;
     }
 
     /**
@@ -3580,16 +3504,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc3use
-     *
-     * @return string 
-     */
-    public function getBrewmisc3use()
-    {
-        return $this->brewmisc3use;
-    }
-
-    /**
      * Set brewmisc4use
      *
      * @param string $brewmisc4use
@@ -3600,16 +3514,6 @@ class Brewing
         $this->brewmisc4use = $brewmisc4use;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc4use
-     *
-     * @return string 
-     */
-    public function getBrewmisc4use()
-    {
-        return $this->brewmisc4use;
     }
 
     /**
@@ -3626,16 +3530,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc1time
-     *
-     * @return string 
-     */
-    public function getBrewmisc1time()
-    {
-        return $this->brewmisc1time;
-    }
-
-    /**
      * Set brewmisc2time
      *
      * @param string $brewmisc2time
@@ -3646,16 +3540,6 @@ class Brewing
         $this->brewmisc2time = $brewmisc2time;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc2time
-     *
-     * @return string 
-     */
-    public function getBrewmisc2time()
-    {
-        return $this->brewmisc2time;
     }
 
     /**
@@ -3672,16 +3556,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc3time
-     *
-     * @return string 
-     */
-    public function getBrewmisc3time()
-    {
-        return $this->brewmisc3time;
-    }
-
-    /**
      * Set brewmisc4time
      *
      * @param string $brewmisc4time
@@ -3692,16 +3566,6 @@ class Brewing
         $this->brewmisc4time = $brewmisc4time;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc4time
-     *
-     * @return string 
-     */
-    public function getBrewmisc4time()
-    {
-        return $this->brewmisc4time;
     }
 
     /**
@@ -3718,16 +3582,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc1amount
-     *
-     * @return string 
-     */
-    public function getBrewmisc1amount()
-    {
-        return $this->brewmisc1amount;
-    }
-
-    /**
      * Set brewmisc2amount
      *
      * @param string $brewmisc2amount
@@ -3738,16 +3592,6 @@ class Brewing
         $this->brewmisc2amount = $brewmisc2amount;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc2amount
-     *
-     * @return string 
-     */
-    public function getBrewmisc2amount()
-    {
-        return $this->brewmisc2amount;
     }
 
     /**
@@ -3764,16 +3608,6 @@ class Brewing
     }
 
     /**
-     * Get brewmisc3amount
-     *
-     * @return string 
-     */
-    public function getBrewmisc3amount()
-    {
-        return $this->brewmisc3amount;
-    }
-
-    /**
      * Set brewmisc4amount
      *
      * @param string $brewmisc4amount
@@ -3784,16 +3618,6 @@ class Brewing
         $this->brewmisc4amount = $brewmisc4amount;
     
         return $this;
-    }
-
-    /**
-     * Get brewmisc4amount
-     *
-     * @return string 
-     */
-    public function getBrewmisc4amount()
-    {
-        return $this->brewmisc4amount;
     }
 
     /**
@@ -8249,10 +8073,10 @@ class Brewing
         for ($i=1; $i<=15; $i++)
         {
             $property = "brewgrain$i";
-            if (!is_null($this->{$property}) && !is_null($this->{$property . "weight"})) {
-                $grains[] = array("Name"       => $this->{$property}, 
-                                  "Weight"     => $this->{$property . "weight"},
-                                  "Percentage" => round(($this->{$property . "weight"} / $total), 3));
+            if (!is_null($this->{$property}) && !is_null($this->{$property . 'weight'})) {
+                $grains[] = array('Name'       => $this->{$property}, 
+                                  'Weight'     => $this->{$property . 'weight'},
+                                  'Percentage' => round(($this->{$property . 'weight'} / $total), 3));
             }
         }
         return $grains;
@@ -8269,10 +8093,119 @@ class Brewing
         $weight = 0.0;
         for ($i=1; $i<=15; $i++)
         {
-            if (!is_null($this->{"brewgrain" . $i . "weight"})) {
-                $weight += $this->{"brewgrain" . $i . "weight"};
+            if (!is_null($this->{'brewgrain' . $i . 'weight'})) {
+                $weight += $this->{'brewgrain' . $i . 'weight'};
             }
         }
         return $weight;
+    }
+    
+    /**
+     * Collects the fermentable adjuncts for the boil
+     * 
+     * @return array
+     */
+    public function getAdjuncts()
+    {
+        $adjuncts = array();
+        for ($i=1; $i<=9; $i++)
+        {
+            $property = "brewaddition$i";
+            if (!is_null($this->{$property})) {
+                $adjuncts[] = array('Name'   => $this->{$property}, 
+                                    'Amount' => $this->{$property . 'amt'},);
+            }
+        }
+        return $adjuncts;
+    }
+    
+    /**
+     * Collects the non-fermentable adjuncts for the boil
+     * 
+     * @return array
+     */
+    public function getMiscIngredients()
+    {
+        $misc = array();
+        for ($i=1; $i<=4; $i++)
+        {
+            $property = "brewmisc$i";
+            if (!is_null($this->{$property . 'name'})) {
+                $misc[] = array('Name'   => $this->{$property . 'name'}, 
+                                'Amount' => $this->{$property . 'amount'},
+                                'Time'   => $this->{$property . 'time'},);
+            }
+        }
+        return $misc;
+    }
+    
+    /**
+     * Collects the non-fermentable adjuncts for the boil
+     * 
+     * @return array
+     */
+    public function getHops()
+    {
+        $hops = array();
+        for ($i=1; $i<=15; $i++)
+        {
+            $property = "brewhops$i";
+            if (!is_null($this->{$property})) {
+                $hops[] = array('Name'      => $this->{$property}, 
+                                'Form'      => $this->{$property . 'form'},
+                                'AlphaAcid' => $this->{$property . 'ibu'},
+                                'Time'      => $this->{$property . 'time'},
+                                'Purpose'   => $this->{$property . 'type'},
+                                'Use'       => $this->{$property . 'use'},
+                                'Weight'    => $this->{$property . 'weight'},
+                                'AAU'       => $this->{$property . 'weight'} * $this->{$property . 'ibu'},
+                               );
+            }
+        }
+        return $hops;
+    }
+    
+    /**
+     * For displaying the total
+     * 
+     * @todo Refactor into some sort of Hop container object
+     * @return array
+     */
+    public function getTotalHops()
+    {
+        $total = array("Weight" => 0, "AAU" => 0);
+        $hops = $this->getHops();
+        foreach ($hops as $hop) {
+            $total['Weight'] += $hop['Weight'];
+            $total['AAU']    += $hop['AAU'];
+        }
+        return $total;        
+    }
+    
+    /**
+     * 
+     * @return YeastProfiles
+     */
+    public function getYeastProfile()
+    {
+        return $this->yeastProfile;
+    }
+
+    /**
+     * 
+     * @return EquipProfiles
+     */
+    public function getEquipmentProfile()
+    {
+        return $this->equipmentProfile;
+    }
+
+    /**
+     * 
+     * @return MashProfiles
+     */
+    public function getMashProfile()
+    {
+        return $this->mashProfile;
     }
 }

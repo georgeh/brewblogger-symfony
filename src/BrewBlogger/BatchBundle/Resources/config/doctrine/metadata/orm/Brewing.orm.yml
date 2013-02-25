@@ -1666,4 +1666,12 @@ Brewing:
             fixed: false
             nullable: true
             column: brewArchive
+    manyToOne:
+        yeastProfile:
+            targetEntity: YeastProfiles
+        equipmentProfile:
+            targetEntity: EquipProfiles
+        mashProfile:
+            targetEntity: MashProfiles
+            
     lifecycleCallbacks: {  }
