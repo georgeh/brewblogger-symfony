@@ -1,4 +1,4 @@
- {% extends '::base.html.twig' %}
+{% extends '::base.html.twig' %}
 
 {% block title %}
 {{batch.brewName}}
@@ -7,7 +7,7 @@
 {% block body %}
 <h1>{{batch.brewName}}</h1>
 
-<dl>
+<dl class="dl-horizontal span5">
     <dt>Style:</dt>
     <dd>{{batch.brewStyle}}</dd>
     <dt>Brew Date:</dt>
@@ -28,6 +28,8 @@
     <dd>{{batch.ABW}}</dd>
     <dt>Color (SRM):</dt>
     <dd>{{batch.brewLovibond}} ({{batch.Brewcolorformula|default('Formula Unknown')}})</dd>
+</dl>
+<dl class="dl-horizontal span5 offset1">
     <dt>Target OG:</dt>
     <dd>{{batch.brewTargetog}}</dd>
     <dt>Target FG:</dt>
@@ -51,7 +53,7 @@
 </dl>
 
 <h2>General Information</h2>
-<dl>
+<dl class="dl-horizontal">
     <dt>Method:</dt>
     <dd>{{batch.brewMethod}}</dd>
     <dt>Cost:</dt>
@@ -62,7 +64,7 @@
 fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord 
 
 <h2>Malts and Grains</h2>
-<table>
+<table class="table table-striped">
     <tbody>
         {% for grain in batch.grains %}
             <tr>
@@ -82,7 +84,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 </table>
 
 <h2>Adjuncts</h2>
-<table>
+<table class="table table-striped">
     <tbody>
         {% for adjunct in batch.adjuncts %}
             <tr>
@@ -94,7 +96,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 </table>
 
 <h2>Non-Fermentables</h2>
-<table>
+<table class="table table-striped">
     <tbody>
         {% for nonferm in batch.MiscIngredients %}
             <tr>
@@ -106,7 +108,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 </table>
 
 <h2>Hops</h2>
-<table>
+<table class="table table-striped">
     <tbody>
         {% for hop in batch.Hops %}
             <tr>
@@ -131,14 +133,14 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 </table>
 
 <h2>Boil</h2>
-<dl>
+<dl class="dl-horizontal">
     <dt>Total Boil Time:</dt>
     <dd>{{batch.brewBoilTime}}</dd>
 </dl>
 
 <h2>Yeast</h2>
 
-<dl>
+<dl class="dl-horizontal">
     <dt>Name:</dt>
     <dd>{{batch.YeastProfile.yeastName}}</dd>
     <dt>Manufacturer:</dt>
@@ -159,7 +161,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 
 <h2>Equipment Profile</h2>
 <h3>{{batch.equipmentProfile.equipProfileName}}</h3>
-<dl>
+<dl class="dl-horizontal">
     <dt>Batch Size:</dt>
     <dd>{{batch.equipmentProfile.equipBatchSize}} gallons</dd>
     <dt>Boil Volume:</dt>
@@ -184,7 +186,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 
 <h2>Mash Profile</h2>
 <h3>{{batch.mashProfile.mashProfileName}}</h3>
-<dl>
+<dl class="dl-horizontal">
     <dt>Grain Temperature:</dt>
     <dd>{{batch.mashProfile.mashGrainTemp}} &deg;F</dd>
     <dt>Sparge Temperature:</dt>
@@ -198,8 +200,9 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
     <dt>Efficiency:</dt>
     <dd>fnord fnord</dd>
 </dl>
+
 <h3>Steps</h3>
-<table>
+<table class="table table-striped">
     <thead>
         <tr>
             <th>#</th>
@@ -216,8 +219,8 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
             <td>{{step.stepNumber}}</td>
             <td>{{step.stepName}}</td>
             <td>{{step.stepType}}</td>
-            <td>{{step.stepTemp}} &deg;F</td>
             <td>{{step.stepTime}}</td>
+            <td>{{step.stepTemp}} &deg;F</td>
             <td>{{step.stepDescription|raw}}</td>
         </tr>
         {% endfor %}
@@ -228,7 +231,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 {% set water = batch.waterProfile %}
 <h3>{{water.watername}}</h3>
 
-<dl>
+<dl class="dl-horizontal">
     <dt>Calicum:</dt>
     <dd>{{water.waterCalcium}} ppm</dd>
     <dt>Bicarbonate:</dt>
@@ -246,7 +249,7 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
 </dl>
 
 <h2>Fermentation</h2>
-<dl>
+<dl class="dl-horizontal">
     <dt>Primary:</dt>
     <dd>{{batch.brewPrimary}} days @ {{batch.brewPrimaryTemp}}&deg;F</dd>
 

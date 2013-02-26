@@ -1,6 +1,60 @@
 {
-    "hash": "cc77becfe0627b3cbaca5a9bd40816d2",
+    "hash": "b2841ef51b04e1f1704d63a1c4612bc1",
     "packages": [
+        {
+            "name": "braincrafted/bootstrap-bundle",
+            "version": "dev-master",
+            "target-dir": "Braincrafted/BootstrapBundle",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/braincrafted/bootstrap-bundle.git",
+                "reference": "v1.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/braincrafted/bootstrap-bundle/zipball/v1.2.0",
+                "reference": "v1.2.0",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3",
+                "twig/extensions": "dev-master"
+            },
+            "require-dev": {
+                "knplabs/knp-markdown-bundle": "dev-master",
+                "knplabs/knp-menu": "dev-master",
+                "knplabs/knp-menu-bundle": "dev-master",
+                "knplabs/knp-paginator-bundle": "dev-master"
+            },
+            "suggest": {
+                "knplabs/knp-menu": "Required to use KnpMenuBundle.",
+                "knplabs/knp-menu-bundle": "BraincraftedBootstrapBundle styles the menus provided by KnpMenuBundle.",
+                "knplabs/knp-paginator-bundle": "BraincraftedBootstrapBundle styles the pagination provided by KnpPaginatorBundle."
+            },
+            "type": "symfony-bundle",
+            "autoload": {
+                "psr-0": {
+                    "Braincrafted\\BootstrapBundle": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Eckerstorfer",
+                    "email": "florian@theroadtojoy.at",
+                    "homepage": "http://florianeckerstorfer.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Twitter Bootstrap for Symfony2",
+            "keywords": [
+                "bootstrap"
+            ],
+            "time": "2013-02-24 18:14:21"
+        },
         {
             "name": "doctrine/common",
             "version": "2.3.0",
@@ -1370,6 +1424,7 @@
         "twig/extensions": 20,
         "kriswallsmith/assetic": 20,
         "doctrine/migrations": 20,
-        "doctrine/doctrine-migrations-bundle": 20
+        "doctrine/doctrine-migrations-bundle": 20,
+        "braincrafted/bootstrap-bundle": 20
     }
 }
