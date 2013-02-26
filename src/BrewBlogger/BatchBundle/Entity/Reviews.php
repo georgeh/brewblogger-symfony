@@ -144,7 +144,7 @@ class Reviews
      * @param boolean $brewid
      * @return Reviews
      */
-    public function setBrewid($brewid)
+    public function setBrewID($brewid)
     {
         $this->brewid = $brewid;
     
@@ -156,7 +156,7 @@ class Reviews
      *
      * @return boolean 
      */
-    public function getBrewid()
+    public function getBrewID()
     {
         return $this->brewid;
     }
@@ -167,7 +167,7 @@ class Reviews
      * @param \DateTime $brewscoredate
      * @return Reviews
      */
-    public function setBrewscoredate($brewscoredate)
+    public function setScoreDate($brewscoredate)
     {
         $this->brewscoredate = $brewscoredate;
     
@@ -179,7 +179,7 @@ class Reviews
      *
      * @return \DateTime 
      */
-    public function getBrewscoredate()
+    public function getScoreDate()
     {
         return $this->brewscoredate;
     }
@@ -190,7 +190,7 @@ class Reviews
      * @param boolean $brewaromascore
      * @return Reviews
      */
-    public function setBrewaromascore($brewaromascore)
+    public function setAromaScore($brewaromascore)
     {
         $this->brewaromascore = $brewaromascore;
     
@@ -202,7 +202,7 @@ class Reviews
      *
      * @return boolean 
      */
-    public function getBrewaromascore()
+    public function getAromaScore()
     {
         return $this->brewaromascore;
     }
@@ -213,7 +213,7 @@ class Reviews
      * @param string $brewaromainfo
      * @return Reviews
      */
-    public function setBrewaromainfo($brewaromainfo)
+    public function setAromaInfo($brewaromainfo)
     {
         $this->brewaromainfo = $brewaromainfo;
     
@@ -225,7 +225,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewaromainfo()
+    public function getAromaInfo()
     {
         return $this->brewaromainfo;
     }
@@ -236,7 +236,7 @@ class Reviews
      * @param boolean $brewappearancescore
      * @return Reviews
      */
-    public function setBrewappearancescore($brewappearancescore)
+    public function setAppearanceScore($brewappearancescore)
     {
         $this->brewappearancescore = $brewappearancescore;
     
@@ -248,7 +248,7 @@ class Reviews
      *
      * @return boolean 
      */
-    public function getBrewappearancescore()
+    public function getAppearanceScore()
     {
         return $this->brewappearancescore;
     }
@@ -259,7 +259,7 @@ class Reviews
      * @param string $brewappearanceinfo
      * @return Reviews
      */
-    public function setBrewappearanceinfo($brewappearanceinfo)
+    public function setAppearanceInfo($brewappearanceinfo)
     {
         $this->brewappearanceinfo = $brewappearanceinfo;
     
@@ -271,7 +271,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewappearanceinfo()
+    public function getAppearanceInfo()
     {
         return $this->brewappearanceinfo;
     }
@@ -282,7 +282,7 @@ class Reviews
      * @param boolean $brewflavorscore
      * @return Reviews
      */
-    public function setBrewflavorscore($brewflavorscore)
+    public function setFlavorScore($brewflavorscore)
     {
         $this->brewflavorscore = $brewflavorscore;
     
@@ -294,7 +294,7 @@ class Reviews
      *
      * @return boolean 
      */
-    public function getBrewflavorscore()
+    public function getFlavorScore()
     {
         return $this->brewflavorscore;
     }
@@ -305,7 +305,7 @@ class Reviews
      * @param string $brewflavorinfo
      * @return Reviews
      */
-    public function setBrewflavorinfo($brewflavorinfo)
+    public function setFlavorInfo($brewflavorinfo)
     {
         $this->brewflavorinfo = $brewflavorinfo;
     
@@ -317,7 +317,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewflavorinfo()
+    public function getFlavorInfo()
     {
         return $this->brewflavorinfo;
     }
@@ -328,7 +328,7 @@ class Reviews
      * @param boolean $brewmouthfeelscore
      * @return Reviews
      */
-    public function setBrewmouthfeelscore($brewmouthfeelscore)
+    public function setMouthfeelScore($brewmouthfeelscore)
     {
         $this->brewmouthfeelscore = $brewmouthfeelscore;
     
@@ -340,7 +340,7 @@ class Reviews
      *
      * @return boolean 
      */
-    public function getBrewmouthfeelscore()
+    public function getMouthfeelScore()
     {
         return $this->brewmouthfeelscore;
     }
@@ -351,7 +351,7 @@ class Reviews
      * @param string $brewmouthfeelinfo
      * @return Reviews
      */
-    public function setBrewmouthfeelinfo($brewmouthfeelinfo)
+    public function setMouthfeelInfo($brewmouthfeelinfo)
     {
         $this->brewmouthfeelinfo = $brewmouthfeelinfo;
     
@@ -363,7 +363,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewmouthfeelinfo()
+    public function getMouthfeelInfo()
     {
         return $this->brewmouthfeelinfo;
     }
@@ -374,7 +374,7 @@ class Reviews
      * @param boolean $brewoverallscore
      * @return Reviews
      */
-    public function setBrewoverallscore($brewoverallscore)
+    public function setOverallScore($brewoverallscore)
     {
         $this->brewoverallscore = $brewoverallscore;
     
@@ -386,7 +386,7 @@ class Reviews
      *
      * @return boolean 
      */
-    public function getBrewoverallscore()
+    public function getOverallScore()
     {
         return $this->brewoverallscore;
     }
@@ -397,7 +397,7 @@ class Reviews
      * @param string $brewoverallinfo
      * @return Reviews
      */
-    public function setBrewoverallinfo($brewoverallinfo)
+    public function setOverallInfo($brewoverallinfo)
     {
         $this->brewoverallinfo = $brewoverallinfo;
     
@@ -409,7 +409,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewoverallinfo()
+    public function getOverallInfo()
     {
         return $this->brewoverallinfo;
     }
@@ -420,7 +420,7 @@ class Reviews
      * @param string $brewscoredby
      * @return Reviews
      */
-    public function setBrewscoredby($brewscoredby)
+    public function setScoredBy($brewscoredby)
     {
         $this->brewscoredby = $brewscoredby;
     
@@ -432,7 +432,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewscoredby()
+    public function getScoredBy()
     {
         return $this->brewscoredby;
     }
@@ -443,7 +443,7 @@ class Reviews
      * @param string $brewbrewerid
      * @return Reviews
      */
-    public function setBrewbrewerid($brewbrewerid)
+    public function setBrewerID($brewbrewerid)
     {
         $this->brewbrewerid = $brewbrewerid;
     
@@ -455,7 +455,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewbrewerid()
+    public function getBrewerID()
     {
         return $this->brewbrewerid;
     }
@@ -466,7 +466,7 @@ class Reviews
      * @param string $brewscorerlevel
      * @return Reviews
      */
-    public function setBrewscorerlevel($brewscorerlevel)
+    public function setScorerLevel($brewscorerlevel)
     {
         $this->brewscorerlevel = $brewscorerlevel;
     
@@ -478,7 +478,7 @@ class Reviews
      *
      * @return string 
      */
-    public function getBrewscorerlevel()
+    public function getScorerLevel()
     {
         return $this->brewscorerlevel;
     }

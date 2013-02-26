@@ -74,7 +74,7 @@ class News
      * @param string $newsheadline
      * @return News
      */
-    public function setNewsheadline($newsheadline)
+    public function setHeadline($newsheadline)
     {
         $this->newsheadline = $newsheadline;
     
@@ -86,7 +86,7 @@ class News
      *
      * @return string 
      */
-    public function getNewsheadline()
+    public function getHeadline()
     {
         return $this->newsheadline;
     }
@@ -97,7 +97,7 @@ class News
      * @param string $newstext
      * @return News
      */
-    public function setNewstext($newstext)
+    public function setText($newstext)
     {
         $this->newstext = $newstext;
     
@@ -109,7 +109,7 @@ class News
      *
      * @return string 
      */
-    public function getNewstext()
+    public function getText()
     {
         return $this->newstext;
     }
@@ -120,7 +120,7 @@ class News
      * @param \DateTime $newsdate
      * @return News
      */
-    public function setNewsdate($newsdate)
+    public function setDate($newsdate)
     {
         $this->newsdate = $newsdate;
     
@@ -132,7 +132,7 @@ class News
      *
      * @return \DateTime 
      */
-    public function getNewsdate()
+    public function getDate()
     {
         return $this->newsdate;
     }
@@ -143,7 +143,7 @@ class News
      * @param string $newsprivate
      * @return News
      */
-    public function setNewsprivate($newsprivate)
+    public function setPrivate($newsprivate)
     {
         $this->newsprivate = $newsprivate;
     
@@ -155,7 +155,7 @@ class News
      *
      * @return string 
      */
-    public function getNewsprivate()
+    public function getPrivate()
     {
         return $this->newsprivate;
     }
@@ -166,7 +166,7 @@ class News
      * @param string $newsposter
      * @return News
      */
-    public function setNewsposter($newsposter)
+    public function setPoster($newsposter)
     {
         $this->newsposter = $newsposter;
     
@@ -178,7 +178,7 @@ class News
      *
      * @return string 
      */
-    public function getNewsposter()
+    public function getPoster()
     {
         return $this->newsposter;
     }

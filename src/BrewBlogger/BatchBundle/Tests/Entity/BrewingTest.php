@@ -9,12 +9,12 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewbitterness(50);
-        $brewing->setBrewog(1.100);
+        $brewing->setBitterness(50);
+        $brewing->setOG(1.100);
         $this->assertEquals(.5, $brewing->getBUGU());
         
         // Divide by zero
-        $brewing->setBrewog(1);
+        $brewing->setOG(1);
         $this->assertNull($brewing->getBUGU());
     }
     
@@ -22,8 +22,8 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewog(1.068);
-        $brewing->setBrewfg(1.005);
+        $brewing->setOG(1.068);
+        $brewing->setFG(1.005);
         $this->assertEquals(220, $brewing->getCalories());
     }
     
@@ -31,8 +31,8 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewog(1.068);
-        $brewing->setBrewfg(1.005);
+        $brewing->setOG(1.068);
+        $brewing->setFG(1.005);
         $this->assertEquals(6.6, $brewing->getABW());
     }
     
@@ -40,8 +40,8 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewog(1.068);
-        $brewing->setBrewfg(1.005);
+        $brewing->setOG(1.068);
+        $brewing->setFG(1.005);
         $this->assertEquals(4.1, $brewing->getRealExtract());
     }
     
@@ -56,8 +56,8 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewog(1.068);
-        $brewing->setBrewfg(1.005);
+        $brewing->setOG(1.068);
+        $brewing->setFG(1.005);
         $this->assertEquals(8.4, $brewing->getABV());
     }
     
@@ -65,8 +65,8 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewog(1.068);
-        $brewing->setBrewfg(1.005);
+        $brewing->setOG(1.068);
+        $brewing->setFG(1.005);
         $this->assertEquals(92.2, $brewing->getApparentAttenuation());
         $this->assertEquals(75.3, $brewing->getRealAttenuation());
     }
@@ -75,12 +75,12 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
 
-        $brewing->setBrewgrain1('American Pale Malt (2-Row)');        
-        $brewing->setBrewgrain1weight("18.00");
-        $brewing->setBrewgrain2("German Light Munich Malt");
-        $brewing->setBrewgrain2weight("4.00");
-        $brewing->setBrewgrain3("Crystal Malt 40L" );
-        $brewing->setBrewgrain3weight("0.25");
+        $brewing->setGrain1('American Pale Malt (2-Row)');        
+        $brewing->setGrain1weight("18.00");
+        $brewing->setGrain2("German Light Munich Malt");
+        $brewing->setGrain2weight("4.00");
+        $brewing->setGrain3("Crystal Malt 40L" );
+        $brewing->setGrain3weight("0.25");
         
         $grains = $brewing->getGrains();
         $this->assertEquals(3, count($grains));
@@ -98,13 +98,13 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewmisc1amount('1/2 tsp.');
-        $brewing->setBrewmisc1name('Fermcap');
-        $brewing->setBrewmisc1time('60');
+        $brewing->setMisc1amount('1/2 tsp.');
+        $brewing->setMisc1name('Fermcap');
+        $brewing->setMisc1time('60');
 
-        $brewing->setBrewmisc3amount('1 tablet');
-        $brewing->setBrewmisc3name('Whirlfloc');
-        $brewing->setBrewmisc3time('15');
+        $brewing->setMisc3amount('1 tablet');
+        $brewing->setMisc3name('Whirlfloc');
+        $brewing->setMisc3time('15');
         
         $misc = $brewing->getMiscIngredients();
         
@@ -118,11 +118,11 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewaddition3('Sucrose (Table Sugar)');
-        $brewing->setBrewaddition3amt('2.00');
+        $brewing->setAddition3('Sucrose (Table Sugar)');
+        $brewing->setAddition3amt('2.00');
 
-        $brewing->setBrewaddition8('Brown Sugar (Dark)');
-        $brewing->setBrewaddition8amt('0.50');
+        $brewing->setAddition8('Brown Sugar (Dark)');
+        $brewing->setAddition8amt('0.50');
         
         $adjuncts = $brewing->getAdjuncts();
         $this->assertEquals(2, count($adjuncts));
@@ -135,22 +135,22 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     {
         $brewing = new Entity\Brewing();
         
-        $brewing->setBrewhops2('Golding')
-                ->setBrewhops2form('Pellets')
-                ->setBrewhops2ibu('7.0')
-                ->setBrewhops2time('60')
-                ->setBrewhops2type('Aroma')
-                ->setBrewhops2use('Boil')
-                ->setBrewhops2weight('0.65');
+        $brewing->setHops2('Golding')
+                ->setHops2form('Pellets')
+                ->setHops2ibu('7.0')
+                ->setHops2time('60')
+                ->setHops2type('Aroma')
+                ->setHops2use('Boil')
+                ->setHops2weight('0.65');
                 
         // Yes these are in reverse order, shouldn't matter with the current setter API
-        $brewing->setBrewhops1('Magnum')
-                ->setBrewhops1form('Whole')
-                ->setBrewhops1ibu('6.0')
-                ->setBrewhops1time('90')
-                ->setBrewhops1type('Bittering')
-                ->setBrewhops1use('Dry Hop')
-                ->setBrewhops1weight('1.35');
+        $brewing->setHops1('Magnum')
+                ->setHops1form('Whole')
+                ->setHops1ibu('6.0')
+                ->setHops1time('90')
+                ->setHops1type('Bittering')
+                ->setHops1use('Dry Hop')
+                ->setHops1weight('1.35');
         
         $hops = $brewing->getHops();
         $this->assertEquals(2, count($hops));

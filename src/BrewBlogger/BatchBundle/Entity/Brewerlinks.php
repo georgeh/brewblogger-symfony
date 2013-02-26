@@ -53,7 +53,7 @@ class Brewerlinks
      * @param string $brewerlinkname
      * @return Brewerlinks
      */
-    public function setBrewerlinkname($brewerlinkname)
+    public function setName($brewerlinkname)
     {
         $this->brewerlinkname = $brewerlinkname;
     
@@ -65,7 +65,7 @@ class Brewerlinks
      *
      * @return string 
      */
-    public function getBrewerlinkname()
+    public function getName()
     {
         return $this->brewerlinkname;
     }
@@ -76,7 +76,7 @@ class Brewerlinks
      * @param string $brewerlinkurl
      * @return Brewerlinks
      */
-    public function setBrewerlinkurl($brewerlinkurl)
+    public function setURL($brewerlinkurl)
     {
         $this->brewerlinkurl = $brewerlinkurl;
     
@@ -88,7 +88,7 @@ class Brewerlinks
      *
      * @return string 
      */
-    public function getBrewerlinkurl()
+    public function getURL()
     {
         return $this->brewerlinkurl;
     }

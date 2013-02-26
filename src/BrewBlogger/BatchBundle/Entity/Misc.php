@@ -67,7 +67,7 @@ class Misc
      * @param string $miscname
      * @return Misc
      */
-    public function setMiscname($miscname)
+    public function setName($miscname)
     {
         $this->miscname = $miscname;
     
@@ -79,7 +79,7 @@ class Misc
      *
      * @return string 
      */
-    public function getMiscname()
+    public function getName()
     {
         return $this->miscname;
     }
@@ -90,7 +90,7 @@ class Misc
      * @param string $misctype
      * @return Misc
      */
-    public function setMisctype($misctype)
+    public function setType($misctype)
     {
         $this->misctype = $misctype;
     
@@ -102,7 +102,7 @@ class Misc
      *
      * @return string 
      */
-    public function getMisctype()
+    public function getType()
     {
         return $this->misctype;
     }
@@ -113,7 +113,7 @@ class Misc
      * @param string $miscuse
      * @return Misc
      */
-    public function setMiscuse($miscuse)
+    public function setUse($miscuse)
     {
         $this->miscuse = $miscuse;
     
@@ -125,7 +125,7 @@ class Misc
      *
      * @return string 
      */
-    public function getMiscuse()
+    public function getUse()
     {
         return $this->miscuse;
     }
@@ -136,7 +136,7 @@ class Misc
      * @param string $miscnotes
      * @return Misc
      */
-    public function setMiscnotes($miscnotes)
+    public function setNotes($miscnotes)
     {
         $this->miscnotes = $miscnotes;
     
@@ -148,7 +148,7 @@ class Misc
      *
      * @return string 
      */
-    public function getMiscnotes()
+    public function getNotes()
     {
         return $this->miscnotes;
     }

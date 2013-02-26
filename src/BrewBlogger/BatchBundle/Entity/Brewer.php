@@ -158,7 +158,7 @@ class Brewer
      * @param string $brewerfirstname
      * @return Brewer
      */
-    public function setBrewerfirstname($brewerfirstname)
+    public function setFirstName($brewerfirstname)
     {
         $this->brewerfirstname = $brewerfirstname;
     
@@ -170,7 +170,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerfirstname()
+    public function getFirstName()
     {
         return $this->brewerfirstname;
     }
@@ -181,7 +181,7 @@ class Brewer
      * @param string $brewerlastname
      * @return Brewer
      */
-    public function setBrewerlastname($brewerlastname)
+    public function setLastName($brewerlastname)
     {
         $this->brewerlastname = $brewerlastname;
     
@@ -193,7 +193,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerlastname()
+    public function getLastName()
     {
         return $this->brewerlastname;
     }
@@ -204,7 +204,7 @@ class Brewer
      * @param string $brewermiddlename
      * @return Brewer
      */
-    public function setBrewermiddlename($brewermiddlename)
+    public function setMiddleName($brewermiddlename)
     {
         $this->brewermiddlename = $brewermiddlename;
     
@@ -216,7 +216,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewermiddlename()
+    public function getMiddleName()
     {
         return $this->brewermiddlename;
     }
@@ -227,7 +227,7 @@ class Brewer
      * @param string $brewerprefix
      * @return Brewer
      */
-    public function setBrewerprefix($brewerprefix)
+    public function setPrefix($brewerprefix)
     {
         $this->brewerprefix = $brewerprefix;
     
@@ -239,7 +239,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerprefix()
+    public function getPrefix()
     {
         return $this->brewerprefix;
     }
@@ -250,7 +250,7 @@ class Brewer
      * @param string $brewersuffix
      * @return Brewer
      */
-    public function setBrewersuffix($brewersuffix)
+    public function setSuffix($brewersuffix)
     {
         $this->brewersuffix = $brewersuffix;
     
@@ -262,7 +262,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewersuffix()
+    public function getSuffix()
     {
         return $this->brewersuffix;
     }
@@ -273,7 +273,7 @@ class Brewer
      * @param string $brewerage
      * @return Brewer
      */
-    public function setBrewerage($brewerage)
+    public function setAge($brewerage)
     {
         $this->brewerage = $brewerage;
     
@@ -285,7 +285,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerage()
+    public function getAge()
     {
         return $this->brewerage;
     }
@@ -296,7 +296,7 @@ class Brewer
      * @param string $brewercity
      * @return Brewer
      */
-    public function setBrewercity($brewercity)
+    public function setCity($brewercity)
     {
         $this->brewercity = $brewercity;
     
@@ -308,7 +308,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewercity()
+    public function getCity()
     {
         return $this->brewercity;
     }
@@ -319,7 +319,7 @@ class Brewer
      * @param string $brewerstate
      * @return Brewer
      */
-    public function setBrewerstate($brewerstate)
+    public function setState($brewerstate)
     {
         $this->brewerstate = $brewerstate;
     
@@ -331,7 +331,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerstate()
+    public function getState()
     {
         return $this->brewerstate;
     }
@@ -342,7 +342,7 @@ class Brewer
      * @param string $brewercountry
      * @return Brewer
      */
-    public function setBrewercountry($brewercountry)
+    public function setCountry($brewercountry)
     {
         $this->brewercountry = $brewercountry;
     
@@ -354,7 +354,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewercountry()
+    public function getCountry()
     {
         return $this->brewercountry;
     }
@@ -365,7 +365,7 @@ class Brewer
      * @param string $brewerabout
      * @return Brewer
      */
-    public function setBrewerabout($brewerabout)
+    public function setAbout($brewerabout)
     {
         $this->brewerabout = $brewerabout;
     
@@ -377,7 +377,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerabout()
+    public function getAbout()
     {
         return $this->brewerabout;
     }
@@ -388,7 +388,7 @@ class Brewer
      * @param string $brewerlogname
      * @return Brewer
      */
-    public function setBrewerlogname($brewerlogname)
+    public function setLogname($brewerlogname)
     {
         $this->brewerlogname = $brewerlogname;
     
@@ -400,7 +400,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerlogname()
+    public function getLogname()
     {
         return $this->brewerlogname;
     }
@@ -411,7 +411,7 @@ class Brewer
      * @param string $brewertagline
      * @return Brewer
      */
-    public function setBrewertagline($brewertagline)
+    public function setTagline($brewertagline)
     {
         $this->brewertagline = $brewertagline;
     
@@ -423,7 +423,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewertagline()
+    public function getTagline()
     {
         return $this->brewertagline;
     }
@@ -434,7 +434,7 @@ class Brewer
      * @param string $brewerfavstyles
      * @return Brewer
      */
-    public function setBrewerfavstyles($brewerfavstyles)
+    public function setFavStyles($brewerfavstyles)
     {
         $this->brewerfavstyles = $brewerfavstyles;
     
@@ -446,7 +446,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerfavstyles()
+    public function getFavStyles()
     {
         return $this->brewerfavstyles;
     }
@@ -457,7 +457,7 @@ class Brewer
      * @param string $brewerprefmethod
      * @return Brewer
      */
-    public function setBrewerprefmethod($brewerprefmethod)
+    public function setPrefMethod($brewerprefmethod)
     {
         $this->brewerprefmethod = $brewerprefmethod;
     
@@ -469,7 +469,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerprefmethod()
+    public function getPrefMethod()
     {
         return $this->brewerprefmethod;
     }
@@ -480,7 +480,7 @@ class Brewer
      * @param string $brewerclubs
      * @return Brewer
      */
-    public function setBrewerclubs($brewerclubs)
+    public function setClubs($brewerclubs)
     {
         $this->brewerclubs = $brewerclubs;
     
@@ -492,7 +492,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerclubs()
+    public function getClubs()
     {
         return $this->brewerclubs;
     }
@@ -503,7 +503,7 @@ class Brewer
      * @param string $brewerother
      * @return Brewer
      */
-    public function setBrewerother($brewerother)
+    public function setOther($brewerother)
     {
         $this->brewerother = $brewerother;
     
@@ -515,7 +515,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerother()
+    public function getOther()
     {
         return $this->brewerother;
     }
@@ -526,7 +526,7 @@ class Brewer
      * @param string $brewerimage
      * @return Brewer
      */
-    public function setBrewerimage($brewerimage)
+    public function setImage($brewerimage)
     {
         $this->brewerimage = $brewerimage;
     
@@ -538,7 +538,7 @@ class Brewer
      *
      * @return string 
      */
-    public function getBrewerimage()
+    public function getImage()
     {
         return $this->brewerimage;
     }

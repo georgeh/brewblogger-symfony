@@ -116,7 +116,7 @@ class WaterProfiles
      * @param string $watername
      * @return WaterProfiles
      */
-    public function setWatername($watername)
+    public function setName($watername)
     {
         $this->watername = $watername;
     
@@ -128,7 +128,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWatername()
+    public function getName()
     {
         return $this->watername;
     }
@@ -139,7 +139,7 @@ class WaterProfiles
      * @param string $wateramount
      * @return WaterProfiles
      */
-    public function setWateramount($wateramount)
+    public function setAmount($wateramount)
     {
         $this->wateramount = $wateramount;
     
@@ -151,7 +151,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWateramount()
+    public function getAmount()
     {
         return $this->wateramount;
     }
@@ -162,7 +162,7 @@ class WaterProfiles
      * @param string $watercalcium
      * @return WaterProfiles
      */
-    public function setWatercalcium($watercalcium)
+    public function setCalcium($watercalcium)
     {
         $this->watercalcium = $watercalcium;
     
@@ -174,7 +174,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWatercalcium()
+    public function getCalcium()
     {
         return $this->watercalcium;
     }
@@ -185,7 +185,7 @@ class WaterProfiles
      * @param string $waterbicarbonate
      * @return WaterProfiles
      */
-    public function setWaterbicarbonate($waterbicarbonate)
+    public function setBicarbonate($waterbicarbonate)
     {
         $this->waterbicarbonate = $waterbicarbonate;
     
@@ -197,7 +197,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWaterbicarbonate()
+    public function getBicarbonate()
     {
         return $this->waterbicarbonate;
     }
@@ -208,7 +208,7 @@ class WaterProfiles
      * @param string $watersulfate
      * @return WaterProfiles
      */
-    public function setWatersulfate($watersulfate)
+    public function setSulfate($watersulfate)
     {
         $this->watersulfate = $watersulfate;
     
@@ -220,7 +220,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWatersulfate()
+    public function getSulfate()
     {
         return $this->watersulfate;
     }
@@ -231,7 +231,7 @@ class WaterProfiles
      * @param string $waterchloride
      * @return WaterProfiles
      */
-    public function setWaterchloride($waterchloride)
+    public function setChloride($waterchloride)
     {
         $this->waterchloride = $waterchloride;
     
@@ -243,7 +243,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWaterchloride()
+    public function getChloride()
     {
         return $this->waterchloride;
     }
@@ -254,7 +254,7 @@ class WaterProfiles
      * @param string $watersodium
      * @return WaterProfiles
      */
-    public function setWatersodium($watersodium)
+    public function setSodium($watersodium)
     {
         $this->watersodium = $watersodium;
     
@@ -266,7 +266,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWatersodium()
+    public function getSodium()
     {
         return $this->watersodium;
     }
@@ -277,7 +277,7 @@ class WaterProfiles
      * @param string $watermagnesium
      * @return WaterProfiles
      */
-    public function setWatermagnesium($watermagnesium)
+    public function setMagnesium($watermagnesium)
     {
         $this->watermagnesium = $watermagnesium;
     
@@ -289,7 +289,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWatermagnesium()
+    public function getMagnesium()
     {
         return $this->watermagnesium;
     }
@@ -300,7 +300,7 @@ class WaterProfiles
      * @param string $waterph
      * @return WaterProfiles
      */
-    public function setWaterph($waterph)
+    public function setPH($waterph)
     {
         $this->waterph = $waterph;
     
@@ -312,7 +312,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWaterph()
+    public function getPH()
     {
         return $this->waterph;
     }
@@ -323,7 +323,7 @@ class WaterProfiles
      * @param string $waternotes
      * @return WaterProfiles
      */
-    public function setWaternotes($waternotes)
+    public function setNotes($waternotes)
     {
         $this->waternotes = $waternotes;
     
@@ -335,7 +335,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWaternotes()
+    public function getNotes()
     {
         return $this->waternotes;
     }
@@ -346,7 +346,7 @@ class WaterProfiles
      * @param string $waterbrewerid
      * @return WaterProfiles
      */
-    public function setWaterbrewerid($waterbrewerid)
+    public function setBrewerID($waterbrewerid)
     {
         $this->waterbrewerid = $waterbrewerid;
     
@@ -358,7 +358,7 @@ class WaterProfiles
      *
      * @return string 
      */
-    public function getWaterbrewerid()
+    public function getBrewerID()
     {
         return $this->waterbrewerid;
     }

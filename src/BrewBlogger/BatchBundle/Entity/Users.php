@@ -344,7 +344,7 @@ class Users
      * @param string $realfirstname
      * @return Users
      */
-    public function setRealfirstname($realfirstname)
+    public function setRealFirstName($realfirstname)
     {
         $this->realfirstname = $realfirstname;
     
@@ -356,7 +356,7 @@ class Users
      *
      * @return string 
      */
-    public function getRealfirstname()
+    public function getRealFirstName()
     {
         return $this->realfirstname;
     }
@@ -367,7 +367,7 @@ class Users
      * @param string $reallastname
      * @return Users
      */
-    public function setReallastname($reallastname)
+    public function setRealLastName($reallastname)
     {
         $this->reallastname = $reallastname;
     
@@ -379,7 +379,7 @@ class Users
      *
      * @return string 
      */
-    public function getReallastname()
+    public function getRealLastName()
     {
         return $this->reallastname;
     }
@@ -413,7 +413,7 @@ class Users
      * @param string $userprofile
      * @return Users
      */
-    public function setUserprofile($userprofile)
+    public function setProfile($userprofile)
     {
         $this->userprofile = $userprofile;
     
@@ -425,7 +425,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserprofile()
+    public function getProfile()
     {
         return $this->userprofile;
     }
@@ -436,7 +436,7 @@ class Users
      * @param string $userpicurl
      * @return Users
      */
-    public function setUserpicurl($userpicurl)
+    public function setPicURL($userpicurl)
     {
         $this->userpicurl = $userpicurl;
     
@@ -448,7 +448,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserpicurl()
+    public function getPicURL()
     {
         return $this->userpicurl;
     }
@@ -459,7 +459,7 @@ class Users
      * @param string $userfavstyles
      * @return Users
      */
-    public function setUserfavstyles($userfavstyles)
+    public function setFavStyles($userfavstyles)
     {
         $this->userfavstyles = $userfavstyles;
     
@@ -471,7 +471,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserfavstyles()
+    public function getFavStyles()
     {
         return $this->userfavstyles;
     }
@@ -482,7 +482,7 @@ class Users
      * @param string $userfavcommercial
      * @return Users
      */
-    public function setUserfavcommercial($userfavcommercial)
+    public function setFavCommercial($userfavcommercial)
     {
         $this->userfavcommercial = $userfavcommercial;
     
@@ -494,7 +494,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserfavcommercial()
+    public function getFavCommercial()
     {
         return $this->userfavcommercial;
     }
@@ -505,7 +505,7 @@ class Users
      * @param string $userfavquote
      * @return Users
      */
-    public function setUserfavquote($userfavquote)
+    public function setFavQuote($userfavquote)
     {
         $this->userfavquote = $userfavquote;
     
@@ -517,7 +517,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserfavquote()
+    public function getFavQuote()
     {
         return $this->userfavquote;
     }
@@ -528,7 +528,7 @@ class Users
      * @param string $userdesignations
      * @return Users
      */
-    public function setUserdesignations($userdesignations)
+    public function setDesignations($userdesignations)
     {
         $this->userdesignations = $userdesignations;
     
@@ -540,7 +540,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserdesignations()
+    public function getDesignations()
     {
         return $this->userdesignations;
     }
@@ -551,7 +551,7 @@ class Users
      * @param string $useroccupation
      * @return Users
      */
-    public function setUseroccupation($useroccupation)
+    public function setOccupation($useroccupation)
     {
         $this->useroccupation = $useroccupation;
     
@@ -563,7 +563,7 @@ class Users
      *
      * @return string 
      */
-    public function getUseroccupation()
+    public function getOccupation()
     {
         return $this->useroccupation;
     }
@@ -574,7 +574,7 @@ class Users
      * @param string $userhobbies
      * @return Users
      */
-    public function setUserhobbies($userhobbies)
+    public function setHobbies($userhobbies)
     {
         $this->userhobbies = $userhobbies;
     
@@ -586,7 +586,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserhobbies()
+    public function getHobbies()
     {
         return $this->userhobbies;
     }
@@ -597,7 +597,7 @@ class Users
      * @param string $userbirthdate
      * @return Users
      */
-    public function setUserbirthdate($userbirthdate)
+    public function setBirthdate($userbirthdate)
     {
         $this->userbirthdate = $userbirthdate;
     
@@ -609,7 +609,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserbirthdate()
+    public function getBirthdate()
     {
         return $this->userbirthdate;
     }
@@ -620,7 +620,7 @@ class Users
      * @param string $userhometown
      * @return Users
      */
-    public function setUserhometown($userhometown)
+    public function setHometown($userhometown)
     {
         $this->userhometown = $userhometown;
     
@@ -632,7 +632,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserhometown()
+    public function getHometown()
     {
         return $this->userhometown;
     }
@@ -643,7 +643,7 @@ class Users
      * @param \DateTime $userbrewingsince
      * @return Users
      */
-    public function setUserbrewingsince($userbrewingsince)
+    public function setBrewingSince($userbrewingsince)
     {
         $this->userbrewingsince = $userbrewingsince;
     
@@ -655,7 +655,7 @@ class Users
      *
      * @return \DateTime 
      */
-    public function getUserbrewingsince()
+    public function getBrewingSince()
     {
         return $this->userbrewingsince;
     }
@@ -666,7 +666,7 @@ class Users
      * @param string $userwebsitename
      * @return Users
      */
-    public function setUserwebsitename($userwebsitename)
+    public function setWebsiteName($userwebsitename)
     {
         $this->userwebsitename = $userwebsitename;
     
@@ -678,7 +678,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserwebsitename()
+    public function getWebsiteName()
     {
         return $this->userwebsitename;
     }
@@ -689,7 +689,7 @@ class Users
      * @param string $userwebsiteurl
      * @return Users
      */
-    public function setUserwebsiteurl($userwebsiteurl)
+    public function setWebsiteURL($userwebsiteurl)
     {
         $this->userwebsiteurl = $userwebsiteurl;
     
@@ -701,7 +701,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserwebsiteurl()
+    public function getWebsiteURL()
     {
         return $this->userwebsiteurl;
     }
@@ -712,7 +712,7 @@ class Users
      * @param string $userinfoprivate
      * @return Users
      */
-    public function setUserinfoprivate($userinfoprivate)
+    public function setInfoPrivate($userinfoprivate)
     {
         $this->userinfoprivate = $userinfoprivate;
     
@@ -724,7 +724,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserinfoprivate()
+    public function getInfoPrivate()
     {
         return $this->userinfoprivate;
     }
@@ -735,7 +735,7 @@ class Users
      * @param string $userposition
      * @return Users
      */
-    public function setUserposition($userposition)
+    public function setPosition($userposition)
     {
         $this->userposition = $userposition;
     
@@ -747,7 +747,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserposition()
+    public function getPosition()
     {
         return $this->userposition;
     }
@@ -758,7 +758,7 @@ class Users
      * @param string $userpastposition
      * @return Users
      */
-    public function setUserpastposition($userpastposition)
+    public function setPastPosition($userpastposition)
     {
         $this->userpastposition = $userpastposition;
     
@@ -770,7 +770,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserpastposition()
+    public function getPastPosition()
     {
         return $this->userpastposition;
     }
@@ -781,7 +781,7 @@ class Users
      * @param string $useraddress
      * @return Users
      */
-    public function setUseraddress($useraddress)
+    public function setAddress($useraddress)
     {
         $this->useraddress = $useraddress;
     
@@ -793,7 +793,7 @@ class Users
      *
      * @return string 
      */
-    public function getUseraddress()
+    public function getAddress()
     {
         return $this->useraddress;
     }
@@ -804,7 +804,7 @@ class Users
      * @param string $usercity
      * @return Users
      */
-    public function setUsercity($usercity)
+    public function setCity($usercity)
     {
         $this->usercity = $usercity;
     
@@ -816,7 +816,7 @@ class Users
      *
      * @return string 
      */
-    public function getUsercity()
+    public function getCity()
     {
         return $this->usercity;
     }
@@ -827,7 +827,7 @@ class Users
      * @param string $userstate
      * @return Users
      */
-    public function setUserstate($userstate)
+    public function setState($userstate)
     {
         $this->userstate = $userstate;
     
@@ -839,7 +839,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserstate()
+    public function getState()
     {
         return $this->userstate;
     }
@@ -850,7 +850,7 @@ class Users
      * @param string $userzip
      * @return Users
      */
-    public function setUserzip($userzip)
+    public function setZIP($userzip)
     {
         $this->userzip = $userzip;
     
@@ -862,7 +862,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserzip()
+    public function getZIP()
     {
         return $this->userzip;
     }
@@ -873,7 +873,7 @@ class Users
      * @param string $userphoneh
      * @return Users
      */
-    public function setUserphoneh($userphoneh)
+    public function setPhoneHome($userphoneh)
     {
         $this->userphoneh = $userphoneh;
     
@@ -885,7 +885,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserphoneh()
+    public function getPhoneHome()
     {
         return $this->userphoneh;
     }
@@ -896,7 +896,7 @@ class Users
      * @param string $userphonew
      * @return Users
      */
-    public function setUserphonew($userphonew)
+    public function setPhoneWork($userphonew)
     {
         $this->userphonew = $userphonew;
     
@@ -908,7 +908,7 @@ class Users
      *
      * @return string 
      */
-    public function getUserphonew()
+    public function getPhoneWork()
     {
         return $this->userphonew;
     }
@@ -919,7 +919,7 @@ class Users
      * @param string $useremail
      * @return Users
      */
-    public function setUseremail($useremail)
+    public function setEmail($useremail)
     {
         $this->useremail = $useremail;
     
@@ -931,7 +931,7 @@ class Users
      *
      * @return string 
      */
-    public function getUseremail()
+    public function getEmail()
     {
         return $this->useremail;
     }
@@ -942,7 +942,7 @@ class Users
      * @param integer $defaultboiltime
      * @return Users
      */
-    public function setDefaultboiltime($defaultboiltime)
+    public function setDefaultBoilTime($defaultboiltime)
     {
         $this->defaultboiltime = $defaultboiltime;
     
@@ -954,7 +954,7 @@ class Users
      *
      * @return integer 
      */
-    public function getDefaultboiltime()
+    public function getDefaultBoilTime()
     {
         return $this->defaultboiltime;
     }
@@ -965,7 +965,7 @@ class Users
      * @param integer $defaultequipprofile
      * @return Users
      */
-    public function setDefaultequipprofile($defaultequipprofile)
+    public function setDefaultEquipProfile($defaultequipprofile)
     {
         $this->defaultequipprofile = $defaultequipprofile;
     
@@ -977,7 +977,7 @@ class Users
      *
      * @return integer 
      */
-    public function getDefaultequipprofile()
+    public function getDefaultEquipProfile()
     {
         return $this->defaultequipprofile;
     }
@@ -988,7 +988,7 @@ class Users
      * @param integer $defaultmashprofile
      * @return Users
      */
-    public function setDefaultmashprofile($defaultmashprofile)
+    public function setDefaultMashProfile($defaultmashprofile)
     {
         $this->defaultmashprofile = $defaultmashprofile;
     
@@ -1000,7 +1000,7 @@ class Users
      *
      * @return integer 
      */
-    public function getDefaultmashprofile()
+    public function getDefaultMashProfile()
     {
         return $this->defaultmashprofile;
     }
@@ -1011,7 +1011,7 @@ class Users
      * @param integer $defaultwaterprofile
      * @return Users
      */
-    public function setDefaultwaterprofile($defaultwaterprofile)
+    public function setDefaultWaterProfile($defaultwaterprofile)
     {
         $this->defaultwaterprofile = $defaultwaterprofile;
     
@@ -1023,7 +1023,7 @@ class Users
      *
      * @return integer 
      */
-    public function getDefaultwaterprofile()
+    public function getDefaultWaterProfile()
     {
         return $this->defaultwaterprofile;
     }
@@ -1034,7 +1034,7 @@ class Users
      * @param string $defaultbitternessformula
      * @return Users
      */
-    public function setDefaultbitternessformula($defaultbitternessformula)
+    public function setDefaultBitternessFormula($defaultbitternessformula)
     {
         $this->defaultbitternessformula = $defaultbitternessformula;
     
@@ -1046,7 +1046,7 @@ class Users
      *
      * @return string 
      */
-    public function getDefaultbitternessformula()
+    public function getDefaultBitternessFormula()
     {
         return $this->defaultbitternessformula;
     }
@@ -1057,7 +1057,7 @@ class Users
      * @param string $defaultmethod
      * @return Users
      */
-    public function setDefaultmethod($defaultmethod)
+    public function setDefaultMethod($defaultmethod)
     {
         $this->defaultmethod = $defaultmethod;
     
@@ -1069,7 +1069,7 @@ class Users
      *
      * @return string 
      */
-    public function getDefaultmethod()
+    public function getDefaultMethod()
     {
         return $this->defaultmethod;
     }
@@ -1080,7 +1080,7 @@ class Users
      * @param integer $defaultbatchsize
      * @return Users
      */
-    public function setDefaultbatchsize($defaultbatchsize)
+    public function setDefaultBatchSize($defaultbatchsize)
     {
         $this->defaultbatchsize = $defaultbatchsize;
     
@@ -1092,7 +1092,7 @@ class Users
      *
      * @return integer 
      */
-    public function getDefaultbatchsize()
+    public function getDefaultBatchSize()
     {
         return $this->defaultbatchsize;
     }
@@ -1103,7 +1103,7 @@ class Users
      * @param string $defaultwaterratio
      * @return Users
      */
-    public function setDefaultwaterratio($defaultwaterratio)
+    public function setDefaultWaterRatio($defaultwaterratio)
     {
         $this->defaultwaterratio = $defaultwaterratio;
     
@@ -1115,7 +1115,7 @@ class Users
      *
      * @return string 
      */
-    public function getDefaultwaterratio()
+    public function getDefaultWaterRatio()
     {
         return $this->defaultwaterratio;
     }
@@ -1126,7 +1126,7 @@ class Users
      * @param string $defaultcolorformula
      * @return Users
      */
-    public function setDefaultcolorformula($defaultcolorformula)
+    public function setDefaultColorFormula($defaultcolorformula)
     {
         $this->defaultcolorformula = $defaultcolorformula;
     
@@ -1138,7 +1138,7 @@ class Users
      *
      * @return string 
      */
-    public function getDefaultcolorformula()
+    public function getDefaultColorFormula()
     {
         return $this->defaultcolorformula;
     }

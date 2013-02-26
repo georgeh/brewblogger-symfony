@@ -90,7 +90,7 @@ class Upcoming
      * @param \DateTime $upcomingdate
      * @return Upcoming
      */
-    public function setUpcomingdate($upcomingdate)
+    public function setDate($upcomingdate)
     {
         $this->upcomingdate = $upcomingdate;
     
@@ -102,7 +102,7 @@ class Upcoming
      *
      * @return \DateTime 
      */
-    public function getUpcomingdate()
+    public function getDate()
     {
         return $this->upcomingdate;
     }
@@ -113,7 +113,7 @@ class Upcoming
      * @param string $upcomingrecipeid
      * @return Upcoming
      */
-    public function setUpcomingrecipeid($upcomingrecipeid)
+    public function setRecipeID($upcomingrecipeid)
     {
         $this->upcomingrecipeid = $upcomingrecipeid;
     
@@ -125,7 +125,7 @@ class Upcoming
      *
      * @return string 
      */
-    public function getUpcomingrecipeid()
+    public function getRecipeID()
     {
         return $this->upcomingrecipeid;
     }
@@ -136,7 +136,7 @@ class Upcoming
      * @param string $brewbrewerid
      * @return Upcoming
      */
-    public function setBrewbrewerid($brewbrewerid)
+    public function setBrewerID($brewbrewerid)
     {
         $this->brewbrewerid = $brewbrewerid;
     
@@ -148,7 +148,7 @@ class Upcoming
      *
      * @return string 
      */
-    public function getBrewbrewerid()
+    public function getBrewerID()
     {
         return $this->brewbrewerid;
     }

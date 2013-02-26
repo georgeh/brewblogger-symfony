@@ -95,7 +95,7 @@ class Hops
      * @param string $hopsname
      * @return Hops
      */
-    public function setHopsname($hopsname)
+    public function setName($hopsname)
     {
         $this->hopsname = $hopsname;
     
@@ -107,7 +107,7 @@ class Hops
      *
      * @return string 
      */
-    public function getHopsname()
+    public function getName()
     {
         return $this->hopsname;
     }
@@ -118,7 +118,7 @@ class Hops
      * @param string $hopsgrown
      * @return Hops
      */
-    public function setHopsgrown($hopsgrown)
+    public function setGrown($hopsgrown)
     {
         $this->hopsgrown = $hopsgrown;
     
@@ -130,7 +130,7 @@ class Hops
      *
      * @return string 
      */
-    public function getHopsgrown()
+    public function getGrown()
     {
         return $this->hopsgrown;
     }
@@ -141,7 +141,7 @@ class Hops
      * @param string $hopsinfo
      * @return Hops
      */
-    public function setHopsinfo($hopsinfo)
+    public function setInfo($hopsinfo)
     {
         $this->hopsinfo = $hopsinfo;
     
@@ -153,7 +153,7 @@ class Hops
      *
      * @return string 
      */
-    public function getHopsinfo()
+    public function getInfo()
     {
         return $this->hopsinfo;
     }
@@ -164,7 +164,7 @@ class Hops
      * @param string $hopsuse
      * @return Hops
      */
-    public function setHopsuse($hopsuse)
+    public function setUse($hopsuse)
     {
         $this->hopsuse = $hopsuse;
     
@@ -176,7 +176,7 @@ class Hops
      *
      * @return string 
      */
-    public function getHopsuse()
+    public function getUse()
     {
         return $this->hopsuse;
     }
@@ -187,7 +187,7 @@ class Hops
      * @param string $hopsexample
      * @return Hops
      */
-    public function setHopsexample($hopsexample)
+    public function setExample($hopsexample)
     {
         $this->hopsexample = $hopsexample;
     
@@ -199,7 +199,7 @@ class Hops
      *
      * @return string 
      */
-    public function getHopsexample()
+    public function getExample()
     {
         return $this->hopsexample;
     }
@@ -210,7 +210,7 @@ class Hops
      * @param boolean $hopsaaulow
      * @return Hops
      */
-    public function setHopsaaulow($hopsaaulow)
+    public function setAAULow($hopsaaulow)
     {
         $this->hopsaaulow = $hopsaaulow;
     
@@ -222,7 +222,7 @@ class Hops
      *
      * @return boolean 
      */
-    public function getHopsaaulow()
+    public function getAAULow()
     {
         return $this->hopsaaulow;
     }
@@ -233,7 +233,7 @@ class Hops
      * @param boolean $hopsaauhigh
      * @return Hops
      */
-    public function setHopsaauhigh($hopsaauhigh)
+    public function setAAUHigh($hopsaauhigh)
     {
         $this->hopsaauhigh = $hopsaauhigh;
     
@@ -245,7 +245,7 @@ class Hops
      *
      * @return boolean 
      */
-    public function getHopsaauhigh()
+    public function getAAUHigh()
     {
         return $this->hopsaauhigh;
     }
@@ -256,7 +256,7 @@ class Hops
      * @param string $hopssub
      * @return Hops
      */
-    public function setHopssub($hopssub)
+    public function setSub($hopssub)
     {
         $this->hopssub = $hopssub;
     
@@ -268,7 +268,7 @@ class Hops
      *
      * @return string 
      */
-    public function getHopssub()
+    public function getSub()
     {
         return $this->hopssub;
     }

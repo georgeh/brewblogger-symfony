@@ -144,7 +144,7 @@ class YeastProfiles
      * @param string $yeastname
      * @return YeastProfiles
      */
-    public function setYeastname($yeastname)
+    public function setName($yeastname)
     {
         $this->yeastname = $yeastname;
     
@@ -156,7 +156,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastname()
+    public function getName()
     {
         return $this->yeastname;
     }
@@ -167,7 +167,7 @@ class YeastProfiles
      * @param string $yeastfloc
      * @return YeastProfiles
      */
-    public function setYeastfloc($yeastfloc)
+    public function setFloc($yeastfloc)
     {
         $this->yeastfloc = $yeastfloc;
     
@@ -179,7 +179,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastfloc()
+    public function getFloc()
     {
         return $this->yeastfloc;
     }
@@ -190,7 +190,7 @@ class YeastProfiles
      * @param string $yeastatten
      * @return YeastProfiles
      */
-    public function setYeastatten($yeastatten)
+    public function setAtten($yeastatten)
     {
         $this->yeastatten = $yeastatten;
     
@@ -202,7 +202,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastatten()
+    public function getAtten()
     {
         return $this->yeastatten;
     }
@@ -213,7 +213,7 @@ class YeastProfiles
      * @param string $yeasttolerance
      * @return YeastProfiles
      */
-    public function setYeasttolerance($yeasttolerance)
+    public function setTolerance($yeasttolerance)
     {
         $this->yeasttolerance = $yeasttolerance;
     
@@ -225,7 +225,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeasttolerance()
+    public function getTolerance()
     {
         return $this->yeasttolerance;
     }
@@ -236,7 +236,7 @@ class YeastProfiles
      * @param string $yeasttype
      * @return YeastProfiles
      */
-    public function setYeasttype($yeasttype)
+    public function setType($yeasttype)
     {
         $this->yeasttype = $yeasttype;
     
@@ -248,7 +248,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeasttype()
+    public function getType()
     {
         return $this->yeasttype;
     }
@@ -259,7 +259,7 @@ class YeastProfiles
      * @param string $yeastform
      * @return YeastProfiles
      */
-    public function setYeastform($yeastform)
+    public function setForm($yeastform)
     {
         $this->yeastform = $yeastform;
     
@@ -271,7 +271,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastform()
+    public function getForm()
     {
         return $this->yeastform;
     }
@@ -282,7 +282,7 @@ class YeastProfiles
      * @param string $yeastamount
      * @return YeastProfiles
      */
-    public function setYeastamount($yeastamount)
+    public function setAmount($yeastamount)
     {
         $this->yeastamount = $yeastamount;
     
@@ -294,7 +294,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastamount()
+    public function getAmount()
     {
         return $this->yeastamount;
     }
@@ -305,7 +305,7 @@ class YeastProfiles
      * @param string $yeastlab
      * @return YeastProfiles
      */
-    public function setYeastlab($yeastlab)
+    public function setLab($yeastlab)
     {
         $this->yeastlab = $yeastlab;
     
@@ -317,7 +317,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastlab()
+    public function getLab()
     {
         return $this->yeastlab;
     }
@@ -328,7 +328,7 @@ class YeastProfiles
      * @param string $yeastprodid
      * @return YeastProfiles
      */
-    public function setYeastprodid($yeastprodid)
+    public function setProdID($yeastprodid)
     {
         $this->yeastprodid = $yeastprodid;
     
@@ -340,7 +340,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastprodid()
+    public function getProdID()
     {
         return $this->yeastprodid;
     }
@@ -351,7 +351,7 @@ class YeastProfiles
      * @param string $yeastmintemp
      * @return YeastProfiles
      */
-    public function setYeastmintemp($yeastmintemp)
+    public function setMinTemp($yeastmintemp)
     {
         $this->yeastmintemp = $yeastmintemp;
     
@@ -363,7 +363,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastmintemp()
+    public function getMinTemp()
     {
         return $this->yeastmintemp;
     }
@@ -374,7 +374,7 @@ class YeastProfiles
      * @param string $yeastmaxtemp
      * @return YeastProfiles
      */
-    public function setYeastmaxtemp($yeastmaxtemp)
+    public function setMaxTemp($yeastmaxtemp)
     {
         $this->yeastmaxtemp = $yeastmaxtemp;
     
@@ -386,7 +386,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastmaxtemp()
+    public function getMaxTemp()
     {
         return $this->yeastmaxtemp;
     }
@@ -397,7 +397,7 @@ class YeastProfiles
      * @param string $yeastnotes
      * @return YeastProfiles
      */
-    public function setYeastnotes($yeastnotes)
+    public function setNotes($yeastnotes)
     {
         $this->yeastnotes = $yeastnotes;
     
@@ -409,7 +409,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastnotes()
+    public function getNotes()
     {
         return $this->yeastnotes;
     }
@@ -420,7 +420,7 @@ class YeastProfiles
      * @param string $yeastbestfor
      * @return YeastProfiles
      */
-    public function setYeastbestfor($yeastbestfor)
+    public function setBestFor($yeastbestfor)
     {
         $this->yeastbestfor = $yeastbestfor;
     
@@ -432,7 +432,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastbestfor()
+    public function getBestFor()
     {
         return $this->yeastbestfor;
     }
@@ -443,7 +443,7 @@ class YeastProfiles
      * @param string $yeastmaxreuse
      * @return YeastProfiles
      */
-    public function setYeastmaxreuse($yeastmaxreuse)
+    public function setMaxReuse($yeastmaxreuse)
     {
         $this->yeastmaxreuse = $yeastmaxreuse;
     
@@ -455,7 +455,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastmaxreuse()
+    public function getMaxReuse()
     {
         return $this->yeastmaxreuse;
     }
@@ -466,7 +466,7 @@ class YeastProfiles
      * @param string $yeastbrewerid
      * @return YeastProfiles
      */
-    public function setYeastbrewerid($yeastbrewerid)
+    public function setBrewerID($yeastbrewerid)
     {
         $this->yeastbrewerid = $yeastbrewerid;
     
@@ -478,7 +478,7 @@ class YeastProfiles
      *
      * @return string 
      */
-    public function getYeastbrewerid()
+    public function getBrewerID()
     {
         return $this->yeastbrewerid;
     }

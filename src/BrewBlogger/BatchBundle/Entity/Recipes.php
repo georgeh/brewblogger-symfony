@@ -1600,7 +1600,7 @@ class Recipes
      * @param string $brewname
      * @return Recipes
      */
-    public function setBrewname($brewname)
+    public function setName($brewname)
     {
         $this->brewname = $brewname;
     
@@ -1612,7 +1612,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewname()
+    public function getName()
     {
         return $this->brewname;
     }
@@ -1623,7 +1623,7 @@ class Recipes
      * @param string $brewstyle
      * @return Recipes
      */
-    public function setBrewstyle($brewstyle)
+    public function setStyle($brewstyle)
     {
         $this->brewstyle = $brewstyle;
     
@@ -1635,7 +1635,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewstyle()
+    public function getStyle()
     {
         return $this->brewstyle;
     }
@@ -1646,7 +1646,7 @@ class Recipes
      * @param string $brewsource
      * @return Recipes
      */
-    public function setBrewsource($brewsource)
+    public function setSource($brewsource)
     {
         $this->brewsource = $brewsource;
     
@@ -1658,7 +1658,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewsource()
+    public function getSource()
     {
         return $this->brewsource;
     }
@@ -1669,7 +1669,7 @@ class Recipes
      * @param string $brewyield
      * @return Recipes
      */
-    public function setBrewyield($brewyield)
+    public function setYield($brewyield)
     {
         $this->brewyield = $brewyield;
     
@@ -1681,7 +1681,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewyield()
+    public function getYield()
     {
         return $this->brewyield;
     }
@@ -1692,7 +1692,7 @@ class Recipes
      * @param string $brewmethod
      * @return Recipes
      */
-    public function setBrewmethod($brewmethod)
+    public function setMethod($brewmethod)
     {
         $this->brewmethod = $brewmethod;
     
@@ -1704,7 +1704,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmethod()
+    public function getMethod()
     {
         return $this->brewmethod;
     }
@@ -1715,7 +1715,7 @@ class Recipes
      * @param string $brewlink1
      * @return Recipes
      */
-    public function setBrewlink1($brewlink1)
+    public function setLink1($brewlink1)
     {
         $this->brewlink1 = $brewlink1;
     
@@ -1727,7 +1727,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlink1()
+    public function getLink1()
     {
         return $this->brewlink1;
     }
@@ -1738,7 +1738,7 @@ class Recipes
      * @param string $brewlink1name
      * @return Recipes
      */
-    public function setBrewlink1name($brewlink1name)
+    public function setLink1Name($brewlink1name)
     {
         $this->brewlink1name = $brewlink1name;
     
@@ -1750,7 +1750,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlink1name()
+    public function getLink1Name()
     {
         return $this->brewlink1name;
     }
@@ -1761,7 +1761,7 @@ class Recipes
      * @param string $brewlink2
      * @return Recipes
      */
-    public function setBrewlink2($brewlink2)
+    public function setLink2($brewlink2)
     {
         $this->brewlink2 = $brewlink2;
     
@@ -1773,7 +1773,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlink2()
+    public function getLink2()
     {
         return $this->brewlink2;
     }
@@ -1784,7 +1784,7 @@ class Recipes
      * @param string $brewlink2name
      * @return Recipes
      */
-    public function setBrewlink2name($brewlink2name)
+    public function setLink2Name($brewlink2name)
     {
         $this->brewlink2name = $brewlink2name;
     
@@ -1796,7 +1796,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlink2name()
+    public function getLink2Name()
     {
         return $this->brewlink2name;
     }
@@ -1807,7 +1807,7 @@ class Recipes
      * @param string $brewnotes
      * @return Recipes
      */
-    public function setBrewnotes($brewnotes)
+    public function setNotes($brewnotes)
     {
         $this->brewnotes = $brewnotes;
     
@@ -1819,7 +1819,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewnotes()
+    public function getNotes()
     {
         return $this->brewnotes;
     }
@@ -1830,7 +1830,7 @@ class Recipes
      * @param string $brewextract1
      * @return Recipes
      */
-    public function setBrewextract1($brewextract1)
+    public function setExtract1($brewextract1)
     {
         $this->brewextract1 = $brewextract1;
     
@@ -1842,7 +1842,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract1()
+    public function getExtract1()
     {
         return $this->brewextract1;
     }
@@ -1853,7 +1853,7 @@ class Recipes
      * @param string $brewextract1weight
      * @return Recipes
      */
-    public function setBrewextract1weight($brewextract1weight)
+    public function setExtract1weight($brewextract1weight)
     {
         $this->brewextract1weight = $brewextract1weight;
     
@@ -1865,7 +1865,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract1weight()
+    public function getExtract1weight()
     {
         return $this->brewextract1weight;
     }
@@ -1876,7 +1876,7 @@ class Recipes
      * @param string $brewextract2
      * @return Recipes
      */
-    public function setBrewextract2($brewextract2)
+    public function setExtract2($brewextract2)
     {
         $this->brewextract2 = $brewextract2;
     
@@ -1888,7 +1888,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract2()
+    public function getExtract2()
     {
         return $this->brewextract2;
     }
@@ -1899,7 +1899,7 @@ class Recipes
      * @param string $brewextract2weight
      * @return Recipes
      */
-    public function setBrewextract2weight($brewextract2weight)
+    public function setExtract2weight($brewextract2weight)
     {
         $this->brewextract2weight = $brewextract2weight;
     
@@ -1911,7 +1911,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract2weight()
+    public function getExtract2weight()
     {
         return $this->brewextract2weight;
     }
@@ -1922,7 +1922,7 @@ class Recipes
      * @param string $brewextract3
      * @return Recipes
      */
-    public function setBrewextract3($brewextract3)
+    public function setExtract3($brewextract3)
     {
         $this->brewextract3 = $brewextract3;
     
@@ -1934,7 +1934,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract3()
+    public function getExtract3()
     {
         return $this->brewextract3;
     }
@@ -1945,7 +1945,7 @@ class Recipes
      * @param string $brewextract3weight
      * @return Recipes
      */
-    public function setBrewextract3weight($brewextract3weight)
+    public function setExtract3weight($brewextract3weight)
     {
         $this->brewextract3weight = $brewextract3weight;
     
@@ -1957,7 +1957,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract3weight()
+    public function getExtract3weight()
     {
         return $this->brewextract3weight;
     }
@@ -1968,7 +1968,7 @@ class Recipes
      * @param string $brewextract4
      * @return Recipes
      */
-    public function setBrewextract4($brewextract4)
+    public function setExtract4($brewextract4)
     {
         $this->brewextract4 = $brewextract4;
     
@@ -1980,7 +1980,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract4()
+    public function getExtract4()
     {
         return $this->brewextract4;
     }
@@ -1991,7 +1991,7 @@ class Recipes
      * @param string $brewextract4weight
      * @return Recipes
      */
-    public function setBrewextract4weight($brewextract4weight)
+    public function setExtract4weight($brewextract4weight)
     {
         $this->brewextract4weight = $brewextract4weight;
     
@@ -2003,7 +2003,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract4weight()
+    public function getExtract4weight()
     {
         return $this->brewextract4weight;
     }
@@ -2014,7 +2014,7 @@ class Recipes
      * @param string $brewextract5
      * @return Recipes
      */
-    public function setBrewextract5($brewextract5)
+    public function setExtract5($brewextract5)
     {
         $this->brewextract5 = $brewextract5;
     
@@ -2026,7 +2026,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract5()
+    public function getExtract5()
     {
         return $this->brewextract5;
     }
@@ -2037,7 +2037,7 @@ class Recipes
      * @param string $brewextract5weight
      * @return Recipes
      */
-    public function setBrewextract5weight($brewextract5weight)
+    public function setExtract5weight($brewextract5weight)
     {
         $this->brewextract5weight = $brewextract5weight;
     
@@ -2049,7 +2049,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewextract5weight()
+    public function getExtract5weight()
     {
         return $this->brewextract5weight;
     }
@@ -2060,7 +2060,7 @@ class Recipes
      * @param string $brewgrain1
      * @return Recipes
      */
-    public function setBrewgrain1($brewgrain1)
+    public function setGrain1($brewgrain1)
     {
         $this->brewgrain1 = $brewgrain1;
     
@@ -2072,7 +2072,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain1()
+    public function getGrain1()
     {
         return $this->brewgrain1;
     }
@@ -2083,7 +2083,7 @@ class Recipes
      * @param string $brewgrain1weight
      * @return Recipes
      */
-    public function setBrewgrain1weight($brewgrain1weight)
+    public function setGrain1weight($brewgrain1weight)
     {
         $this->brewgrain1weight = $brewgrain1weight;
     
@@ -2095,7 +2095,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain1weight()
+    public function getGrain1weight()
     {
         return $this->brewgrain1weight;
     }
@@ -2106,7 +2106,7 @@ class Recipes
      * @param string $brewgrain2
      * @return Recipes
      */
-    public function setBrewgrain2($brewgrain2)
+    public function setGrain2($brewgrain2)
     {
         $this->brewgrain2 = $brewgrain2;
     
@@ -2118,7 +2118,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain2()
+    public function getGrain2()
     {
         return $this->brewgrain2;
     }
@@ -2129,7 +2129,7 @@ class Recipes
      * @param string $brewgrain2weight
      * @return Recipes
      */
-    public function setBrewgrain2weight($brewgrain2weight)
+    public function setGrain2weight($brewgrain2weight)
     {
         $this->brewgrain2weight = $brewgrain2weight;
     
@@ -2141,7 +2141,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain2weight()
+    public function getGrain2weight()
     {
         return $this->brewgrain2weight;
     }
@@ -2152,7 +2152,7 @@ class Recipes
      * @param string $brewgrain3
      * @return Recipes
      */
-    public function setBrewgrain3($brewgrain3)
+    public function setGrain3($brewgrain3)
     {
         $this->brewgrain3 = $brewgrain3;
     
@@ -2164,7 +2164,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain3()
+    public function getGrain3()
     {
         return $this->brewgrain3;
     }
@@ -2175,7 +2175,7 @@ class Recipes
      * @param string $brewgrain3weight
      * @return Recipes
      */
-    public function setBrewgrain3weight($brewgrain3weight)
+    public function setGrain3weight($brewgrain3weight)
     {
         $this->brewgrain3weight = $brewgrain3weight;
     
@@ -2187,7 +2187,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain3weight()
+    public function getGrain3weight()
     {
         return $this->brewgrain3weight;
     }
@@ -2198,7 +2198,7 @@ class Recipes
      * @param string $brewgrain4
      * @return Recipes
      */
-    public function setBrewgrain4($brewgrain4)
+    public function setGrain4($brewgrain4)
     {
         $this->brewgrain4 = $brewgrain4;
     
@@ -2210,7 +2210,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain4()
+    public function getGrain4()
     {
         return $this->brewgrain4;
     }
@@ -2221,7 +2221,7 @@ class Recipes
      * @param string $brewgrain4weight
      * @return Recipes
      */
-    public function setBrewgrain4weight($brewgrain4weight)
+    public function setGrain4weight($brewgrain4weight)
     {
         $this->brewgrain4weight = $brewgrain4weight;
     
@@ -2233,7 +2233,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain4weight()
+    public function getGrain4weight()
     {
         return $this->brewgrain4weight;
     }
@@ -2244,7 +2244,7 @@ class Recipes
      * @param string $brewgrain5
      * @return Recipes
      */
-    public function setBrewgrain5($brewgrain5)
+    public function setGrain5($brewgrain5)
     {
         $this->brewgrain5 = $brewgrain5;
     
@@ -2256,7 +2256,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain5()
+    public function getGrain5()
     {
         return $this->brewgrain5;
     }
@@ -2267,7 +2267,7 @@ class Recipes
      * @param string $brewgrain5weight
      * @return Recipes
      */
-    public function setBrewgrain5weight($brewgrain5weight)
+    public function setGrain5weight($brewgrain5weight)
     {
         $this->brewgrain5weight = $brewgrain5weight;
     
@@ -2279,7 +2279,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain5weight()
+    public function getGrain5weight()
     {
         return $this->brewgrain5weight;
     }
@@ -2290,7 +2290,7 @@ class Recipes
      * @param string $brewgrain6
      * @return Recipes
      */
-    public function setBrewgrain6($brewgrain6)
+    public function setGrain6($brewgrain6)
     {
         $this->brewgrain6 = $brewgrain6;
     
@@ -2302,7 +2302,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain6()
+    public function getGrain6()
     {
         return $this->brewgrain6;
     }
@@ -2313,7 +2313,7 @@ class Recipes
      * @param string $brewgrain6weight
      * @return Recipes
      */
-    public function setBrewgrain6weight($brewgrain6weight)
+    public function setGrain6weight($brewgrain6weight)
     {
         $this->brewgrain6weight = $brewgrain6weight;
     
@@ -2325,7 +2325,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain6weight()
+    public function getGrain6weight()
     {
         return $this->brewgrain6weight;
     }
@@ -2336,7 +2336,7 @@ class Recipes
      * @param string $brewgrain7
      * @return Recipes
      */
-    public function setBrewgrain7($brewgrain7)
+    public function setGrain7($brewgrain7)
     {
         $this->brewgrain7 = $brewgrain7;
     
@@ -2348,7 +2348,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain7()
+    public function getGrain7()
     {
         return $this->brewgrain7;
     }
@@ -2359,7 +2359,7 @@ class Recipes
      * @param string $brewgrain7weight
      * @return Recipes
      */
-    public function setBrewgrain7weight($brewgrain7weight)
+    public function setGrain7weight($brewgrain7weight)
     {
         $this->brewgrain7weight = $brewgrain7weight;
     
@@ -2371,7 +2371,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain7weight()
+    public function getGrain7weight()
     {
         return $this->brewgrain7weight;
     }
@@ -2382,7 +2382,7 @@ class Recipes
      * @param string $brewgrain8
      * @return Recipes
      */
-    public function setBrewgrain8($brewgrain8)
+    public function setGrain8($brewgrain8)
     {
         $this->brewgrain8 = $brewgrain8;
     
@@ -2394,7 +2394,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain8()
+    public function getGrain8()
     {
         return $this->brewgrain8;
     }
@@ -2405,7 +2405,7 @@ class Recipes
      * @param string $brewgrain8weight
      * @return Recipes
      */
-    public function setBrewgrain8weight($brewgrain8weight)
+    public function setGrain8weight($brewgrain8weight)
     {
         $this->brewgrain8weight = $brewgrain8weight;
     
@@ -2417,7 +2417,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain8weight()
+    public function getGrain8weight()
     {
         return $this->brewgrain8weight;
     }
@@ -2428,7 +2428,7 @@ class Recipes
      * @param string $brewgrain9
      * @return Recipes
      */
-    public function setBrewgrain9($brewgrain9)
+    public function setGrain9($brewgrain9)
     {
         $this->brewgrain9 = $brewgrain9;
     
@@ -2440,7 +2440,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain9()
+    public function getGrain9()
     {
         return $this->brewgrain9;
     }
@@ -2451,7 +2451,7 @@ class Recipes
      * @param string $brewgrain9weight
      * @return Recipes
      */
-    public function setBrewgrain9weight($brewgrain9weight)
+    public function setGrain9weight($brewgrain9weight)
     {
         $this->brewgrain9weight = $brewgrain9weight;
     
@@ -2463,7 +2463,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain9weight()
+    public function getGrain9weight()
     {
         return $this->brewgrain9weight;
     }
@@ -2474,7 +2474,7 @@ class Recipes
      * @param string $brewgrain10
      * @return Recipes
      */
-    public function setBrewgrain10($brewgrain10)
+    public function setGrain10($brewgrain10)
     {
         $this->brewgrain10 = $brewgrain10;
     
@@ -2486,7 +2486,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain10()
+    public function getGrain10()
     {
         return $this->brewgrain10;
     }
@@ -2497,7 +2497,7 @@ class Recipes
      * @param string $brewgrain10weight
      * @return Recipes
      */
-    public function setBrewgrain10weight($brewgrain10weight)
+    public function setGrain10weight($brewgrain10weight)
     {
         $this->brewgrain10weight = $brewgrain10weight;
     
@@ -2509,7 +2509,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain10weight()
+    public function getGrain10weight()
     {
         return $this->brewgrain10weight;
     }
@@ -2520,7 +2520,7 @@ class Recipes
      * @param string $brewgrain11
      * @return Recipes
      */
-    public function setBrewgrain11($brewgrain11)
+    public function setGrain11($brewgrain11)
     {
         $this->brewgrain11 = $brewgrain11;
     
@@ -2532,7 +2532,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain11()
+    public function getGrain11()
     {
         return $this->brewgrain11;
     }
@@ -2543,7 +2543,7 @@ class Recipes
      * @param string $brewgrain11weight
      * @return Recipes
      */
-    public function setBrewgrain11weight($brewgrain11weight)
+    public function setGrain11weight($brewgrain11weight)
     {
         $this->brewgrain11weight = $brewgrain11weight;
     
@@ -2555,7 +2555,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain11weight()
+    public function getGrain11weight()
     {
         return $this->brewgrain11weight;
     }
@@ -2566,7 +2566,7 @@ class Recipes
      * @param string $brewgrain12
      * @return Recipes
      */
-    public function setBrewgrain12($brewgrain12)
+    public function setGrain12($brewgrain12)
     {
         $this->brewgrain12 = $brewgrain12;
     
@@ -2578,7 +2578,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain12()
+    public function getGrain12()
     {
         return $this->brewgrain12;
     }
@@ -2589,7 +2589,7 @@ class Recipes
      * @param string $brewgrain12weight
      * @return Recipes
      */
-    public function setBrewgrain12weight($brewgrain12weight)
+    public function setGrain12weight($brewgrain12weight)
     {
         $this->brewgrain12weight = $brewgrain12weight;
     
@@ -2601,7 +2601,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain12weight()
+    public function getGrain12weight()
     {
         return $this->brewgrain12weight;
     }
@@ -2612,7 +2612,7 @@ class Recipes
      * @param string $brewgrain13
      * @return Recipes
      */
-    public function setBrewgrain13($brewgrain13)
+    public function setGrain13($brewgrain13)
     {
         $this->brewgrain13 = $brewgrain13;
     
@@ -2624,7 +2624,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain13()
+    public function getGrain13()
     {
         return $this->brewgrain13;
     }
@@ -2635,7 +2635,7 @@ class Recipes
      * @param string $brewgrain13weight
      * @return Recipes
      */
-    public function setBrewgrain13weight($brewgrain13weight)
+    public function setGrain13weight($brewgrain13weight)
     {
         $this->brewgrain13weight = $brewgrain13weight;
     
@@ -2647,7 +2647,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain13weight()
+    public function getGrain13weight()
     {
         return $this->brewgrain13weight;
     }
@@ -2658,7 +2658,7 @@ class Recipes
      * @param string $brewgrain14
      * @return Recipes
      */
-    public function setBrewgrain14($brewgrain14)
+    public function setGrain14($brewgrain14)
     {
         $this->brewgrain14 = $brewgrain14;
     
@@ -2670,7 +2670,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain14()
+    public function getGrain14()
     {
         return $this->brewgrain14;
     }
@@ -2681,7 +2681,7 @@ class Recipes
      * @param string $brewgrain14weight
      * @return Recipes
      */
-    public function setBrewgrain14weight($brewgrain14weight)
+    public function setGrain14weight($brewgrain14weight)
     {
         $this->brewgrain14weight = $brewgrain14weight;
     
@@ -2693,7 +2693,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain14weight()
+    public function getGrain14weight()
     {
         return $this->brewgrain14weight;
     }
@@ -2704,7 +2704,7 @@ class Recipes
      * @param string $brewgrain15
      * @return Recipes
      */
-    public function setBrewgrain15($brewgrain15)
+    public function setGrain15($brewgrain15)
     {
         $this->brewgrain15 = $brewgrain15;
     
@@ -2716,7 +2716,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain15()
+    public function getGrain15()
     {
         return $this->brewgrain15;
     }
@@ -2727,7 +2727,7 @@ class Recipes
      * @param string $brewgrain15weight
      * @return Recipes
      */
-    public function setBrewgrain15weight($brewgrain15weight)
+    public function setGrain15weight($brewgrain15weight)
     {
         $this->brewgrain15weight = $brewgrain15weight;
     
@@ -2739,7 +2739,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewgrain15weight()
+    public function getGrain15weight()
     {
         return $this->brewgrain15weight;
     }
@@ -2750,7 +2750,7 @@ class Recipes
      * @param string $brewaddition1
      * @return Recipes
      */
-    public function setBrewaddition1($brewaddition1)
+    public function setAddition1($brewaddition1)
     {
         $this->brewaddition1 = $brewaddition1;
     
@@ -2762,7 +2762,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition1()
+    public function getAddition1()
     {
         return $this->brewaddition1;
     }
@@ -2773,7 +2773,7 @@ class Recipes
      * @param string $brewaddition1amt
      * @return Recipes
      */
-    public function setBrewaddition1amt($brewaddition1amt)
+    public function setAddition1amt($brewaddition1amt)
     {
         $this->brewaddition1amt = $brewaddition1amt;
     
@@ -2785,7 +2785,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition1amt()
+    public function getAddition1amt()
     {
         return $this->brewaddition1amt;
     }
@@ -2796,7 +2796,7 @@ class Recipes
      * @param string $brewaddition2
      * @return Recipes
      */
-    public function setBrewaddition2($brewaddition2)
+    public function setAddition2($brewaddition2)
     {
         $this->brewaddition2 = $brewaddition2;
     
@@ -2808,7 +2808,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition2()
+    public function getAddition2()
     {
         return $this->brewaddition2;
     }
@@ -2819,7 +2819,7 @@ class Recipes
      * @param string $brewaddition2amt
      * @return Recipes
      */
-    public function setBrewaddition2amt($brewaddition2amt)
+    public function setAddition2amt($brewaddition2amt)
     {
         $this->brewaddition2amt = $brewaddition2amt;
     
@@ -2831,7 +2831,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition2amt()
+    public function getAddition2amt()
     {
         return $this->brewaddition2amt;
     }
@@ -2842,7 +2842,7 @@ class Recipes
      * @param string $brewaddition3
      * @return Recipes
      */
-    public function setBrewaddition3($brewaddition3)
+    public function setAddition3($brewaddition3)
     {
         $this->brewaddition3 = $brewaddition3;
     
@@ -2854,7 +2854,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition3()
+    public function getAddition3()
     {
         return $this->brewaddition3;
     }
@@ -2865,7 +2865,7 @@ class Recipes
      * @param string $brewaddition3amt
      * @return Recipes
      */
-    public function setBrewaddition3amt($brewaddition3amt)
+    public function setAddition3amt($brewaddition3amt)
     {
         $this->brewaddition3amt = $brewaddition3amt;
     
@@ -2877,7 +2877,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition3amt()
+    public function getAddition3amt()
     {
         return $this->brewaddition3amt;
     }
@@ -2888,7 +2888,7 @@ class Recipes
      * @param string $brewaddition4
      * @return Recipes
      */
-    public function setBrewaddition4($brewaddition4)
+    public function setAddition4($brewaddition4)
     {
         $this->brewaddition4 = $brewaddition4;
     
@@ -2900,7 +2900,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition4()
+    public function getAddition4()
     {
         return $this->brewaddition4;
     }
@@ -2911,7 +2911,7 @@ class Recipes
      * @param string $brewaddition4amt
      * @return Recipes
      */
-    public function setBrewaddition4amt($brewaddition4amt)
+    public function setAddition4amt($brewaddition4amt)
     {
         $this->brewaddition4amt = $brewaddition4amt;
     
@@ -2923,7 +2923,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition4amt()
+    public function getAddition4amt()
     {
         return $this->brewaddition4amt;
     }
@@ -2934,7 +2934,7 @@ class Recipes
      * @param string $brewaddition5
      * @return Recipes
      */
-    public function setBrewaddition5($brewaddition5)
+    public function setAddition5($brewaddition5)
     {
         $this->brewaddition5 = $brewaddition5;
     
@@ -2946,7 +2946,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition5()
+    public function getAddition5()
     {
         return $this->brewaddition5;
     }
@@ -2957,7 +2957,7 @@ class Recipes
      * @param string $brewaddition5amt
      * @return Recipes
      */
-    public function setBrewaddition5amt($brewaddition5amt)
+    public function setAddition5amt($brewaddition5amt)
     {
         $this->brewaddition5amt = $brewaddition5amt;
     
@@ -2969,7 +2969,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition5amt()
+    public function getAddition5amt()
     {
         return $this->brewaddition5amt;
     }
@@ -2980,7 +2980,7 @@ class Recipes
      * @param string $brewaddition6
      * @return Recipes
      */
-    public function setBrewaddition6($brewaddition6)
+    public function setAddition6($brewaddition6)
     {
         $this->brewaddition6 = $brewaddition6;
     
@@ -2992,7 +2992,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition6()
+    public function getAddition6()
     {
         return $this->brewaddition6;
     }
@@ -3003,7 +3003,7 @@ class Recipes
      * @param string $brewaddition6amt
      * @return Recipes
      */
-    public function setBrewaddition6amt($brewaddition6amt)
+    public function setAddition6amt($brewaddition6amt)
     {
         $this->brewaddition6amt = $brewaddition6amt;
     
@@ -3015,7 +3015,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition6amt()
+    public function getAddition6amt()
     {
         return $this->brewaddition6amt;
     }
@@ -3026,7 +3026,7 @@ class Recipes
      * @param string $brewaddition7
      * @return Recipes
      */
-    public function setBrewaddition7($brewaddition7)
+    public function setAddition7($brewaddition7)
     {
         $this->brewaddition7 = $brewaddition7;
     
@@ -3038,7 +3038,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition7()
+    public function getAddition7()
     {
         return $this->brewaddition7;
     }
@@ -3049,7 +3049,7 @@ class Recipes
      * @param string $brewaddition7amt
      * @return Recipes
      */
-    public function setBrewaddition7amt($brewaddition7amt)
+    public function setAddition7amt($brewaddition7amt)
     {
         $this->brewaddition7amt = $brewaddition7amt;
     
@@ -3061,7 +3061,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition7amt()
+    public function getAddition7amt()
     {
         return $this->brewaddition7amt;
     }
@@ -3072,7 +3072,7 @@ class Recipes
      * @param string $brewaddition8
      * @return Recipes
      */
-    public function setBrewaddition8($brewaddition8)
+    public function setAddition8($brewaddition8)
     {
         $this->brewaddition8 = $brewaddition8;
     
@@ -3084,7 +3084,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition8()
+    public function getAddition8()
     {
         return $this->brewaddition8;
     }
@@ -3095,7 +3095,7 @@ class Recipes
      * @param string $brewaddition8amt
      * @return Recipes
      */
-    public function setBrewaddition8amt($brewaddition8amt)
+    public function setAddition8amt($brewaddition8amt)
     {
         $this->brewaddition8amt = $brewaddition8amt;
     
@@ -3107,7 +3107,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition8amt()
+    public function getAddition8amt()
     {
         return $this->brewaddition8amt;
     }
@@ -3118,7 +3118,7 @@ class Recipes
      * @param string $brewaddition9
      * @return Recipes
      */
-    public function setBrewaddition9($brewaddition9)
+    public function setAddition9($brewaddition9)
     {
         $this->brewaddition9 = $brewaddition9;
     
@@ -3130,7 +3130,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition9()
+    public function getAddition9()
     {
         return $this->brewaddition9;
     }
@@ -3141,7 +3141,7 @@ class Recipes
      * @param string $brewaddition9amt
      * @return Recipes
      */
-    public function setBrewaddition9amt($brewaddition9amt)
+    public function setAddition9amt($brewaddition9amt)
     {
         $this->brewaddition9amt = $brewaddition9amt;
     
@@ -3153,7 +3153,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewaddition9amt()
+    public function getAddition9amt()
     {
         return $this->brewaddition9amt;
     }
@@ -3164,7 +3164,7 @@ class Recipes
      * @param string $brewmisc1name
      * @return Recipes
      */
-    public function setBrewmisc1name($brewmisc1name)
+    public function setMisc1name($brewmisc1name)
     {
         $this->brewmisc1name = $brewmisc1name;
     
@@ -3176,7 +3176,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc1name()
+    public function getMisc1name()
     {
         return $this->brewmisc1name;
     }
@@ -3187,7 +3187,7 @@ class Recipes
      * @param string $brewmisc2name
      * @return Recipes
      */
-    public function setBrewmisc2name($brewmisc2name)
+    public function setMisc2name($brewmisc2name)
     {
         $this->brewmisc2name = $brewmisc2name;
     
@@ -3199,7 +3199,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc2name()
+    public function getMisc2name()
     {
         return $this->brewmisc2name;
     }
@@ -3210,7 +3210,7 @@ class Recipes
      * @param string $brewmisc3name
      * @return Recipes
      */
-    public function setBrewmisc3name($brewmisc3name)
+    public function setMisc3name($brewmisc3name)
     {
         $this->brewmisc3name = $brewmisc3name;
     
@@ -3222,7 +3222,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc3name()
+    public function getMisc3name()
     {
         return $this->brewmisc3name;
     }
@@ -3233,7 +3233,7 @@ class Recipes
      * @param string $brewmisc4name
      * @return Recipes
      */
-    public function setBrewmisc4name($brewmisc4name)
+    public function setMisc4name($brewmisc4name)
     {
         $this->brewmisc4name = $brewmisc4name;
     
@@ -3245,7 +3245,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc4name()
+    public function getMisc4name()
     {
         return $this->brewmisc4name;
     }
@@ -3256,7 +3256,7 @@ class Recipes
      * @param string $brewmisc1type
      * @return Recipes
      */
-    public function setBrewmisc1type($brewmisc1type)
+    public function setMisc1type($brewmisc1type)
     {
         $this->brewmisc1type = $brewmisc1type;
     
@@ -3268,7 +3268,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc1type()
+    public function getMisc1type()
     {
         return $this->brewmisc1type;
     }
@@ -3279,7 +3279,7 @@ class Recipes
      * @param string $brewmisc2type
      * @return Recipes
      */
-    public function setBrewmisc2type($brewmisc2type)
+    public function setMisc2type($brewmisc2type)
     {
         $this->brewmisc2type = $brewmisc2type;
     
@@ -3291,7 +3291,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc2type()
+    public function getMisc2type()
     {
         return $this->brewmisc2type;
     }
@@ -3302,7 +3302,7 @@ class Recipes
      * @param string $brewmisc3type
      * @return Recipes
      */
-    public function setBrewmisc3type($brewmisc3type)
+    public function setMisc3type($brewmisc3type)
     {
         $this->brewmisc3type = $brewmisc3type;
     
@@ -3314,7 +3314,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc3type()
+    public function getMisc3type()
     {
         return $this->brewmisc3type;
     }
@@ -3325,7 +3325,7 @@ class Recipes
      * @param string $brewmisc4type
      * @return Recipes
      */
-    public function setBrewmisc4type($brewmisc4type)
+    public function setMisc4type($brewmisc4type)
     {
         $this->brewmisc4type = $brewmisc4type;
     
@@ -3337,7 +3337,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc4type()
+    public function getMisc4type()
     {
         return $this->brewmisc4type;
     }
@@ -3348,7 +3348,7 @@ class Recipes
      * @param string $brewmisc1use
      * @return Recipes
      */
-    public function setBrewmisc1use($brewmisc1use)
+    public function setMisc1use($brewmisc1use)
     {
         $this->brewmisc1use = $brewmisc1use;
     
@@ -3360,7 +3360,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc1use()
+    public function getMisc1use()
     {
         return $this->brewmisc1use;
     }
@@ -3371,7 +3371,7 @@ class Recipes
      * @param string $brewmisc2use
      * @return Recipes
      */
-    public function setBrewmisc2use($brewmisc2use)
+    public function setMisc2use($brewmisc2use)
     {
         $this->brewmisc2use = $brewmisc2use;
     
@@ -3383,7 +3383,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc2use()
+    public function getMisc2use()
     {
         return $this->brewmisc2use;
     }
@@ -3394,7 +3394,7 @@ class Recipes
      * @param string $brewmisc3use
      * @return Recipes
      */
-    public function setBrewmisc3use($brewmisc3use)
+    public function setMisc3use($brewmisc3use)
     {
         $this->brewmisc3use = $brewmisc3use;
     
@@ -3406,7 +3406,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc3use()
+    public function getMisc3use()
     {
         return $this->brewmisc3use;
     }
@@ -3417,7 +3417,7 @@ class Recipes
      * @param string $brewmisc4use
      * @return Recipes
      */
-    public function setBrewmisc4use($brewmisc4use)
+    public function setMisc4use($brewmisc4use)
     {
         $this->brewmisc4use = $brewmisc4use;
     
@@ -3429,7 +3429,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc4use()
+    public function getMisc4use()
     {
         return $this->brewmisc4use;
     }
@@ -3440,7 +3440,7 @@ class Recipes
      * @param string $brewmisc1time
      * @return Recipes
      */
-    public function setBrewmisc1time($brewmisc1time)
+    public function setMisc1time($brewmisc1time)
     {
         $this->brewmisc1time = $brewmisc1time;
     
@@ -3452,7 +3452,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc1time()
+    public function getMisc1time()
     {
         return $this->brewmisc1time;
     }
@@ -3463,7 +3463,7 @@ class Recipes
      * @param string $brewmisc2time
      * @return Recipes
      */
-    public function setBrewmisc2time($brewmisc2time)
+    public function setMisc2time($brewmisc2time)
     {
         $this->brewmisc2time = $brewmisc2time;
     
@@ -3475,7 +3475,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc2time()
+    public function getMisc2time()
     {
         return $this->brewmisc2time;
     }
@@ -3486,7 +3486,7 @@ class Recipes
      * @param string $brewmisc3time
      * @return Recipes
      */
-    public function setBrewmisc3time($brewmisc3time)
+    public function setMisc3time($brewmisc3time)
     {
         $this->brewmisc3time = $brewmisc3time;
     
@@ -3498,7 +3498,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc3time()
+    public function getMisc3time()
     {
         return $this->brewmisc3time;
     }
@@ -3509,7 +3509,7 @@ class Recipes
      * @param string $brewmisc4time
      * @return Recipes
      */
-    public function setBrewmisc4time($brewmisc4time)
+    public function setMisc4time($brewmisc4time)
     {
         $this->brewmisc4time = $brewmisc4time;
     
@@ -3521,7 +3521,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc4time()
+    public function getMisc4time()
     {
         return $this->brewmisc4time;
     }
@@ -3532,7 +3532,7 @@ class Recipes
      * @param string $brewmisc1amount
      * @return Recipes
      */
-    public function setBrewmisc1amount($brewmisc1amount)
+    public function setMisc1amount($brewmisc1amount)
     {
         $this->brewmisc1amount = $brewmisc1amount;
     
@@ -3544,7 +3544,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc1amount()
+    public function getMisc1amount()
     {
         return $this->brewmisc1amount;
     }
@@ -3555,7 +3555,7 @@ class Recipes
      * @param string $brewmisc2amount
      * @return Recipes
      */
-    public function setBrewmisc2amount($brewmisc2amount)
+    public function setMisc2amount($brewmisc2amount)
     {
         $this->brewmisc2amount = $brewmisc2amount;
     
@@ -3567,7 +3567,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc2amount()
+    public function getMisc2amount()
     {
         return $this->brewmisc2amount;
     }
@@ -3578,7 +3578,7 @@ class Recipes
      * @param string $brewmisc3amount
      * @return Recipes
      */
-    public function setBrewmisc3amount($brewmisc3amount)
+    public function setMisc3amount($brewmisc3amount)
     {
         $this->brewmisc3amount = $brewmisc3amount;
     
@@ -3590,7 +3590,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc3amount()
+    public function getMisc3amount()
     {
         return $this->brewmisc3amount;
     }
@@ -3601,7 +3601,7 @@ class Recipes
      * @param string $brewmisc4amount
      * @return Recipes
      */
-    public function setBrewmisc4amount($brewmisc4amount)
+    public function setMisc4amount($brewmisc4amount)
     {
         $this->brewmisc4amount = $brewmisc4amount;
     
@@ -3613,7 +3613,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewmisc4amount()
+    public function getMisc4amount()
     {
         return $this->brewmisc4amount;
     }
@@ -3624,7 +3624,7 @@ class Recipes
      * @param string $brewhops1
      * @return Recipes
      */
-    public function setBrewhops1($brewhops1)
+    public function setHops1($brewhops1)
     {
         $this->brewhops1 = $brewhops1;
     
@@ -3636,7 +3636,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1()
+    public function getHops1()
     {
         return $this->brewhops1;
     }
@@ -3647,7 +3647,7 @@ class Recipes
      * @param string $brewhops1weight
      * @return Recipes
      */
-    public function setBrewhops1weight($brewhops1weight)
+    public function setHops1weight($brewhops1weight)
     {
         $this->brewhops1weight = $brewhops1weight;
     
@@ -3659,7 +3659,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1weight()
+    public function getHops1weight()
     {
         return $this->brewhops1weight;
     }
@@ -3670,7 +3670,7 @@ class Recipes
      * @param string $brewhops1ibu
      * @return Recipes
      */
-    public function setBrewhops1ibu($brewhops1ibu)
+    public function setHops1ibu($brewhops1ibu)
     {
         $this->brewhops1ibu = $brewhops1ibu;
     
@@ -3682,7 +3682,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1ibu()
+    public function getHops1ibu()
     {
         return $this->brewhops1ibu;
     }
@@ -3693,7 +3693,7 @@ class Recipes
      * @param string $brewhops1time
      * @return Recipes
      */
-    public function setBrewhops1time($brewhops1time)
+    public function setHops1time($brewhops1time)
     {
         $this->brewhops1time = $brewhops1time;
     
@@ -3705,7 +3705,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1time()
+    public function getHops1time()
     {
         return $this->brewhops1time;
     }
@@ -3716,7 +3716,7 @@ class Recipes
      * @param string $brewhops2
      * @return Recipes
      */
-    public function setBrewhops2($brewhops2)
+    public function setHops2($brewhops2)
     {
         $this->brewhops2 = $brewhops2;
     
@@ -3728,7 +3728,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2()
+    public function getHops2()
     {
         return $this->brewhops2;
     }
@@ -3739,7 +3739,7 @@ class Recipes
      * @param string $brewhops2weight
      * @return Recipes
      */
-    public function setBrewhops2weight($brewhops2weight)
+    public function setHops2weight($brewhops2weight)
     {
         $this->brewhops2weight = $brewhops2weight;
     
@@ -3751,7 +3751,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2weight()
+    public function getHops2weight()
     {
         return $this->brewhops2weight;
     }
@@ -3762,7 +3762,7 @@ class Recipes
      * @param string $brewhops2ibu
      * @return Recipes
      */
-    public function setBrewhops2ibu($brewhops2ibu)
+    public function setHops2ibu($brewhops2ibu)
     {
         $this->brewhops2ibu = $brewhops2ibu;
     
@@ -3774,7 +3774,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2ibu()
+    public function getHops2ibu()
     {
         return $this->brewhops2ibu;
     }
@@ -3785,7 +3785,7 @@ class Recipes
      * @param string $brewhops2time
      * @return Recipes
      */
-    public function setBrewhops2time($brewhops2time)
+    public function setHops2time($brewhops2time)
     {
         $this->brewhops2time = $brewhops2time;
     
@@ -3797,7 +3797,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2time()
+    public function getHops2time()
     {
         return $this->brewhops2time;
     }
@@ -3808,7 +3808,7 @@ class Recipes
      * @param string $brewhops3
      * @return Recipes
      */
-    public function setBrewhops3($brewhops3)
+    public function setHops3($brewhops3)
     {
         $this->brewhops3 = $brewhops3;
     
@@ -3820,7 +3820,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3()
+    public function getHops3()
     {
         return $this->brewhops3;
     }
@@ -3831,7 +3831,7 @@ class Recipes
      * @param string $brewhops3weight
      * @return Recipes
      */
-    public function setBrewhops3weight($brewhops3weight)
+    public function setHops3weight($brewhops3weight)
     {
         $this->brewhops3weight = $brewhops3weight;
     
@@ -3843,7 +3843,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3weight()
+    public function getHops3weight()
     {
         return $this->brewhops3weight;
     }
@@ -3854,7 +3854,7 @@ class Recipes
      * @param string $brewhops3ibu
      * @return Recipes
      */
-    public function setBrewhops3ibu($brewhops3ibu)
+    public function setHops3ibu($brewhops3ibu)
     {
         $this->brewhops3ibu = $brewhops3ibu;
     
@@ -3866,7 +3866,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3ibu()
+    public function getHops3ibu()
     {
         return $this->brewhops3ibu;
     }
@@ -3877,7 +3877,7 @@ class Recipes
      * @param string $brewhops3time
      * @return Recipes
      */
-    public function setBrewhops3time($brewhops3time)
+    public function setHops3time($brewhops3time)
     {
         $this->brewhops3time = $brewhops3time;
     
@@ -3889,7 +3889,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3time()
+    public function getHops3time()
     {
         return $this->brewhops3time;
     }
@@ -3900,7 +3900,7 @@ class Recipes
      * @param string $brewhops4
      * @return Recipes
      */
-    public function setBrewhops4($brewhops4)
+    public function setHops4($brewhops4)
     {
         $this->brewhops4 = $brewhops4;
     
@@ -3912,7 +3912,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4()
+    public function getHops4()
     {
         return $this->brewhops4;
     }
@@ -3923,7 +3923,7 @@ class Recipes
      * @param string $brewhops4weight
      * @return Recipes
      */
-    public function setBrewhops4weight($brewhops4weight)
+    public function setHops4weight($brewhops4weight)
     {
         $this->brewhops4weight = $brewhops4weight;
     
@@ -3935,7 +3935,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4weight()
+    public function getHops4weight()
     {
         return $this->brewhops4weight;
     }
@@ -3946,7 +3946,7 @@ class Recipes
      * @param string $brewhops4ibu
      * @return Recipes
      */
-    public function setBrewhops4ibu($brewhops4ibu)
+    public function setHops4ibu($brewhops4ibu)
     {
         $this->brewhops4ibu = $brewhops4ibu;
     
@@ -3958,7 +3958,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4ibu()
+    public function getHops4ibu()
     {
         return $this->brewhops4ibu;
     }
@@ -3969,7 +3969,7 @@ class Recipes
      * @param string $brewhops4time
      * @return Recipes
      */
-    public function setBrewhops4time($brewhops4time)
+    public function setHops4time($brewhops4time)
     {
         $this->brewhops4time = $brewhops4time;
     
@@ -3981,7 +3981,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4time()
+    public function getHops4time()
     {
         return $this->brewhops4time;
     }
@@ -3992,7 +3992,7 @@ class Recipes
      * @param string $brewhops5
      * @return Recipes
      */
-    public function setBrewhops5($brewhops5)
+    public function setHops5($brewhops5)
     {
         $this->brewhops5 = $brewhops5;
     
@@ -4004,7 +4004,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5()
+    public function getHops5()
     {
         return $this->brewhops5;
     }
@@ -4015,7 +4015,7 @@ class Recipes
      * @param string $brewhops5weight
      * @return Recipes
      */
-    public function setBrewhops5weight($brewhops5weight)
+    public function setHops5weight($brewhops5weight)
     {
         $this->brewhops5weight = $brewhops5weight;
     
@@ -4027,7 +4027,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5weight()
+    public function getHops5weight()
     {
         return $this->brewhops5weight;
     }
@@ -4038,7 +4038,7 @@ class Recipes
      * @param string $brewhops5ibu
      * @return Recipes
      */
-    public function setBrewhops5ibu($brewhops5ibu)
+    public function setHops5ibu($brewhops5ibu)
     {
         $this->brewhops5ibu = $brewhops5ibu;
     
@@ -4050,7 +4050,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5ibu()
+    public function getHops5ibu()
     {
         return $this->brewhops5ibu;
     }
@@ -4061,7 +4061,7 @@ class Recipes
      * @param string $brewhops5time
      * @return Recipes
      */
-    public function setBrewhops5time($brewhops5time)
+    public function setHops5time($brewhops5time)
     {
         $this->brewhops5time = $brewhops5time;
     
@@ -4073,7 +4073,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5time()
+    public function getHops5time()
     {
         return $this->brewhops5time;
     }
@@ -4084,7 +4084,7 @@ class Recipes
      * @param string $brewhops6
      * @return Recipes
      */
-    public function setBrewhops6($brewhops6)
+    public function setHops6($brewhops6)
     {
         $this->brewhops6 = $brewhops6;
     
@@ -4096,7 +4096,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6()
+    public function getHops6()
     {
         return $this->brewhops6;
     }
@@ -4107,7 +4107,7 @@ class Recipes
      * @param string $brewhops6weight
      * @return Recipes
      */
-    public function setBrewhops6weight($brewhops6weight)
+    public function setHops6weight($brewhops6weight)
     {
         $this->brewhops6weight = $brewhops6weight;
     
@@ -4119,7 +4119,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6weight()
+    public function getHops6weight()
     {
         return $this->brewhops6weight;
     }
@@ -4130,7 +4130,7 @@ class Recipes
      * @param string $brewhops6ibu
      * @return Recipes
      */
-    public function setBrewhops6ibu($brewhops6ibu)
+    public function setHops6ibu($brewhops6ibu)
     {
         $this->brewhops6ibu = $brewhops6ibu;
     
@@ -4142,7 +4142,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6ibu()
+    public function getHops6ibu()
     {
         return $this->brewhops6ibu;
     }
@@ -4153,7 +4153,7 @@ class Recipes
      * @param string $brewhops6time
      * @return Recipes
      */
-    public function setBrewhops6time($brewhops6time)
+    public function setHops6time($brewhops6time)
     {
         $this->brewhops6time = $brewhops6time;
     
@@ -4165,7 +4165,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6time()
+    public function getHops6time()
     {
         return $this->brewhops6time;
     }
@@ -4176,7 +4176,7 @@ class Recipes
      * @param string $brewhops7
      * @return Recipes
      */
-    public function setBrewhops7($brewhops7)
+    public function setHops7($brewhops7)
     {
         $this->brewhops7 = $brewhops7;
     
@@ -4188,7 +4188,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7()
+    public function getHops7()
     {
         return $this->brewhops7;
     }
@@ -4199,7 +4199,7 @@ class Recipes
      * @param string $brewhops7weight
      * @return Recipes
      */
-    public function setBrewhops7weight($brewhops7weight)
+    public function setHops7weight($brewhops7weight)
     {
         $this->brewhops7weight = $brewhops7weight;
     
@@ -4211,7 +4211,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7weight()
+    public function getHops7weight()
     {
         return $this->brewhops7weight;
     }
@@ -4222,7 +4222,7 @@ class Recipes
      * @param string $brewhops7ibu
      * @return Recipes
      */
-    public function setBrewhops7ibu($brewhops7ibu)
+    public function setHops7ibu($brewhops7ibu)
     {
         $this->brewhops7ibu = $brewhops7ibu;
     
@@ -4234,7 +4234,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7ibu()
+    public function getHops7ibu()
     {
         return $this->brewhops7ibu;
     }
@@ -4245,7 +4245,7 @@ class Recipes
      * @param string $brewhops7time
      * @return Recipes
      */
-    public function setBrewhops7time($brewhops7time)
+    public function setHops7time($brewhops7time)
     {
         $this->brewhops7time = $brewhops7time;
     
@@ -4257,7 +4257,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7time()
+    public function getHops7time()
     {
         return $this->brewhops7time;
     }
@@ -4268,7 +4268,7 @@ class Recipes
      * @param string $brewhops8
      * @return Recipes
      */
-    public function setBrewhops8($brewhops8)
+    public function setHops8($brewhops8)
     {
         $this->brewhops8 = $brewhops8;
     
@@ -4280,7 +4280,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8()
+    public function getHops8()
     {
         return $this->brewhops8;
     }
@@ -4291,7 +4291,7 @@ class Recipes
      * @param string $brewhops8weight
      * @return Recipes
      */
-    public function setBrewhops8weight($brewhops8weight)
+    public function setHops8weight($brewhops8weight)
     {
         $this->brewhops8weight = $brewhops8weight;
     
@@ -4303,7 +4303,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8weight()
+    public function getHops8weight()
     {
         return $this->brewhops8weight;
     }
@@ -4314,7 +4314,7 @@ class Recipes
      * @param string $brewhops8ibu
      * @return Recipes
      */
-    public function setBrewhops8ibu($brewhops8ibu)
+    public function setHops8ibu($brewhops8ibu)
     {
         $this->brewhops8ibu = $brewhops8ibu;
     
@@ -4326,7 +4326,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8ibu()
+    public function getHops8ibu()
     {
         return $this->brewhops8ibu;
     }
@@ -4337,7 +4337,7 @@ class Recipes
      * @param string $brewhops8time
      * @return Recipes
      */
-    public function setBrewhops8time($brewhops8time)
+    public function setHops8time($brewhops8time)
     {
         $this->brewhops8time = $brewhops8time;
     
@@ -4349,7 +4349,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8time()
+    public function getHops8time()
     {
         return $this->brewhops8time;
     }
@@ -4360,7 +4360,7 @@ class Recipes
      * @param string $brewhops9
      * @return Recipes
      */
-    public function setBrewhops9($brewhops9)
+    public function setHops9($brewhops9)
     {
         $this->brewhops9 = $brewhops9;
     
@@ -4372,7 +4372,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9()
+    public function getHops9()
     {
         return $this->brewhops9;
     }
@@ -4383,7 +4383,7 @@ class Recipes
      * @param string $brewhops9weight
      * @return Recipes
      */
-    public function setBrewhops9weight($brewhops9weight)
+    public function setHops9weight($brewhops9weight)
     {
         $this->brewhops9weight = $brewhops9weight;
     
@@ -4395,7 +4395,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9weight()
+    public function getHops9weight()
     {
         return $this->brewhops9weight;
     }
@@ -4406,7 +4406,7 @@ class Recipes
      * @param string $brewhops9ibu
      * @return Recipes
      */
-    public function setBrewhops9ibu($brewhops9ibu)
+    public function setHops9ibu($brewhops9ibu)
     {
         $this->brewhops9ibu = $brewhops9ibu;
     
@@ -4418,7 +4418,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9ibu()
+    public function getHops9ibu()
     {
         return $this->brewhops9ibu;
     }
@@ -4429,7 +4429,7 @@ class Recipes
      * @param string $brewhops9time
      * @return Recipes
      */
-    public function setBrewhops9time($brewhops9time)
+    public function setHops9time($brewhops9time)
     {
         $this->brewhops9time = $brewhops9time;
     
@@ -4441,7 +4441,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9time()
+    public function getHops9time()
     {
         return $this->brewhops9time;
     }
@@ -4452,7 +4452,7 @@ class Recipes
      * @param string $brewhops1use
      * @return Recipes
      */
-    public function setBrewhops1use($brewhops1use)
+    public function setHops1use($brewhops1use)
     {
         $this->brewhops1use = $brewhops1use;
     
@@ -4464,7 +4464,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1use()
+    public function getHops1use()
     {
         return $this->brewhops1use;
     }
@@ -4475,7 +4475,7 @@ class Recipes
      * @param string $brewhops2use
      * @return Recipes
      */
-    public function setBrewhops2use($brewhops2use)
+    public function setHops2use($brewhops2use)
     {
         $this->brewhops2use = $brewhops2use;
     
@@ -4487,7 +4487,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2use()
+    public function getHops2use()
     {
         return $this->brewhops2use;
     }
@@ -4498,7 +4498,7 @@ class Recipes
      * @param string $brewhops3use
      * @return Recipes
      */
-    public function setBrewhops3use($brewhops3use)
+    public function setHops3use($brewhops3use)
     {
         $this->brewhops3use = $brewhops3use;
     
@@ -4510,7 +4510,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3use()
+    public function getHops3use()
     {
         return $this->brewhops3use;
     }
@@ -4521,7 +4521,7 @@ class Recipes
      * @param string $brewhops4use
      * @return Recipes
      */
-    public function setBrewhops4use($brewhops4use)
+    public function setHops4use($brewhops4use)
     {
         $this->brewhops4use = $brewhops4use;
     
@@ -4533,7 +4533,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4use()
+    public function getHops4use()
     {
         return $this->brewhops4use;
     }
@@ -4544,7 +4544,7 @@ class Recipes
      * @param string $brewhops5use
      * @return Recipes
      */
-    public function setBrewhops5use($brewhops5use)
+    public function setHops5use($brewhops5use)
     {
         $this->brewhops5use = $brewhops5use;
     
@@ -4556,7 +4556,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5use()
+    public function getHops5use()
     {
         return $this->brewhops5use;
     }
@@ -4567,7 +4567,7 @@ class Recipes
      * @param string $brewhops6use
      * @return Recipes
      */
-    public function setBrewhops6use($brewhops6use)
+    public function setHops6use($brewhops6use)
     {
         $this->brewhops6use = $brewhops6use;
     
@@ -4579,7 +4579,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6use()
+    public function getHops6use()
     {
         return $this->brewhops6use;
     }
@@ -4590,7 +4590,7 @@ class Recipes
      * @param string $brewhops7use
      * @return Recipes
      */
-    public function setBrewhops7use($brewhops7use)
+    public function setHops7use($brewhops7use)
     {
         $this->brewhops7use = $brewhops7use;
     
@@ -4602,7 +4602,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7use()
+    public function getHops7use()
     {
         return $this->brewhops7use;
     }
@@ -4613,7 +4613,7 @@ class Recipes
      * @param string $brewhops8use
      * @return Recipes
      */
-    public function setBrewhops8use($brewhops8use)
+    public function setHops8use($brewhops8use)
     {
         $this->brewhops8use = $brewhops8use;
     
@@ -4625,7 +4625,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8use()
+    public function getHops8use()
     {
         return $this->brewhops8use;
     }
@@ -4636,7 +4636,7 @@ class Recipes
      * @param string $brewhops9use
      * @return Recipes
      */
-    public function setBrewhops9use($brewhops9use)
+    public function setHops9use($brewhops9use)
     {
         $this->brewhops9use = $brewhops9use;
     
@@ -4648,7 +4648,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9use()
+    public function getHops9use()
     {
         return $this->brewhops9use;
     }
@@ -4659,7 +4659,7 @@ class Recipes
      * @param string $brewhops1type
      * @return Recipes
      */
-    public function setBrewhops1type($brewhops1type)
+    public function setHops1type($brewhops1type)
     {
         $this->brewhops1type = $brewhops1type;
     
@@ -4671,7 +4671,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1type()
+    public function getHops1type()
     {
         return $this->brewhops1type;
     }
@@ -4682,7 +4682,7 @@ class Recipes
      * @param string $brewhops2type
      * @return Recipes
      */
-    public function setBrewhops2type($brewhops2type)
+    public function setHops2type($brewhops2type)
     {
         $this->brewhops2type = $brewhops2type;
     
@@ -4694,7 +4694,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2type()
+    public function getHops2type()
     {
         return $this->brewhops2type;
     }
@@ -4705,7 +4705,7 @@ class Recipes
      * @param string $brewhops3type
      * @return Recipes
      */
-    public function setBrewhops3type($brewhops3type)
+    public function setHops3type($brewhops3type)
     {
         $this->brewhops3type = $brewhops3type;
     
@@ -4717,7 +4717,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3type()
+    public function getHops3type()
     {
         return $this->brewhops3type;
     }
@@ -4728,7 +4728,7 @@ class Recipes
      * @param string $brewhops4type
      * @return Recipes
      */
-    public function setBrewhops4type($brewhops4type)
+    public function setHops4type($brewhops4type)
     {
         $this->brewhops4type = $brewhops4type;
     
@@ -4740,7 +4740,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4type()
+    public function getHops4type()
     {
         return $this->brewhops4type;
     }
@@ -4751,7 +4751,7 @@ class Recipes
      * @param string $brewhops5type
      * @return Recipes
      */
-    public function setBrewhops5type($brewhops5type)
+    public function setHops5type($brewhops5type)
     {
         $this->brewhops5type = $brewhops5type;
     
@@ -4763,7 +4763,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5type()
+    public function getHops5type()
     {
         return $this->brewhops5type;
     }
@@ -4774,7 +4774,7 @@ class Recipes
      * @param string $brewhops6type
      * @return Recipes
      */
-    public function setBrewhops6type($brewhops6type)
+    public function setHops6type($brewhops6type)
     {
         $this->brewhops6type = $brewhops6type;
     
@@ -4786,7 +4786,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6type()
+    public function getHops6type()
     {
         return $this->brewhops6type;
     }
@@ -4797,7 +4797,7 @@ class Recipes
      * @param string $brewhops7type
      * @return Recipes
      */
-    public function setBrewhops7type($brewhops7type)
+    public function setHops7type($brewhops7type)
     {
         $this->brewhops7type = $brewhops7type;
     
@@ -4809,7 +4809,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7type()
+    public function getHops7type()
     {
         return $this->brewhops7type;
     }
@@ -4820,7 +4820,7 @@ class Recipes
      * @param string $brewhops8type
      * @return Recipes
      */
-    public function setBrewhops8type($brewhops8type)
+    public function setHops8type($brewhops8type)
     {
         $this->brewhops8type = $brewhops8type;
     
@@ -4832,7 +4832,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8type()
+    public function getHops8type()
     {
         return $this->brewhops8type;
     }
@@ -4843,7 +4843,7 @@ class Recipes
      * @param string $brewhops9type
      * @return Recipes
      */
-    public function setBrewhops9type($brewhops9type)
+    public function setHops9type($brewhops9type)
     {
         $this->brewhops9type = $brewhops9type;
     
@@ -4855,7 +4855,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9type()
+    public function getHops9type()
     {
         return $this->brewhops9type;
     }
@@ -4866,7 +4866,7 @@ class Recipes
      * @param string $brewhops1form
      * @return Recipes
      */
-    public function setBrewhops1form($brewhops1form)
+    public function setHops1form($brewhops1form)
     {
         $this->brewhops1form = $brewhops1form;
     
@@ -4878,7 +4878,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops1form()
+    public function getHops1form()
     {
         return $this->brewhops1form;
     }
@@ -4889,7 +4889,7 @@ class Recipes
      * @param string $brewhops2form
      * @return Recipes
      */
-    public function setBrewhops2form($brewhops2form)
+    public function setHops2form($brewhops2form)
     {
         $this->brewhops2form = $brewhops2form;
     
@@ -4901,7 +4901,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops2form()
+    public function getHops2form()
     {
         return $this->brewhops2form;
     }
@@ -4912,7 +4912,7 @@ class Recipes
      * @param string $brewhops3form
      * @return Recipes
      */
-    public function setBrewhops3form($brewhops3form)
+    public function setHops3form($brewhops3form)
     {
         $this->brewhops3form = $brewhops3form;
     
@@ -4924,7 +4924,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops3form()
+    public function getHops3form()
     {
         return $this->brewhops3form;
     }
@@ -4935,7 +4935,7 @@ class Recipes
      * @param string $brewhops4form
      * @return Recipes
      */
-    public function setBrewhops4form($brewhops4form)
+    public function setHops4form($brewhops4form)
     {
         $this->brewhops4form = $brewhops4form;
     
@@ -4947,7 +4947,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops4form()
+    public function getHops4form()
     {
         return $this->brewhops4form;
     }
@@ -4958,7 +4958,7 @@ class Recipes
      * @param string $brewhops5form
      * @return Recipes
      */
-    public function setBrewhops5form($brewhops5form)
+    public function setHops5form($brewhops5form)
     {
         $this->brewhops5form = $brewhops5form;
     
@@ -4970,7 +4970,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops5form()
+    public function getHops5form()
     {
         return $this->brewhops5form;
     }
@@ -4981,7 +4981,7 @@ class Recipes
      * @param string $brewhops6form
      * @return Recipes
      */
-    public function setBrewhops6form($brewhops6form)
+    public function setHops6form($brewhops6form)
     {
         $this->brewhops6form = $brewhops6form;
     
@@ -4993,7 +4993,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops6form()
+    public function getHops6form()
     {
         return $this->brewhops6form;
     }
@@ -5004,7 +5004,7 @@ class Recipes
      * @param string $brewhops7form
      * @return Recipes
      */
-    public function setBrewhops7form($brewhops7form)
+    public function setHops7form($brewhops7form)
     {
         $this->brewhops7form = $brewhops7form;
     
@@ -5016,7 +5016,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops7form()
+    public function getHops7form()
     {
         return $this->brewhops7form;
     }
@@ -5027,7 +5027,7 @@ class Recipes
      * @param string $brewhops8form
      * @return Recipes
      */
-    public function setBrewhops8form($brewhops8form)
+    public function setHops8form($brewhops8form)
     {
         $this->brewhops8form = $brewhops8form;
     
@@ -5039,7 +5039,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops8form()
+    public function getHops8form()
     {
         return $this->brewhops8form;
     }
@@ -5050,7 +5050,7 @@ class Recipes
      * @param string $brewhops9form
      * @return Recipes
      */
-    public function setBrewhops9form($brewhops9form)
+    public function setHops9form($brewhops9form)
     {
         $this->brewhops9form = $brewhops9form;
     
@@ -5062,7 +5062,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops9form()
+    public function getHops9form()
     {
         return $this->brewhops9form;
     }
@@ -5073,7 +5073,7 @@ class Recipes
      * @param string $brewhops10
      * @return Recipes
      */
-    public function setBrewhops10($brewhops10)
+    public function setHops10($brewhops10)
     {
         $this->brewhops10 = $brewhops10;
     
@@ -5085,7 +5085,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10()
+    public function getHops10()
     {
         return $this->brewhops10;
     }
@@ -5096,7 +5096,7 @@ class Recipes
      * @param string $brewhops10weight
      * @return Recipes
      */
-    public function setBrewhops10weight($brewhops10weight)
+    public function setHops10weight($brewhops10weight)
     {
         $this->brewhops10weight = $brewhops10weight;
     
@@ -5108,7 +5108,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10weight()
+    public function getHops10weight()
     {
         return $this->brewhops10weight;
     }
@@ -5119,7 +5119,7 @@ class Recipes
      * @param string $brewhops10ibu
      * @return Recipes
      */
-    public function setBrewhops10ibu($brewhops10ibu)
+    public function setHops10ibu($brewhops10ibu)
     {
         $this->brewhops10ibu = $brewhops10ibu;
     
@@ -5131,7 +5131,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10ibu()
+    public function getHops10ibu()
     {
         return $this->brewhops10ibu;
     }
@@ -5142,7 +5142,7 @@ class Recipes
      * @param string $brewhops10time
      * @return Recipes
      */
-    public function setBrewhops10time($brewhops10time)
+    public function setHops10time($brewhops10time)
     {
         $this->brewhops10time = $brewhops10time;
     
@@ -5154,7 +5154,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10time()
+    public function getHops10time()
     {
         return $this->brewhops10time;
     }
@@ -5165,7 +5165,7 @@ class Recipes
      * @param string $brewhops10use
      * @return Recipes
      */
-    public function setBrewhops10use($brewhops10use)
+    public function setHops10use($brewhops10use)
     {
         $this->brewhops10use = $brewhops10use;
     
@@ -5177,7 +5177,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10use()
+    public function getHops10use()
     {
         return $this->brewhops10use;
     }
@@ -5188,7 +5188,7 @@ class Recipes
      * @param string $brewhops10type
      * @return Recipes
      */
-    public function setBrewhops10type($brewhops10type)
+    public function setHops10type($brewhops10type)
     {
         $this->brewhops10type = $brewhops10type;
     
@@ -5200,7 +5200,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10type()
+    public function getHops10type()
     {
         return $this->brewhops10type;
     }
@@ -5211,7 +5211,7 @@ class Recipes
      * @param string $brewhops10form
      * @return Recipes
      */
-    public function setBrewhops10form($brewhops10form)
+    public function setHops10form($brewhops10form)
     {
         $this->brewhops10form = $brewhops10form;
     
@@ -5223,7 +5223,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops10form()
+    public function getHops10form()
     {
         return $this->brewhops10form;
     }
@@ -5234,7 +5234,7 @@ class Recipes
      * @param string $brewhops11
      * @return Recipes
      */
-    public function setBrewhops11($brewhops11)
+    public function setHops11($brewhops11)
     {
         $this->brewhops11 = $brewhops11;
     
@@ -5246,7 +5246,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11()
+    public function getHops11()
     {
         return $this->brewhops11;
     }
@@ -5257,7 +5257,7 @@ class Recipes
      * @param string $brewhops11weight
      * @return Recipes
      */
-    public function setBrewhops11weight($brewhops11weight)
+    public function setHops11weight($brewhops11weight)
     {
         $this->brewhops11weight = $brewhops11weight;
     
@@ -5269,7 +5269,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11weight()
+    public function getHops11weight()
     {
         return $this->brewhops11weight;
     }
@@ -5280,7 +5280,7 @@ class Recipes
      * @param string $brewhops11ibu
      * @return Recipes
      */
-    public function setBrewhops11ibu($brewhops11ibu)
+    public function setHops11ibu($brewhops11ibu)
     {
         $this->brewhops11ibu = $brewhops11ibu;
     
@@ -5292,7 +5292,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11ibu()
+    public function getHops11ibu()
     {
         return $this->brewhops11ibu;
     }
@@ -5303,7 +5303,7 @@ class Recipes
      * @param string $brewhops11time
      * @return Recipes
      */
-    public function setBrewhops11time($brewhops11time)
+    public function setHops11time($brewhops11time)
     {
         $this->brewhops11time = $brewhops11time;
     
@@ -5315,7 +5315,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11time()
+    public function getHops11time()
     {
         return $this->brewhops11time;
     }
@@ -5326,7 +5326,7 @@ class Recipes
      * @param string $brewhops11use
      * @return Recipes
      */
-    public function setBrewhops11use($brewhops11use)
+    public function setHops11use($brewhops11use)
     {
         $this->brewhops11use = $brewhops11use;
     
@@ -5338,7 +5338,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11use()
+    public function getHops11use()
     {
         return $this->brewhops11use;
     }
@@ -5349,7 +5349,7 @@ class Recipes
      * @param string $brewhops11type
      * @return Recipes
      */
-    public function setBrewhops11type($brewhops11type)
+    public function setHops11type($brewhops11type)
     {
         $this->brewhops11type = $brewhops11type;
     
@@ -5361,7 +5361,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11type()
+    public function getHops11type()
     {
         return $this->brewhops11type;
     }
@@ -5372,7 +5372,7 @@ class Recipes
      * @param string $brewhops11form
      * @return Recipes
      */
-    public function setBrewhops11form($brewhops11form)
+    public function setHops11form($brewhops11form)
     {
         $this->brewhops11form = $brewhops11form;
     
@@ -5384,7 +5384,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops11form()
+    public function getHops11form()
     {
         return $this->brewhops11form;
     }
@@ -5395,7 +5395,7 @@ class Recipes
      * @param string $brewhops12
      * @return Recipes
      */
-    public function setBrewhops12($brewhops12)
+    public function setHops12($brewhops12)
     {
         $this->brewhops12 = $brewhops12;
     
@@ -5407,7 +5407,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12()
+    public function getHops12()
     {
         return $this->brewhops12;
     }
@@ -5418,7 +5418,7 @@ class Recipes
      * @param string $brewhops12weight
      * @return Recipes
      */
-    public function setBrewhops12weight($brewhops12weight)
+    public function setHops12weight($brewhops12weight)
     {
         $this->brewhops12weight = $brewhops12weight;
     
@@ -5430,7 +5430,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12weight()
+    public function getHops12weight()
     {
         return $this->brewhops12weight;
     }
@@ -5441,7 +5441,7 @@ class Recipes
      * @param string $brewhops12ibu
      * @return Recipes
      */
-    public function setBrewhops12ibu($brewhops12ibu)
+    public function setHops12ibu($brewhops12ibu)
     {
         $this->brewhops12ibu = $brewhops12ibu;
     
@@ -5453,7 +5453,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12ibu()
+    public function getHops12ibu()
     {
         return $this->brewhops12ibu;
     }
@@ -5464,7 +5464,7 @@ class Recipes
      * @param string $brewhops12time
      * @return Recipes
      */
-    public function setBrewhops12time($brewhops12time)
+    public function setHops12time($brewhops12time)
     {
         $this->brewhops12time = $brewhops12time;
     
@@ -5476,7 +5476,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12time()
+    public function getHops12time()
     {
         return $this->brewhops12time;
     }
@@ -5487,7 +5487,7 @@ class Recipes
      * @param string $brewhops12use
      * @return Recipes
      */
-    public function setBrewhops12use($brewhops12use)
+    public function setHops12use($brewhops12use)
     {
         $this->brewhops12use = $brewhops12use;
     
@@ -5499,7 +5499,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12use()
+    public function getHops12use()
     {
         return $this->brewhops12use;
     }
@@ -5510,7 +5510,7 @@ class Recipes
      * @param string $brewhops12type
      * @return Recipes
      */
-    public function setBrewhops12type($brewhops12type)
+    public function setHops12type($brewhops12type)
     {
         $this->brewhops12type = $brewhops12type;
     
@@ -5522,7 +5522,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12type()
+    public function getHops12type()
     {
         return $this->brewhops12type;
     }
@@ -5533,7 +5533,7 @@ class Recipes
      * @param string $brewhops12form
      * @return Recipes
      */
-    public function setBrewhops12form($brewhops12form)
+    public function setHops12form($brewhops12form)
     {
         $this->brewhops12form = $brewhops12form;
     
@@ -5545,7 +5545,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops12form()
+    public function getHops12form()
     {
         return $this->brewhops12form;
     }
@@ -5556,7 +5556,7 @@ class Recipes
      * @param string $brewhops13
      * @return Recipes
      */
-    public function setBrewhops13($brewhops13)
+    public function setHops13($brewhops13)
     {
         $this->brewhops13 = $brewhops13;
     
@@ -5568,7 +5568,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13()
+    public function getHops13()
     {
         return $this->brewhops13;
     }
@@ -5579,7 +5579,7 @@ class Recipes
      * @param string $brewhops13weight
      * @return Recipes
      */
-    public function setBrewhops13weight($brewhops13weight)
+    public function setHops13weight($brewhops13weight)
     {
         $this->brewhops13weight = $brewhops13weight;
     
@@ -5591,7 +5591,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13weight()
+    public function getHops13weight()
     {
         return $this->brewhops13weight;
     }
@@ -5602,7 +5602,7 @@ class Recipes
      * @param string $brewhops13ibu
      * @return Recipes
      */
-    public function setBrewhops13ibu($brewhops13ibu)
+    public function setHops13ibu($brewhops13ibu)
     {
         $this->brewhops13ibu = $brewhops13ibu;
     
@@ -5614,7 +5614,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13ibu()
+    public function getHops13ibu()
     {
         return $this->brewhops13ibu;
     }
@@ -5625,7 +5625,7 @@ class Recipes
      * @param string $brewhops13time
      * @return Recipes
      */
-    public function setBrewhops13time($brewhops13time)
+    public function setHops13time($brewhops13time)
     {
         $this->brewhops13time = $brewhops13time;
     
@@ -5637,7 +5637,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13time()
+    public function getHops13time()
     {
         return $this->brewhops13time;
     }
@@ -5648,7 +5648,7 @@ class Recipes
      * @param string $brewhops13use
      * @return Recipes
      */
-    public function setBrewhops13use($brewhops13use)
+    public function setHops13use($brewhops13use)
     {
         $this->brewhops13use = $brewhops13use;
     
@@ -5660,7 +5660,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13use()
+    public function getHops13use()
     {
         return $this->brewhops13use;
     }
@@ -5671,7 +5671,7 @@ class Recipes
      * @param string $brewhops13type
      * @return Recipes
      */
-    public function setBrewhops13type($brewhops13type)
+    public function setHops13type($brewhops13type)
     {
         $this->brewhops13type = $brewhops13type;
     
@@ -5683,7 +5683,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13type()
+    public function getHops13type()
     {
         return $this->brewhops13type;
     }
@@ -5694,7 +5694,7 @@ class Recipes
      * @param string $brewhops13form
      * @return Recipes
      */
-    public function setBrewhops13form($brewhops13form)
+    public function setHops13form($brewhops13form)
     {
         $this->brewhops13form = $brewhops13form;
     
@@ -5706,7 +5706,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops13form()
+    public function getHops13form()
     {
         return $this->brewhops13form;
     }
@@ -5717,7 +5717,7 @@ class Recipes
      * @param string $brewhops14
      * @return Recipes
      */
-    public function setBrewhops14($brewhops14)
+    public function setHops14($brewhops14)
     {
         $this->brewhops14 = $brewhops14;
     
@@ -5729,7 +5729,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14()
+    public function getHops14()
     {
         return $this->brewhops14;
     }
@@ -5740,7 +5740,7 @@ class Recipes
      * @param string $brewhops14weight
      * @return Recipes
      */
-    public function setBrewhops14weight($brewhops14weight)
+    public function setHops14weight($brewhops14weight)
     {
         $this->brewhops14weight = $brewhops14weight;
     
@@ -5752,7 +5752,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14weight()
+    public function getHops14weight()
     {
         return $this->brewhops14weight;
     }
@@ -5763,7 +5763,7 @@ class Recipes
      * @param string $brewhops14ibu
      * @return Recipes
      */
-    public function setBrewhops14ibu($brewhops14ibu)
+    public function setHops14ibu($brewhops14ibu)
     {
         $this->brewhops14ibu = $brewhops14ibu;
     
@@ -5775,7 +5775,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14ibu()
+    public function getHops14ibu()
     {
         return $this->brewhops14ibu;
     }
@@ -5786,7 +5786,7 @@ class Recipes
      * @param string $brewhops14time
      * @return Recipes
      */
-    public function setBrewhops14time($brewhops14time)
+    public function setHops14time($brewhops14time)
     {
         $this->brewhops14time = $brewhops14time;
     
@@ -5798,7 +5798,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14time()
+    public function getHops14time()
     {
         return $this->brewhops14time;
     }
@@ -5809,7 +5809,7 @@ class Recipes
      * @param string $brewhops14use
      * @return Recipes
      */
-    public function setBrewhops14use($brewhops14use)
+    public function setHops14use($brewhops14use)
     {
         $this->brewhops14use = $brewhops14use;
     
@@ -5821,7 +5821,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14use()
+    public function getHops14use()
     {
         return $this->brewhops14use;
     }
@@ -5832,7 +5832,7 @@ class Recipes
      * @param string $brewhops14type
      * @return Recipes
      */
-    public function setBrewhops14type($brewhops14type)
+    public function setHops14type($brewhops14type)
     {
         $this->brewhops14type = $brewhops14type;
     
@@ -5844,7 +5844,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14type()
+    public function getHops14type()
     {
         return $this->brewhops14type;
     }
@@ -5855,7 +5855,7 @@ class Recipes
      * @param string $brewhops14form
      * @return Recipes
      */
-    public function setBrewhops14form($brewhops14form)
+    public function setHops14form($brewhops14form)
     {
         $this->brewhops14form = $brewhops14form;
     
@@ -5867,7 +5867,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops14form()
+    public function getHops14form()
     {
         return $this->brewhops14form;
     }
@@ -5878,7 +5878,7 @@ class Recipes
      * @param string $brewhops15
      * @return Recipes
      */
-    public function setBrewhops15($brewhops15)
+    public function setHops15($brewhops15)
     {
         $this->brewhops15 = $brewhops15;
     
@@ -5890,7 +5890,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15()
+    public function getHops15()
     {
         return $this->brewhops15;
     }
@@ -5901,7 +5901,7 @@ class Recipes
      * @param string $brewhops15weight
      * @return Recipes
      */
-    public function setBrewhops15weight($brewhops15weight)
+    public function setHops15weight($brewhops15weight)
     {
         $this->brewhops15weight = $brewhops15weight;
     
@@ -5913,7 +5913,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15weight()
+    public function getHops15weight()
     {
         return $this->brewhops15weight;
     }
@@ -5924,7 +5924,7 @@ class Recipes
      * @param string $brewhops15ibu
      * @return Recipes
      */
-    public function setBrewhops15ibu($brewhops15ibu)
+    public function setHops15ibu($brewhops15ibu)
     {
         $this->brewhops15ibu = $brewhops15ibu;
     
@@ -5936,7 +5936,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15ibu()
+    public function getHops15ibu()
     {
         return $this->brewhops15ibu;
     }
@@ -5947,7 +5947,7 @@ class Recipes
      * @param string $brewhops15time
      * @return Recipes
      */
-    public function setBrewhops15time($brewhops15time)
+    public function setHops15time($brewhops15time)
     {
         $this->brewhops15time = $brewhops15time;
     
@@ -5959,7 +5959,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15time()
+    public function getHops15time()
     {
         return $this->brewhops15time;
     }
@@ -5970,7 +5970,7 @@ class Recipes
      * @param string $brewhops15use
      * @return Recipes
      */
-    public function setBrewhops15use($brewhops15use)
+    public function setHops15use($brewhops15use)
     {
         $this->brewhops15use = $brewhops15use;
     
@@ -5982,7 +5982,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15use()
+    public function getHops15use()
     {
         return $this->brewhops15use;
     }
@@ -5993,7 +5993,7 @@ class Recipes
      * @param string $brewhops15type
      * @return Recipes
      */
-    public function setBrewhops15type($brewhops15type)
+    public function setHops15type($brewhops15type)
     {
         $this->brewhops15type = $brewhops15type;
     
@@ -6005,7 +6005,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15type()
+    public function getHops15type()
     {
         return $this->brewhops15type;
     }
@@ -6016,7 +6016,7 @@ class Recipes
      * @param string $brewhops15form
      * @return Recipes
      */
-    public function setBrewhops15form($brewhops15form)
+    public function setHops15form($brewhops15form)
     {
         $this->brewhops15form = $brewhops15form;
     
@@ -6028,7 +6028,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewhops15form()
+    public function getHops15form()
     {
         return $this->brewhops15form;
     }
@@ -6039,7 +6039,7 @@ class Recipes
      * @param string $brewyeast
      * @return Recipes
      */
-    public function setBrewyeast($brewyeast)
+    public function setYeast($brewyeast)
     {
         $this->brewyeast = $brewyeast;
     
@@ -6051,7 +6051,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewyeast()
+    public function getYeast()
     {
         return $this->brewyeast;
     }
@@ -6062,7 +6062,7 @@ class Recipes
      * @param string $brewyeastman
      * @return Recipes
      */
-    public function setBrewyeastman($brewyeastman)
+    public function setYeastMan($brewyeastman)
     {
         $this->brewyeastman = $brewyeastman;
     
@@ -6074,7 +6074,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewyeastman()
+    public function getYeastMan()
     {
         return $this->brewyeastman;
     }
@@ -6085,7 +6085,7 @@ class Recipes
      * @param string $brewyeastform
      * @return Recipes
      */
-    public function setBrewyeastform($brewyeastform)
+    public function setYeastForm($brewyeastform)
     {
         $this->brewyeastform = $brewyeastform;
     
@@ -6097,7 +6097,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewyeastform()
+    public function getYeastForm()
     {
         return $this->brewyeastform;
     }
@@ -6108,7 +6108,7 @@ class Recipes
      * @param string $brewyeasttype
      * @return Recipes
      */
-    public function setBrewyeasttype($brewyeasttype)
+    public function setYeastType($brewyeasttype)
     {
         $this->brewyeasttype = $brewyeasttype;
     
@@ -6120,7 +6120,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewyeasttype()
+    public function getYeastType()
     {
         return $this->brewyeasttype;
     }
@@ -6131,7 +6131,7 @@ class Recipes
      * @param string $brewyeastamount
      * @return Recipes
      */
-    public function setBrewyeastamount($brewyeastamount)
+    public function setYeastAmount($brewyeastamount)
     {
         $this->brewyeastamount = $brewyeastamount;
     
@@ -6143,7 +6143,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewyeastamount()
+    public function getYeastAmount()
     {
         return $this->brewyeastamount;
     }
@@ -6154,7 +6154,7 @@ class Recipes
      * @param string $brewlabelimage
      * @return Recipes
      */
-    public function setBrewlabelimage($brewlabelimage)
+    public function setLabelImage($brewlabelimage)
     {
         $this->brewlabelimage = $brewlabelimage;
     
@@ -6166,7 +6166,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlabelimage()
+    public function getLabelImage()
     {
         return $this->brewlabelimage;
     }
@@ -6177,7 +6177,7 @@ class Recipes
      * @param string $brewog
      * @return Recipes
      */
-    public function setBrewog($brewog)
+    public function setOG($brewog)
     {
         $this->brewog = $brewog;
     
@@ -6189,7 +6189,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewog()
+    public function getOG()
     {
         return $this->brewog;
     }
@@ -6200,7 +6200,7 @@ class Recipes
      * @param string $brewfg
      * @return Recipes
      */
-    public function setBrewfg($brewfg)
+    public function setFG($brewfg)
     {
         $this->brewfg = $brewfg;
     
@@ -6212,7 +6212,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewfg()
+    public function getFG()
     {
         return $this->brewfg;
     }
@@ -6223,7 +6223,7 @@ class Recipes
      * @param string $brewprocedure
      * @return Recipes
      */
-    public function setBrewprocedure($brewprocedure)
+    public function setProcedure($brewprocedure)
     {
         $this->brewprocedure = $brewprocedure;
     
@@ -6235,7 +6235,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewprocedure()
+    public function getProcedure()
     {
         return $this->brewprocedure;
     }
@@ -6246,7 +6246,7 @@ class Recipes
      * @param string $brewprimary
      * @return Recipes
      */
-    public function setBrewprimary($brewprimary)
+    public function setPrimaryDays($brewprimary)
     {
         $this->brewprimary = $brewprimary;
     
@@ -6258,7 +6258,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewprimary()
+    public function getPrimaryDays()
     {
         return $this->brewprimary;
     }
@@ -6269,7 +6269,7 @@ class Recipes
      * @param string $brewprimarytemp
      * @return Recipes
      */
-    public function setBrewprimarytemp($brewprimarytemp)
+    public function setPrimaryTemp($brewprimarytemp)
     {
         $this->brewprimarytemp = $brewprimarytemp;
     
@@ -6281,7 +6281,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewprimarytemp()
+    public function getPrimaryTemp()
     {
         return $this->brewprimarytemp;
     }
@@ -6292,7 +6292,7 @@ class Recipes
      * @param string $brewsecondary
      * @return Recipes
      */
-    public function setBrewsecondary($brewsecondary)
+    public function setBrewsecondaryDays($brewsecondary)
     {
         $this->brewsecondary = $brewsecondary;
     
@@ -6304,7 +6304,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewsecondary()
+    public function getSecondaryDays()
     {
         return $this->brewsecondary;
     }
@@ -6315,7 +6315,7 @@ class Recipes
      * @param string $brewsecondarytemp
      * @return Recipes
      */
-    public function setBrewsecondarytemp($brewsecondarytemp)
+    public function setSecondaryTemp($brewsecondarytemp)
     {
         $this->brewsecondarytemp = $brewsecondarytemp;
     
@@ -6327,7 +6327,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewsecondarytemp()
+    public function getSecondaryTemp()
     {
         return $this->brewsecondarytemp;
     }
@@ -6338,7 +6338,7 @@ class Recipes
      * @param string $brewtertiary
      * @return Recipes
      */
-    public function setBrewtertiary($brewtertiary)
+    public function setTertiaryDays($brewtertiary)
     {
         $this->brewtertiary = $brewtertiary;
     
@@ -6350,7 +6350,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewtertiary()
+    public function getTertiaryDays()
     {
         return $this->brewtertiary;
     }
@@ -6361,7 +6361,7 @@ class Recipes
      * @param string $brewtertiarytemp
      * @return Recipes
      */
-    public function setBrewtertiarytemp($brewtertiarytemp)
+    public function setTertiaryTemp($brewtertiarytemp)
     {
         $this->brewtertiarytemp = $brewtertiarytemp;
     
@@ -6373,7 +6373,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewtertiarytemp()
+    public function getTertiaryTemp()
     {
         return $this->brewtertiarytemp;
     }
@@ -6384,7 +6384,7 @@ class Recipes
      * @param string $brewlager
      * @return Recipes
      */
-    public function setBrewlager($brewlager)
+    public function setLagerDays($brewlager)
     {
         $this->brewlager = $brewlager;
     
@@ -6396,7 +6396,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlager()
+    public function getLagerDays()
     {
         return $this->brewlager;
     }
@@ -6407,7 +6407,7 @@ class Recipes
      * @param string $brewlagertemp
      * @return Recipes
      */
-    public function setBrewlagertemp($brewlagertemp)
+    public function setLagerTemp($brewlagertemp)
     {
         $this->brewlagertemp = $brewlagertemp;
     
@@ -6419,7 +6419,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewlagertemp()
+    public function getLagerTemp()
     {
         return $this->brewlagertemp;
     }
@@ -6430,7 +6430,7 @@ class Recipes
      * @param string $brewage
      * @return Recipes
      */
-    public function setBrewage($brewage)
+    public function setAgeDays($brewage)
     {
         $this->brewage = $brewage;
     
@@ -6442,7 +6442,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewage()
+    public function getAgeDays()
     {
         return $this->brewage;
     }
@@ -6453,7 +6453,7 @@ class Recipes
      * @param string $brewagetemp
      * @return Recipes
      */
-    public function setBrewagetemp($brewagetemp)
+    public function setAgeTemp($brewagetemp)
     {
         $this->brewagetemp = $brewagetemp;
     
@@ -6465,7 +6465,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewagetemp()
+    public function getAgeTemp()
     {
         return $this->brewagetemp;
     }
@@ -6476,7 +6476,7 @@ class Recipes
      * @param float $brewbitterness
      * @return Recipes
      */
-    public function setBrewbitterness($brewbitterness)
+    public function setBitterness($brewbitterness)
     {
         $this->brewbitterness = $brewbitterness;
     
@@ -6488,7 +6488,7 @@ class Recipes
      *
      * @return float 
      */
-    public function getBrewbitterness()
+    public function getBitterness()
     {
         return $this->brewbitterness;
     }
@@ -6499,7 +6499,7 @@ class Recipes
      * @param string $brewibuformula
      * @return Recipes
      */
-    public function setBrewibuformula($brewibuformula)
+    public function setIBUFormula($brewibuformula)
     {
         $this->brewibuformula = $brewibuformula;
     
@@ -6511,7 +6511,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewibuformula()
+    public function getIBUFormula()
     {
         return $this->brewibuformula;
     }
@@ -6522,7 +6522,7 @@ class Recipes
      * @param float $brewlovibond
      * @return Recipes
      */
-    public function setBrewlovibond($brewlovibond)
+    public function setLovibond($brewlovibond)
     {
         $this->brewlovibond = $brewlovibond;
     
@@ -6534,7 +6534,7 @@ class Recipes
      *
      * @return float 
      */
-    public function getBrewlovibond()
+    public function getLovibond()
     {
         return $this->brewlovibond;
     }
@@ -6545,7 +6545,7 @@ class Recipes
      * @param string $brewcolorformula
      * @return Recipes
      */
-    public function setBrewcolorformula($brewcolorformula)
+    public function setColorFormula($brewcolorformula)
     {
         $this->brewcolorformula = $brewcolorformula;
     
@@ -6557,7 +6557,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewcolorformula()
+    public function getColorFormula()
     {
         return $this->brewcolorformula;
     }
@@ -6568,7 +6568,7 @@ class Recipes
      * @param string $brewbrewerid
      * @return Recipes
      */
-    public function setBrewbrewerid($brewbrewerid)
+    public function setBrewerID($brewbrewerid)
     {
         $this->brewbrewerid = $brewbrewerid;
     
@@ -6580,7 +6580,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewbrewerid()
+    public function getBrewerID()
     {
         return $this->brewbrewerid;
     }
@@ -6591,7 +6591,7 @@ class Recipes
      * @param integer $brewboiltime
      * @return Recipes
      */
-    public function setBrewboiltime($brewboiltime)
+    public function setBoilTime($brewboiltime)
     {
         $this->brewboiltime = $brewboiltime;
     
@@ -6603,7 +6603,7 @@ class Recipes
      *
      * @return integer 
      */
-    public function getBrewboiltime()
+    public function getBoilTime()
     {
         return $this->brewboiltime;
     }
@@ -6614,7 +6614,7 @@ class Recipes
      * @param string $brewfeatured
      * @return Recipes
      */
-    public function setBrewfeatured($brewfeatured)
+    public function setFeatured($brewfeatured)
     {
         $this->brewfeatured = $brewfeatured;
     
@@ -6626,7 +6626,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewfeatured()
+    public function getFeatured()
     {
         return $this->brewfeatured;
     }
@@ -6637,7 +6637,7 @@ class Recipes
      * @param integer $brewmashprofile
      * @return Recipes
      */
-    public function setBrewmashprofile($brewmashprofile)
+    public function setMashProfile($brewmashprofile)
     {
         $this->brewmashprofile = $brewmashprofile;
     
@@ -6649,7 +6649,7 @@ class Recipes
      *
      * @return integer 
      */
-    public function getBrewmashprofile()
+    public function getMashProfile()
     {
         return $this->brewmashprofile;
     }
@@ -6660,7 +6660,7 @@ class Recipes
      * @param integer $brewwaterprofile
      * @return Recipes
      */
-    public function setBrewwaterprofile($brewwaterprofile)
+    public function setWaterProfile($brewwaterprofile)
     {
         $this->brewwaterprofile = $brewwaterprofile;
     
@@ -6672,7 +6672,7 @@ class Recipes
      *
      * @return integer 
      */
-    public function getBrewwaterprofile()
+    public function getWaterProfile()
     {
         return $this->brewwaterprofile;
     }
@@ -6683,7 +6683,7 @@ class Recipes
      * @param integer $brewyeastprofile
      * @return Recipes
      */
-    public function setBrewyeastprofile($brewyeastprofile)
+    public function setYeastProfile($brewyeastprofile)
     {
         $this->brewyeastprofile = $brewyeastprofile;
     
@@ -6695,7 +6695,7 @@ class Recipes
      *
      * @return integer 
      */
-    public function getBrewyeastprofile()
+    public function getYeastProfile()
     {
         return $this->brewyeastprofile;
     }
@@ -6706,7 +6706,7 @@ class Recipes
      * @param string $brewarchive
      * @return Recipes
      */
-    public function setBrewarchive($brewarchive)
+    public function setArchive($brewarchive)
     {
         $this->brewarchive = $brewarchive;
     
@@ -6718,7 +6718,7 @@ class Recipes
      *
      * @return string 
      */
-    public function getBrewarchive()
+    public function getArchive()
     {
         return $this->brewarchive;
     }

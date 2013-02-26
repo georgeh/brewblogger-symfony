@@ -95,7 +95,7 @@ class Extract
      * @param string $extractname
      * @return Extract
      */
-    public function setExtractname($extractname)
+    public function setName($extractname)
     {
         $this->extractname = $extractname;
     
@@ -107,7 +107,7 @@ class Extract
      *
      * @return string 
      */
-    public function getExtractname()
+    public function getName()
     {
         return $this->extractname;
     }
@@ -118,7 +118,7 @@ class Extract
      * @param string $extractinfo
      * @return Extract
      */
-    public function setExtractinfo($extractinfo)
+    public function setInfo($extractinfo)
     {
         $this->extractinfo = $extractinfo;
     
@@ -130,7 +130,7 @@ class Extract
      *
      * @return string 
      */
-    public function getExtractinfo()
+    public function getInfo()
     {
         return $this->extractinfo;
     }
@@ -141,7 +141,7 @@ class Extract
      * @param float $extractppg
      * @return Extract
      */
-    public function setExtractppg($extractppg)
+    public function setPPG($extractppg)
     {
         $this->extractppg = $extractppg;
     
@@ -153,7 +153,7 @@ class Extract
      *
      * @return float 
      */
-    public function getExtractppg()
+    public function getPPG()
     {
         return $this->extractppg;
     }
@@ -164,7 +164,7 @@ class Extract
      * @param string $extractorigin
      * @return Extract
      */
-    public function setExtractorigin($extractorigin)
+    public function setOrigin($extractorigin)
     {
         $this->extractorigin = $extractorigin;
     
@@ -176,7 +176,7 @@ class Extract
      *
      * @return string 
      */
-    public function getExtractorigin()
+    public function getOrigin()
     {
         return $this->extractorigin;
     }
@@ -187,7 +187,7 @@ class Extract
      * @param string $extractsupplier
      * @return Extract
      */
-    public function setExtractsupplier($extractsupplier)
+    public function setSupplier($extractsupplier)
     {
         $this->extractsupplier = $extractsupplier;
     
@@ -199,7 +199,7 @@ class Extract
      *
      * @return string 
      */
-    public function getExtractsupplier()
+    public function getSupplier()
     {
         return $this->extractsupplier;
     }
@@ -210,7 +210,7 @@ class Extract
      * @param boolean $extractlme
      * @return Extract
      */
-    public function setExtractlme($extractlme)
+    public function setLME($extractlme)
     {
         $this->extractlme = $extractlme;
     
@@ -222,7 +222,7 @@ class Extract
      *
      * @return boolean 
      */
-    public function getExtractlme()
+    public function getLME()
     {
         return $this->extractlme;
     }
@@ -233,7 +233,7 @@ class Extract
      * @param float $extractlovibondlow
      * @return Extract
      */
-    public function setExtractlovibondlow($extractlovibondlow)
+    public function setLovibondLow($extractlovibondlow)
     {
         $this->extractlovibondlow = $extractlovibondlow;
     
@@ -245,7 +245,7 @@ class Extract
      *
      * @return float 
      */
-    public function getExtractlovibondlow()
+    public function getLovibondLow()
     {
         return $this->extractlovibondlow;
     }
@@ -256,7 +256,7 @@ class Extract
      * @param float $extractlovibondhigh
      * @return Extract
      */
-    public function setExtractlovibondhigh($extractlovibondhigh)
+    public function setLovibondHigh($extractlovibondhigh)
     {
         $this->extractlovibondhigh = $extractlovibondhigh;
     
@@ -268,7 +268,7 @@ class Extract
      *
      * @return float 
      */
-    public function getExtractlovibondhigh()
+    public function getLovibondHigh()
     {
         return $this->extractlovibondhigh;
     }

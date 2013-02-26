@@ -88,7 +88,7 @@ class Malt
      * @param string $maltname
      * @return Malt
      */
-    public function setMaltname($maltname)
+    public function setName($maltname)
     {
         $this->maltname = $maltname;
     
@@ -100,7 +100,7 @@ class Malt
      *
      * @return string 
      */
-    public function getMaltname()
+    public function getName()
     {
         return $this->maltname;
     }
@@ -111,7 +111,7 @@ class Malt
      * @param string $maltinfo
      * @return Malt
      */
-    public function setMaltinfo($maltinfo)
+    public function setInfo($maltinfo)
     {
         $this->maltinfo = $maltinfo;
     
@@ -123,7 +123,7 @@ class Malt
      *
      * @return string 
      */
-    public function getMaltinfo()
+    public function getInfo()
     {
         return $this->maltinfo;
     }
@@ -134,7 +134,7 @@ class Malt
      * @param float $maltppg
      * @return Malt
      */
-    public function setMaltppg($maltppg)
+    public function setPPG($maltppg)
     {
         $this->maltppg = $maltppg;
     
@@ -146,7 +146,7 @@ class Malt
      *
      * @return float 
      */
-    public function getMaltppg()
+    public function getPPG()
     {
         return $this->maltppg;
     }
@@ -157,7 +157,7 @@ class Malt
      * @param string $maltorigin
      * @return Malt
      */
-    public function setMaltorigin($maltorigin)
+    public function setOrigin($maltorigin)
     {
         $this->maltorigin = $maltorigin;
     
@@ -169,7 +169,7 @@ class Malt
      *
      * @return string 
      */
-    public function getMaltorigin()
+    public function getOrigin()
     {
         return $this->maltorigin;
     }
@@ -180,7 +180,7 @@ class Malt
      * @param string $maltsupplier
      * @return Malt
      */
-    public function setMaltsupplier($maltsupplier)
+    public function setSupplier($maltsupplier)
     {
         $this->maltsupplier = $maltsupplier;
     
@@ -192,7 +192,7 @@ class Malt
      *
      * @return string 
      */
-    public function getMaltsupplier()
+    public function getSupplier()
     {
         return $this->maltsupplier;
     }
@@ -203,7 +203,7 @@ class Malt
      * @param float $maltlovibondlow
      * @return Malt
      */
-    public function setMaltlovibondlow($maltlovibondlow)
+    public function setLovibondLow($maltlovibondlow)
     {
         $this->maltlovibondlow = $maltlovibondlow;
     
@@ -215,7 +215,7 @@ class Malt
      *
      * @return float 
      */
-    public function getMaltlovibondlow()
+    public function getLovibondLow()
     {
         return $this->maltlovibondlow;
     }
@@ -226,7 +226,7 @@ class Malt
      * @param float $maltlovibondhigh
      * @return Malt
      */
-    public function setMaltlovibondhigh($maltlovibondhigh)
+    public function setLovibondHigh($maltlovibondhigh)
     {
         $this->maltlovibondhigh = $maltlovibondhigh;
     
@@ -238,7 +238,7 @@ class Malt
      *
      * @return float 
      */
-    public function getMaltlovibondhigh()
+    public function getLovibondHigh()
     {
         return $this->maltlovibondhigh;
     }

@@ -88,7 +88,7 @@ class Adjuncts
      * @param string $adjunctname
      * @return Adjuncts
      */
-    public function setAdjunctname($adjunctname)
+    public function setName($adjunctname)
     {
         $this->adjunctname = $adjunctname;
     
@@ -100,7 +100,7 @@ class Adjuncts
      *
      * @return string 
      */
-    public function getAdjunctname()
+    public function getName()
     {
         return $this->adjunctname;
     }
@@ -111,7 +111,7 @@ class Adjuncts
      * @param string $adjunctorigin
      * @return Adjuncts
      */
-    public function setAdjunctorigin($adjunctorigin)
+    public function setOrigin($adjunctorigin)
     {
         $this->adjunctorigin = $adjunctorigin;
     
@@ -123,7 +123,7 @@ class Adjuncts
      *
      * @return string 
      */
-    public function getAdjunctorigin()
+    public function getOrigin()
     {
         return $this->adjunctorigin;
     }
@@ -134,7 +134,7 @@ class Adjuncts
      * @param string $adjunctsupplier
      * @return Adjuncts
      */
-    public function setAdjunctsupplier($adjunctsupplier)
+    public function setSupplier($adjunctsupplier)
     {
         $this->adjunctsupplier = $adjunctsupplier;
     
@@ -146,7 +146,7 @@ class Adjuncts
      *
      * @return string 
      */
-    public function getAdjunctsupplier()
+    public function getSupplier()
     {
         return $this->adjunctsupplier;
     }
@@ -157,7 +157,7 @@ class Adjuncts
      * @param string $adjunctinfo
      * @return Adjuncts
      */
-    public function setAdjunctinfo($adjunctinfo)
+    public function setInfo($adjunctinfo)
     {
         $this->adjunctinfo = $adjunctinfo;
     
@@ -169,7 +169,7 @@ class Adjuncts
      *
      * @return string 
      */
-    public function getAdjunctinfo()
+    public function getInfo()
     {
         return $this->adjunctinfo;
     }
@@ -180,7 +180,7 @@ class Adjuncts
      * @param float $adjunctppg
      * @return Adjuncts
      */
-    public function setAdjunctppg($adjunctppg)
+    public function setPPG($adjunctppg)
     {
         $this->adjunctppg = $adjunctppg;
     
@@ -192,7 +192,7 @@ class Adjuncts
      *
      * @return float 
      */
-    public function getAdjunctppg()
+    public function getPPG()
     {
         return $this->adjunctppg;
     }
@@ -203,7 +203,7 @@ class Adjuncts
      * @param float $adjunctlovibondlow
      * @return Adjuncts
      */
-    public function setAdjunctlovibondlow($adjunctlovibondlow)
+    public function setLovibondLow($adjunctlovibondlow)
     {
         $this->adjunctlovibondlow = $adjunctlovibondlow;
     
@@ -215,7 +215,7 @@ class Adjuncts
      *
      * @return float 
      */
-    public function getAdjunctlovibondlow()
+    public function getLovibondLow()
     {
         return $this->adjunctlovibondlow;
     }
@@ -226,7 +226,7 @@ class Adjuncts
      * @param float $adjunctlovibondhigh
      * @return Adjuncts
      */
-    public function setAdjunctlovibondhigh($adjunctlovibondhigh)
+    public function setLovibondHigh($adjunctlovibondhigh)
     {
         $this->adjunctlovibondhigh = $adjunctlovibondhigh;
     
@@ -238,7 +238,7 @@ class Adjuncts
      *
      * @return float 
      */
-    public function getAdjunctlovibondhigh()
+    public function getLovibondHigh()
     {
         return $this->adjunctlovibondhigh;
     }

@@ -101,7 +101,7 @@ class MashProfiles
      * @param string $mashprofilename
      * @return MashProfiles
      */
-    public function setMashprofilename($mashprofilename)
+    public function setName($mashprofilename)
     {
         $this->mashprofilename = $mashprofilename;
     
@@ -113,7 +113,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashprofilename()
+    public function getName()
     {
         return $this->mashprofilename;
     }
@@ -124,7 +124,7 @@ class MashProfiles
      * @param string $mashgraintemp
      * @return MashProfiles
      */
-    public function setMashgraintemp($mashgraintemp)
+    public function setGrainTemp($mashgraintemp)
     {
         $this->mashgraintemp = $mashgraintemp;
     
@@ -136,7 +136,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashgraintemp()
+    public function getGrainTemp()
     {
         return $this->mashgraintemp;
     }
@@ -147,7 +147,7 @@ class MashProfiles
      * @param string $mashtuntemp
      * @return MashProfiles
      */
-    public function setMashtuntemp($mashtuntemp)
+    public function setMashTunTemp($mashtuntemp)
     {
         $this->mashtuntemp = $mashtuntemp;
     
@@ -159,7 +159,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashtuntemp()
+    public function getMashTunTemp()
     {
         return $this->mashtuntemp;
     }
@@ -170,7 +170,7 @@ class MashProfiles
      * @param string $mashspargetemp
      * @return MashProfiles
      */
-    public function setMashspargetemp($mashspargetemp)
+    public function setSpargeTemp($mashspargetemp)
     {
         $this->mashspargetemp = $mashspargetemp;
     
@@ -182,7 +182,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashspargetemp()
+    public function getSpargeTemp()
     {
         return $this->mashspargetemp;
     }
@@ -193,7 +193,7 @@ class MashProfiles
      * @param string $mashph
      * @return MashProfiles
      */
-    public function setMashph($mashph)
+    public function setPH($mashph)
     {
         $this->mashph = $mashph;
     
@@ -205,7 +205,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashph()
+    public function getPH()
     {
         return $this->mashph;
     }
@@ -216,7 +216,7 @@ class MashProfiles
      * @param string $mashequipadj
      * @return MashProfiles
      */
-    public function setMashequipadj($mashequipadj)
+    public function setEquipAdj($mashequipadj)
     {
         $this->mashequipadj = $mashequipadj;
     
@@ -228,7 +228,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashequipadj()
+    public function getEquipAdj()
     {
         return $this->mashequipadj;
     }
@@ -239,7 +239,7 @@ class MashProfiles
      * @param string $mashnotes
      * @return MashProfiles
      */
-    public function setMashnotes($mashnotes)
+    public function setNotes($mashnotes)
     {
         $this->mashnotes = $mashnotes;
     
@@ -251,7 +251,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashnotes()
+    public function getNotes()
     {
         return $this->mashnotes;
     }
@@ -262,7 +262,7 @@ class MashProfiles
      * @param string $mashbrewerid
      * @return MashProfiles
      */
-    public function setMashbrewerid($mashbrewerid)
+    public function setBrewerID($mashbrewerid)
     {
         $this->mashbrewerid = $mashbrewerid;
     
@@ -274,7 +274,7 @@ class MashProfiles
      *
      * @return string 
      */
-    public function getMashbrewerid()
+    public function getBrewerID()
     {
         return $this->mashbrewerid;
     }

@@ -95,7 +95,7 @@ class Awards
      * @param string $awardbrewid
      * @return Awards
      */
-    public function setAwardbrewid($awardbrewid)
+    public function setBrewID($awardbrewid)
     {
         $this->awardbrewid = $awardbrewid;
     
@@ -107,7 +107,7 @@ class Awards
      *
      * @return string 
      */
-    public function getAwardbrewid()
+    public function getBrewID()
     {
         return $this->awardbrewid;
     }
@@ -118,7 +118,7 @@ class Awards
      * @param string $awardcontest
      * @return Awards
      */
-    public function setAwardcontest($awardcontest)
+    public function setContest($awardcontest)
     {
         $this->awardcontest = $awardcontest;
     
@@ -130,7 +130,7 @@ class Awards
      *
      * @return string 
      */
-    public function getAwardcontest()
+    public function getContest()
     {
         return $this->awardcontest;
     }
@@ -141,7 +141,7 @@ class Awards
      * @param string $awardcontesturl
      * @return Awards
      */
-    public function setAwardcontesturl($awardcontesturl)
+    public function setContestURL($awardcontesturl)
     {
         $this->awardcontesturl = $awardcontesturl;
     
@@ -153,7 +153,7 @@ class Awards
      *
      * @return string 
      */
-    public function getAwardcontesturl()
+    public function getContestURL()
     {
         return $this->awardcontesturl;
     }
@@ -164,7 +164,7 @@ class Awards
      * @param \DateTime $awarddate
      * @return Awards
      */
-    public function setAwarddate($awarddate)
+    public function setDate($awarddate)
     {
         $this->awarddate = $awarddate;
     
@@ -176,7 +176,7 @@ class Awards
      *
      * @return \DateTime 
      */
-    public function getAwarddate()
+    public function getDate()
     {
         return $this->awarddate;
     }
@@ -187,7 +187,7 @@ class Awards
      * @param string $awardstyle
      * @return Awards
      */
-    public function setAwardstyle($awardstyle)
+    public function setStyle($awardstyle)
     {
         $this->awardstyle = $awardstyle;
     
@@ -199,7 +199,7 @@ class Awards
      *
      * @return string 
      */
-    public function getAwardstyle()
+    public function getStyle()
     {
         return $this->awardstyle;
     }
@@ -210,7 +210,7 @@ class Awards
      * @param string $awardplace
      * @return Awards
      */
-    public function setAwardplace($awardplace)
+    public function setPlace($awardplace)
     {
         $this->awardplace = $awardplace;
     
@@ -222,7 +222,7 @@ class Awards
      *
      * @return string 
      */
-    public function getAwardplace()
+    public function getPlace()
     {
         return $this->awardplace;
     }
@@ -233,7 +233,7 @@ class Awards
      * @param string $brewbrewerid
      * @return Awards
      */
-    public function setBrewbrewerid($brewbrewerid)
+    public function setBrewerId($brewbrewerid)
     {
         $this->brewbrewerid = $brewbrewerid;
     
@@ -245,7 +245,7 @@ class Awards
      *
      * @return string 
      */
-    public function getBrewbrewerid()
+    public function getBrewerId()
     {
         return $this->brewbrewerid;
     }
@@ -256,7 +256,7 @@ class Awards
      * @param string $awardbrewname
      * @return Awards
      */
-    public function setAwardbrewname($awardbrewname)
+    public function setBrewName($awardbrewname)
     {
         $this->awardbrewname = $awardbrewname;
     
@@ -268,7 +268,7 @@ class Awards
      *
      * @return string 
      */
-    public function getAwardbrewname()
+    public function getBrewName()
     {
         return $this->awardbrewname;
     }

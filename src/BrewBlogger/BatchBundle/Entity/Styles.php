@@ -151,7 +151,7 @@ class Styles
      * @param string $brewstylenum
      * @return Styles
      */
-    public function setBrewstylenum($brewstylenum)
+    public function setNum($brewstylenum)
     {
         $this->brewstylenum = $brewstylenum;
     
@@ -163,7 +163,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylenum()
+    public function getNum()
     {
         return $this->brewstylenum;
     }
@@ -174,7 +174,7 @@ class Styles
      * @param string $brewstyle
      * @return Styles
      */
-    public function setBrewstyle($brewstyle)
+    public function setName($brewstyle)
     {
         $this->brewstyle = $brewstyle;
     
@@ -186,7 +186,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyle()
+    public function getName()
     {
         return $this->brewstyle;
     }
@@ -197,7 +197,7 @@ class Styles
      * @param string $brewstyleog
      * @return Styles
      */
-    public function setBrewstyleog($brewstyleog)
+    public function setOG($brewstyleog)
     {
         $this->brewstyleog = $brewstyleog;
     
@@ -209,7 +209,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleog()
+    public function getOG()
     {
         return $this->brewstyleog;
     }
@@ -220,7 +220,7 @@ class Styles
      * @param string $brewstyleogmax
      * @return Styles
      */
-    public function setBrewstyleogmax($brewstyleogmax)
+    public function setMaxOG($brewstyleogmax)
     {
         $this->brewstyleogmax = $brewstyleogmax;
     
@@ -232,7 +232,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleogmax()
+    public function getMaxOG()
     {
         return $this->brewstyleogmax;
     }
@@ -243,7 +243,7 @@ class Styles
      * @param string $brewstylefg
      * @return Styles
      */
-    public function setBrewstylefg($brewstylefg)
+    public function setFG($brewstylefg)
     {
         $this->brewstylefg = $brewstylefg;
     
@@ -255,7 +255,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylefg()
+    public function getFG()
     {
         return $this->brewstylefg;
     }
@@ -266,7 +266,7 @@ class Styles
      * @param string $brewstylefgmax
      * @return Styles
      */
-    public function setBrewstylefgmax($brewstylefgmax)
+    public function setMaxFG($brewstylefgmax)
     {
         $this->brewstylefgmax = $brewstylefgmax;
     
@@ -278,7 +278,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylefgmax()
+    public function getMaxFG()
     {
         return $this->brewstylefgmax;
     }
@@ -289,7 +289,7 @@ class Styles
      * @param string $brewstyleabv
      * @return Styles
      */
-    public function setBrewstyleabv($brewstyleabv)
+    public function setABV($brewstyleabv)
     {
         $this->brewstyleabv = $brewstyleabv;
     
@@ -301,7 +301,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleabv()
+    public function getABV()
     {
         return $this->brewstyleabv;
     }
@@ -312,7 +312,7 @@ class Styles
      * @param string $brewstyleabvmax
      * @return Styles
      */
-    public function setBrewstyleabvmax($brewstyleabvmax)
+    public function setMaxABV($brewstyleabvmax)
     {
         $this->brewstyleabvmax = $brewstyleabvmax;
     
@@ -324,7 +324,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleabvmax()
+    public function getMaxABV()
     {
         return $this->brewstyleabvmax;
     }
@@ -335,7 +335,7 @@ class Styles
      * @param string $brewstyleibu
      * @return Styles
      */
-    public function setBrewstyleibu($brewstyleibu)
+    public function setIBU($brewstyleibu)
     {
         $this->brewstyleibu = $brewstyleibu;
     
@@ -347,7 +347,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleibu()
+    public function getIBU()
     {
         return $this->brewstyleibu;
     }
@@ -358,7 +358,7 @@ class Styles
      * @param string $brewstyleibumax
      * @return Styles
      */
-    public function setBrewstyleibumax($brewstyleibumax)
+    public function setMaxIBU($brewstyleibumax)
     {
         $this->brewstyleibumax = $brewstyleibumax;
     
@@ -370,7 +370,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleibumax()
+    public function getMaxIBU()
     {
         return $this->brewstyleibumax;
     }
@@ -381,7 +381,7 @@ class Styles
      * @param string $brewstylesrm
      * @return Styles
      */
-    public function setBrewstylesrm($brewstylesrm)
+    public function setSRM($brewstylesrm)
     {
         $this->brewstylesrm = $brewstylesrm;
     
@@ -393,7 +393,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylesrm()
+    public function getSRM()
     {
         return $this->brewstylesrm;
     }
@@ -404,7 +404,7 @@ class Styles
      * @param string $brewstylesrmmax
      * @return Styles
      */
-    public function setBrewstylesrmmax($brewstylesrmmax)
+    public function setMaxSRM($brewstylesrmmax)
     {
         $this->brewstylesrmmax = $brewstylesrmmax;
     
@@ -416,7 +416,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylesrmmax()
+    public function getMaxSRM()
     {
         return $this->brewstylesrmmax;
     }
@@ -427,7 +427,7 @@ class Styles
      * @param string $brewstyletype
      * @return Styles
      */
-    public function setBrewstyletype($brewstyletype)
+    public function setType($brewstyletype)
     {
         $this->brewstyletype = $brewstyletype;
     
@@ -439,7 +439,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyletype()
+    public function getType()
     {
         return $this->brewstyletype;
     }
@@ -450,7 +450,7 @@ class Styles
      * @param string $brewstyleinfo
      * @return Styles
      */
-    public function setBrewstyleinfo($brewstyleinfo)
+    public function setInfo($brewstyleinfo)
     {
         $this->brewstyleinfo = $brewstyleinfo;
     
@@ -462,7 +462,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstyleinfo()
+    public function getInfo()
     {
         return $this->brewstyleinfo;
     }
@@ -473,7 +473,7 @@ class Styles
      * @param string $brewstylelink
      * @return Styles
      */
-    public function setBrewstylelink($brewstylelink)
+    public function setLink($brewstylelink)
     {
         $this->brewstylelink = $brewstylelink;
     
@@ -485,7 +485,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylelink()
+    public function getLink()
     {
         return $this->brewstylelink;
     }
@@ -496,7 +496,7 @@ class Styles
      * @param string $brewstylegroup
      * @return Styles
      */
-    public function setBrewstylegroup($brewstylegroup)
+    public function setGroup($brewstylegroup)
     {
         $this->brewstylegroup = $brewstylegroup;
     
@@ -508,7 +508,7 @@ class Styles
      *
      * @return string 
      */
-    public function getBrewstylegroup()
+    public function getGroup()
     {
         return $this->brewstylegroup;
     }

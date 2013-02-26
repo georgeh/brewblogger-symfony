@@ -130,7 +130,7 @@ class MashSteps
      * @param integer $stepmashprofileid
      * @return MashSteps
      */
-    public function setStepmashprofileid($stepmashprofileid)
+    public function setMashProfileID($stepmashprofileid)
     {
         $this->stepmashprofileid = $stepmashprofileid;
     
@@ -142,7 +142,7 @@ class MashSteps
      *
      * @return integer 
      */
-    public function getStepmashprofileid()
+    public function getMashProfileID()
     {
         return $this->stepmashprofileid;
     }
@@ -153,7 +153,7 @@ class MashSteps
      * @param string $stepname
      * @return MashSteps
      */
-    public function setStepname($stepname)
+    public function setName($stepname)
     {
         $this->stepname = $stepname;
     
@@ -165,7 +165,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStepname()
+    public function getName()
     {
         return $this->stepname;
     }
@@ -176,7 +176,7 @@ class MashSteps
      * @param integer $stepnumber
      * @return MashSteps
      */
-    public function setStepnumber($stepnumber)
+    public function setNumber($stepnumber)
     {
         $this->stepnumber = $stepnumber;
     
@@ -188,7 +188,7 @@ class MashSteps
      *
      * @return integer 
      */
-    public function getStepnumber()
+    public function getNumber()
     {
         return $this->stepnumber;
     }
@@ -199,7 +199,7 @@ class MashSteps
      * @param string $steptype
      * @return MashSteps
      */
-    public function setSteptype($steptype)
+    public function setType($steptype)
     {
         $this->steptype = $steptype;
     
@@ -211,7 +211,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getSteptype()
+    public function getType()
     {
         return $this->steptype;
     }
@@ -222,7 +222,7 @@ class MashSteps
      * @param string $steptime
      * @return MashSteps
      */
-    public function setSteptime($steptime)
+    public function setTime($steptime)
     {
         $this->steptime = $steptime;
     
@@ -234,7 +234,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getSteptime()
+    public function getTime()
     {
         return $this->steptime;
     }
@@ -245,7 +245,7 @@ class MashSteps
      * @param string $steptemp
      * @return MashSteps
      */
-    public function setSteptemp($steptemp)
+    public function setTemp($steptemp)
     {
         $this->steptemp = $steptemp;
     
@@ -257,7 +257,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getSteptemp()
+    public function getTemp()
     {
         return $this->steptemp;
     }
@@ -268,7 +268,7 @@ class MashSteps
      * @param string $stepramptime
      * @return MashSteps
      */
-    public function setStepramptime($stepramptime)
+    public function setRampTime($stepramptime)
     {
         $this->stepramptime = $stepramptime;
     
@@ -280,7 +280,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStepramptime()
+    public function getRampTime()
     {
         return $this->stepramptime;
     }
@@ -291,7 +291,7 @@ class MashSteps
      * @param string $stependtemp
      * @return MashSteps
      */
-    public function setStependtemp($stependtemp)
+    public function setEndTemp($stependtemp)
     {
         $this->stependtemp = $stependtemp;
     
@@ -303,7 +303,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStependtemp()
+    public function getEndTemp()
     {
         return $this->stependtemp;
     }
@@ -314,7 +314,7 @@ class MashSteps
      * @param string $stepdescription
      * @return MashSteps
      */
-    public function setStepdescription($stepdescription)
+    public function setDescription($stepdescription)
     {
         $this->stepdescription = $stepdescription;
     
@@ -326,7 +326,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStepdescription()
+    public function getDescription()
     {
         return $this->stepdescription;
     }
@@ -337,7 +337,7 @@ class MashSteps
      * @param string $stepinfuseamt
      * @return MashSteps
      */
-    public function setStepinfuseamt($stepinfuseamt)
+    public function setInfuseAmt($stepinfuseamt)
     {
         $this->stepinfuseamt = $stepinfuseamt;
     
@@ -349,7 +349,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStepinfuseamt()
+    public function getInfuseAmt()
     {
         return $this->stepinfuseamt;
     }
@@ -360,7 +360,7 @@ class MashSteps
      * @param string $stepdecoctionamt
      * @return MashSteps
      */
-    public function setStepdecoctionamt($stepdecoctionamt)
+    public function setDecoctionAmt($stepdecoctionamt)
     {
         $this->stepdecoctionamt = $stepdecoctionamt;
     
@@ -372,7 +372,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStepdecoctionamt()
+    public function getDecoctionAmt()
     {
         return $this->stepdecoctionamt;
     }
@@ -383,7 +383,7 @@ class MashSteps
      * @param string $stepinfusiontemp
      * @return MashSteps
      */
-    public function setStepinfusiontemp($stepinfusiontemp)
+    public function setInfusionTemp($stepinfusiontemp)
     {
         $this->stepinfusiontemp = $stepinfusiontemp;
     
@@ -395,7 +395,7 @@ class MashSteps
      *
      * @return string 
      */
-    public function getStepinfusiontemp()
+    public function getInfusionTemp()
     {
         return $this->stepinfusiontemp;
     }

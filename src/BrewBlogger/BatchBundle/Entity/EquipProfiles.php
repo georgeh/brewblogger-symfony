@@ -158,7 +158,7 @@ class EquipProfiles
      * @param string $equipprofilename
      * @return EquipProfiles
      */
-    public function setEquipprofilename($equipprofilename)
+    public function setName($equipprofilename)
     {
         $this->equipprofilename = $equipprofilename;
     
@@ -170,7 +170,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipprofilename()
+    public function getName()
     {
         return $this->equipprofilename;
     }
@@ -181,7 +181,7 @@ class EquipProfiles
      * @param string $equipbatchsize
      * @return EquipProfiles
      */
-    public function setEquipbatchsize($equipbatchsize)
+    public function setBatchSize($equipbatchsize)
     {
         $this->equipbatchsize = $equipbatchsize;
     
@@ -193,7 +193,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipbatchsize()
+    public function getBatchSize()
     {
         return $this->equipbatchsize;
     }
@@ -204,7 +204,7 @@ class EquipProfiles
      * @param string $equipboilvolume
      * @return EquipProfiles
      */
-    public function setEquipboilvolume($equipboilvolume)
+    public function setBoilVolume($equipboilvolume)
     {
         $this->equipboilvolume = $equipboilvolume;
     
@@ -216,7 +216,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipboilvolume()
+    public function getBoilVolume()
     {
         return $this->equipboilvolume;
     }
@@ -227,7 +227,7 @@ class EquipProfiles
      * @param string $equipevaprate
      * @return EquipProfiles
      */
-    public function setEquipevaprate($equipevaprate)
+    public function setEvaprate($equipevaprate)
     {
         $this->equipevaprate = $equipevaprate;
     
@@ -239,7 +239,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipevaprate()
+    public function getEvaprate()
     {
         return $this->equipevaprate;
     }
@@ -250,7 +250,7 @@ class EquipProfiles
      * @param string $equiploss
      * @return EquipProfiles
      */
-    public function setEquiploss($equiploss)
+    public function setLoss($equiploss)
     {
         $this->equiploss = $equiploss;
     
@@ -262,7 +262,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquiploss()
+    public function getLoss()
     {
         return $this->equiploss;
     }
@@ -273,7 +273,7 @@ class EquipProfiles
      * @param string $equipnotes
      * @return EquipProfiles
      */
-    public function setEquipnotes($equipnotes)
+    public function setNotes($equipnotes)
     {
         $this->equipnotes = $equipnotes;
     
@@ -285,7 +285,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipnotes()
+    public function getNotes()
     {
         return $this->equipnotes;
     }
@@ -296,7 +296,7 @@ class EquipProfiles
      * @param string $equipmashtunvolume
      * @return EquipProfiles
      */
-    public function setEquipmashtunvolume($equipmashtunvolume)
+    public function setMashTunVolume($equipmashtunvolume)
     {
         $this->equipmashtunvolume = $equipmashtunvolume;
     
@@ -308,7 +308,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipmashtunvolume()
+    public function getMashTunVolume()
     {
         return $this->equipmashtunvolume;
     }
@@ -319,7 +319,7 @@ class EquipProfiles
      * @param string $equipmashtunweight
      * @return EquipProfiles
      */
-    public function setEquipmashtunweight($equipmashtunweight)
+    public function setMashTunWeight($equipmashtunweight)
     {
         $this->equipmashtunweight = $equipmashtunweight;
     
@@ -331,7 +331,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipmashtunweight()
+    public function getMashTunWeight()
     {
         return $this->equipmashtunweight;
     }
@@ -342,7 +342,7 @@ class EquipProfiles
      * @param string $equipmashtunmaterial
      * @return EquipProfiles
      */
-    public function setEquipmashtunmaterial($equipmashtunmaterial)
+    public function setMashTunMaterial($equipmashtunmaterial)
     {
         $this->equipmashtunmaterial = $equipmashtunmaterial;
     
@@ -354,7 +354,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipmashtunmaterial()
+    public function getMashTunMaterial()
     {
         return $this->equipmashtunmaterial;
     }
@@ -365,7 +365,7 @@ class EquipProfiles
      * @param string $equipmashtunspecificheat
      * @return EquipProfiles
      */
-    public function setEquipmashtunspecificheat($equipmashtunspecificheat)
+    public function setMashTunSpecificHeat($equipmashtunspecificheat)
     {
         $this->equipmashtunspecificheat = $equipmashtunspecificheat;
     
@@ -377,7 +377,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipmashtunspecificheat()
+    public function getMashTunSpecificHeat()
     {
         return $this->equipmashtunspecificheat;
     }
@@ -388,7 +388,7 @@ class EquipProfiles
      * @param string $equipmashtundeadspace
      * @return EquipProfiles
      */
-    public function setEquipmashtundeadspace($equipmashtundeadspace)
+    public function setMashTunDeadSpace($equipmashtundeadspace)
     {
         $this->equipmashtundeadspace = $equipmashtundeadspace;
     
@@ -400,7 +400,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipmashtundeadspace()
+    public function getMashTunDeadSpace()
     {
         return $this->equipmashtundeadspace;
     }
@@ -411,7 +411,7 @@ class EquipProfiles
      * @param string $equiphoputil
      * @return EquipProfiles
      */
-    public function setEquiphoputil($equiphoputil)
+    public function setHopUtil($equiphoputil)
     {
         $this->equiphoputil = $equiphoputil;
     
@@ -423,7 +423,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquiphoputil()
+    public function getHopUtil()
     {
         return $this->equiphoputil;
     }
@@ -434,7 +434,7 @@ class EquipProfiles
      * @param string $equiptypicalefficiency
      * @return EquipProfiles
      */
-    public function setEquiptypicalefficiency($equiptypicalefficiency)
+    public function setTypicalEfficiency($equiptypicalefficiency)
     {
         $this->equiptypicalefficiency = $equiptypicalefficiency;
     
@@ -446,7 +446,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquiptypicalefficiency()
+    public function getTypicalEfficiency()
     {
         return $this->equiptypicalefficiency;
     }
@@ -457,7 +457,7 @@ class EquipProfiles
      * @param string $equiptopup
      * @return EquipProfiles
      */
-    public function setEquiptopup($equiptopup)
+    public function setTopUp($equiptopup)
     {
         $this->equiptopup = $equiptopup;
     
@@ -469,7 +469,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquiptopup()
+    public function getTopUp()
     {
         return $this->equiptopup;
     }
@@ -480,7 +480,7 @@ class EquipProfiles
      * @param string $equiptopupkettle
      * @return EquipProfiles
      */
-    public function setEquiptopupkettle($equiptopupkettle)
+    public function setTopUpKettle($equiptopupkettle)
     {
         $this->equiptopupkettle = $equiptopupkettle;
     
@@ -492,7 +492,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquiptopupkettle()
+    public function getTopUpKettle()
     {
         return $this->equiptopupkettle;
     }
@@ -503,7 +503,7 @@ class EquipProfiles
      * @param string $equipbrewerid
      * @return EquipProfiles
      */
-    public function setEquipbrewerid($equipbrewerid)
+    public function setBrewerID($equipbrewerid)
     {
         $this->equipbrewerid = $equipbrewerid;
     
@@ -515,7 +515,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquipbrewerid()
+    public function getBrewerID()
     {
         return $this->equipbrewerid;
     }
@@ -526,7 +526,7 @@ class EquipProfiles
      * @param string $equiptypicalwaterratio
      * @return EquipProfiles
      */
-    public function setEquiptypicalwaterratio($equiptypicalwaterratio)
+    public function setTypicalWaterRatio($equiptypicalwaterratio)
     {
         $this->equiptypicalwaterratio = $equiptypicalwaterratio;
     
@@ -538,7 +538,7 @@ class EquipProfiles
      *
      * @return string 
      */
-    public function getEquiptypicalwaterratio()
+    public function getTypicalWaterRatio()
     {
         return $this->equiptypicalwaterratio;
     }
