@@ -224,5 +224,43 @@ fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fnord fn
     </tbody>
 </table>
 
+<h2>Water Profile</h2>
+{% set water = batch.waterProfile %}
+<h3>{{water.watername}}</h3>
+
+<dl>
+    <dt>Calicum:</dt>
+    <dd>{{water.waterCalcium}} ppm</dd>
+    <dt>Bicarbonate:</dt>
+    <dd>{{water.waterBicarbonate}} ppm</dd>
+    <dt>Sulfate:</dt>
+    <dd>{{water.waterSulfate}} ppm</dd>
+    <dt>Chloride:</dt>
+    <dd>{{water.waterChloride}} ppm</dd>
+    <dt>Sodium:</dt>
+    <dd>{{water.waterSodium}} ppm</dd>
+    <dt>Magnesium:</dt>
+    <dd>{{water.waterMagnesium}} ppm</dd>
+    <dt>PH:</dt>
+    <dd>{{water.waterPH}}%</dd>
+</dl>
+
+<h2>Fermentation</h2>
+<dl>
+    <dt>Primary:</dt>
+    <dd>{{batch.brewPrimary}} days @ {{batch.brewPrimaryTemp}}&deg;F</dd>
+
+    <dt>Secondary:</dt>
+    <dd>{{batch.brewSecondary}} days @ {{batch.brewSecondaryTemp}}&deg;F</dd>
+    
+    <dt>Tertiary:</dt>
+    <dd>{{batch.brewTertiary}} days @ {{batch.brewTertiaryTemp}}&deg;F</dd>
+    
+    <dt>Lager:</dt>
+    <dd>{{batch.brewLager}} days @ {{batch.brewLagerTemp}}&deg;F</dd>
+    
+    <dt>Age:</dt>
+    <dd>{{batch.brewAge}} days @ {{batch.brewAgeTemp}}&deg;F</dd>
+</dl>
 
 {% endblock %}

@@ -2006,6 +2006,14 @@ class Brewing
      * @ORM\JoinColumn(name="brewMashProfile", referencedColumnName="id")
      */
     private $mashProfile;
+    
+    /**
+     * @var WaterProfiles
+     * 
+     * @ORM\ManyToOne(targetEntity="WaterProfiles")
+     * @ORM\JoinColumn(name="brewWaterProfile", referencedColumnName="id")
+     */
+    private $waterProfile;
 
     /**
      * Get id
@@ -8207,5 +8215,14 @@ class Brewing
     public function getMashProfile()
     {
         return $this->mashProfile;
+    }
+    
+    /**
+     * 
+     * @return WaterProfiles
+     */
+    public function getWaterProfile()
+    {
+        return $this->waterProfile;
     }
 }
