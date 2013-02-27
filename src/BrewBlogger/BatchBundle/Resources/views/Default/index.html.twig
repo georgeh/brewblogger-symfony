@@ -80,6 +80,7 @@
     </tfoot>
 </table>
 
+{% if batch.adjuncts %}
 <h2>Adjuncts</h2>
 <table class="table table-striped">
     <tbody>
@@ -91,7 +92,9 @@
         {% endfor %}
     </tbody>
 </table>
+{% endif %}
 
+{% if batch.MiscIngredients %}
 <h2>Non-Fermentables</h2>
 <table class="table table-striped">
     <tbody>
@@ -104,12 +107,14 @@
     </tbody>
 </table>
 
+{% endif %}
+
 <h2>Hops</h2>
 <table class="table table-striped">
     <tbody>
         {% for hop in batch.Hops %}
             <tr>
-                <td>{{hop.Weight}} ounces</td>
+                <td>{{hop.weight}} ounces</td>
                 <td>
                     {{hop.Name}}<br>
                     {{hop.AlphaAcid}}% {{hop.Form}} @ {{hop.Time}} minutes<br>

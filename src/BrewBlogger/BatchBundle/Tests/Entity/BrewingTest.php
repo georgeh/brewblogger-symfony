@@ -134,33 +134,38 @@ class BrewingTest extends \PHPUnit_Framework_TestCase
     public function testHopAggregator()
     {
         $brewing = new Entity\Brewing();
+
+        $hop = new Entity\HopAddition();
+        $hop->setAlphaAcid(6.0)
+                ->setName('Magnum')
+                ->setForm('Whole')
+                ->setTime(90)
+                ->setPurpose('Bittering')
+                ->setUse('Dry Hop')
+                ->setWeight(1.35);
+        $brewing->getHops()->add($hop);
         
-        $brewing->setHops2('Golding')
-                ->setHops2form('Pellets')
-                ->setHops2ibu('7.0')
-                ->setHops2time('60')
-                ->setHops2type('Aroma')
-                ->setHops2use('Boil')
-                ->setHops2weight('0.65');
-                
-        // Yes these are in reverse order, shouldn't matter with the current setter API
-        $brewing->setHops1('Magnum')
-                ->setHops1form('Whole')
-                ->setHops1ibu('6.0')
-                ->setHops1time('90')
-                ->setHops1type('Bittering')
-                ->setHops1use('Dry Hop')
-                ->setHops1weight('1.35');
+        $hop = new Entity\HopAddition();
+        $hop->setAlphaAcid(7.0)
+                ->setName('Golding')
+                ->setForm('Pellets')
+                ->setTime(60)
+                ->setPurpose('Aroma')
+                ->setUse('Boil')
+                ->setWeight(0.65);
         
+        $brewing->getHops()->add($hop);
+
         $hops = $brewing->getHops();
+        
         $this->assertEquals(2, count($hops));
-        $this->assertEquals('Magnum', $hops[0]['Name']);
-        $this->assertEquals('Pellets', $hops[1]['Form']);
-        $this->assertEquals('6.0', $hops[0]['AlphaAcid']);
-        $this->assertEquals(60, $hops[1]['Time']);
-        $this->assertEquals('Bittering', $hops[0]['Purpose']);
-        $this->assertEquals('Boil', $hops[1]['Use']);
-        $this->assertEquals('1.35', $hops[0]['Weight']);
+        $this->assertEquals('Magnum', $hops[0]->getName());
+        $this->assertEquals('Pellets', $hops[1]->getForm());
+        $this->assertEquals('6.0', $hops[0]->getAlphaAcid());
+        $this->assertEquals(60, $hops[1]->getTime());
+        $this->assertEquals('Bittering', $hops[0]->getPurpose());
+        $this->assertEquals('Boil', $hops[1]->getUse());
+        $this->assertEquals('1.35', $hops[0]->getWeight());
         
         $total = $brewing->getTotalHops();
         $this->assertEquals(2, $total['Weight']);

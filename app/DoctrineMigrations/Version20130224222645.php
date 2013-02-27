@@ -15,7 +15,7 @@ class Version20130224222645 extends AbstractMigration
     {        
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `adjuncts` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `id` INT unsigned NOT NULL auto_increment,
   `adjunctName` varchar(100) NOT NULL,
   `adjunctOrigin` varchar(100) default NULL,
   `adjunctSupplier` varchar(100) default NULL,
@@ -124,7 +124,7 @@ EOSQL
         );
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `malt` (
-  `id` mediumint(8) unsigned NOT NULL auto_increment,
+  `id` INT unsigned NOT NULL auto_increment,
   `maltName` varchar(100) NOT NULL,
   `maltInfo` text,
   `maltPPG` decimal(5,2) unsigned NOT NULL default '0.00',
@@ -227,7 +227,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `brewing` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `brewName` varchar(250) default NULL,
   `brewStyle` varchar(250) default NULL,
   `brewBatchNum` varchar(100) default NULL,
@@ -616,7 +616,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `recipes` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `brewName` varchar(250) default NULL,
   `brewStyle` varchar(250) default NULL,
   `brewSource` varchar(200) default NULL,
@@ -857,7 +857,7 @@ EOSQL
 
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `awards` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `awardBrewID` varchar(10) default NULL,
   `awardContest` varchar(250) default NULL,
   `awardContestURL` varchar(250) default NULL,
@@ -904,7 +904,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `brewerlinks` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `brewerLinkName` varchar(200) default NULL,
   `brewerLinkURL` varchar(200) default NULL,
   PRIMARY KEY  (`id`)
@@ -922,7 +922,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `equip_profiles` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `equipProfileName` varchar(255) default NULL,
   `equipBatchSize` varchar(10) default NULL,
   `equipBoilVolume` varchar(10) default NULL,
@@ -961,7 +961,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `hops` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `hopsName` varchar(250) default NULL,
   `hopsGrown` varchar(250) default NULL,
   `hopsInfo` text,
@@ -1061,7 +1061,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `mash_profiles` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `mashProfileName` varchar(255) default NULL,
   `mashGrainTemp` varchar(255) default NULL,
   `mashTunTemp` varchar(255) default NULL,
@@ -1101,10 +1101,10 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `mash_steps` (
-  `id` int(8) NOT NULL auto_increment,
-  `stepMashProfileID` int(8) default NULL,
+  `id` INT NOT NULL auto_increment,
+  `stepMashProfileID` INT default NULL,
   `stepName` varchar(255) default NULL,
-  `stepNumber` int(8) default NULL,
+  `stepNumber` INT default NULL,
   `stepType` varchar(255) default NULL,
   `stepTime` varchar(255) default NULL,
   `stepTemp` varchar(255) default NULL,
@@ -1180,7 +1180,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `misc` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `miscName` varchar(255) default NULL,
   `miscType` varchar(255) default NULL,
   `miscUse` varchar(255) default NULL,
@@ -1251,7 +1251,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `news` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `newsHeadline` varchar(250) default NULL,
   `newsText` text,
   `newsDate` date default NULL,
@@ -1271,7 +1271,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `reviews` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `brewID` tinyint(5) default '0',
   `brewScoreDate` date default '0000-00-00',
   `brewAromaScore` tinyint(5) default NULL,
@@ -1426,7 +1426,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `upcoming` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `upcoming` varchar(250) default NULL,
   `upcomingDate` date default '0000-00-00',
   `upcomingRecipeID` varchar(10) default NULL,
@@ -1445,7 +1445,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `users` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `user_name` varchar(20) NOT NULL default '',
   `password` varchar(250) NOT NULL default '',
   `realFirstName` varchar(250) default NULL,
@@ -1475,12 +1475,12 @@ CREATE TABLE IF NOT EXISTS `users` (
   `userPhoneW` varchar(15) default NULL,
   `userEmail` varchar(250) default NULL,
   `defaultBoilTime` int(4) default NULL,
-  `defaultEquipProfile` int(8) default NULL,
-  `defaultMashProfile` int(8) default NULL,
-  `defaultWaterProfile` int(8) default NULL,
+  `defaultEquipProfile` INT default NULL,
+  `defaultMashProfile` INT default NULL,
+  `defaultWaterProfile` INT default NULL,
   `defaultBitternessFormula` varchar(50) NOT NULL default 'Tinseth',
   `defaultMethod` varchar(255) default NULL,
-  `defaultBatchSize` int(8) default NULL,
+  `defaultBatchSize` INT default NULL,
   `defaultWaterRatio` varchar(8) default NULL,
   `defaultColorFormula` varchar(50) NOT NULL default 'Morey',
   PRIMARY KEY  (`id`)
@@ -1497,7 +1497,7 @@ EOSQL
         
         $this->addSql(<<<EOSQL
 CREATE TABLE IF NOT EXISTS `water_profiles` (
-  `id` int(8) NOT NULL auto_increment,
+  `id` INT NOT NULL auto_increment,
   `waterName` varchar(255) default NULL,
   `waterAmount` varchar(255) default NULL,
   `waterCalcium` varchar(255) default NULL,
