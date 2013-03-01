@@ -1,0 +1,14 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}
+Edit {{batch.Name}}
+{% endblock %}
+
+{% block body %}
+<h1>Edit Batch</h1>
+<form method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+
+    <input type="submit">
+</form>
+{% endblock %}

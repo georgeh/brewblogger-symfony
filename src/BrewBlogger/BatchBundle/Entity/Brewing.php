@@ -1847,12 +1847,24 @@ class Brewing
     {
         return round((1 - ($this->getRealExtract() / $this->convertGravityToPlato($this->brewog))) * 100,1);
     }
+
+    /**
+     * Returns an array of ExtractAddtions
+     * 
+     * @return Doctrine\Common\Collections\Collection
+     */
+    public function getExtracts()
+    {
+        if (!isset($this->extractAdditions)) {
+            $this->extractAdditions = new ArrayCollection();
+        }
+        return $this->extractAdditions;
+    }
     
     /**
      * Returns an array of Grains
      * 
-     * @todo Refactor database to normalize and make this a JOIN
-     * @return array
+     * @return Doctrine\Common\Collections\Collection
      */
     public function getGrains()
     {

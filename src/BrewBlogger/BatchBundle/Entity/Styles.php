@@ -512,4 +512,12 @@ class Styles
     {
         return $this->brewstylegroup;
     }
+    
+    /**
+     * 
+     * @return string
+     */
+    public function __toString() {
+        return sprintf("%d%s. %s", $this->brewstylegroup, $this->brewstylenum, $this->brewstyle);
+    }
 }

@@ -1,3 +1,6 @@
-brew_blogger_batch_homepage:
+brew_blogger_batch_show:
     pattern:  /batch/{id}
-    defaults: { _controller: BrewBloggerBatchBundle:Default:index }
+    defaults: { _controller: BrewBloggerBatchBundle:Default:show }
+brew_blogger_batch_edit:
+    pattern:  /batch/{id}/edit
+    defaults: { _controller: BrewBloggerBatchBundle:Default:edit }

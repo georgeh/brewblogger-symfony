@@ -50,7 +50,7 @@ class AdjunctAddition
     /**
      * @var Brewing
      * 
-     * @ORM\ManyToOne(targetEntity="Brewing", inversedBy="hopAdditions")
+     * @ORM\ManyToOne(targetEntity="Brewing", inversedBy="adjunctAdditions")
      * @ORM\JoinColumn(name="brewing_id", referencedColumnName="id")
      */
     private $batch;

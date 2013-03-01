@@ -482,4 +482,8 @@ class YeastProfiles
     {
         return $this->yeastbrewerid;
     }
+    
+    public function __toString() {
+        return sprintf("%s %s (%s)", $this->yeastlab, $this->yeastname, $this->yeastprodid);
+    }
 }
