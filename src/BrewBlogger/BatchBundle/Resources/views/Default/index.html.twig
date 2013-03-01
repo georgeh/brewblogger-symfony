@@ -67,7 +67,7 @@
             <tr>
                 <td>{{grain.Weight}} pounds</td>
                 <td>{{grain.Name}}</td>
-                <td>{{grain.Percentage * 100}}% of grist</td>
+                <td>{{grain.GristPercentage * 100}}% of grist</td>
             </tr>
         {% endfor %}
     </tbody>
@@ -86,7 +86,7 @@
     <tbody>
         {% for adjunct in batch.adjuncts %}
             <tr>
-                <td>{{adjunct.Amount}} pounds</td>
+                <td>{{adjunct.Weight}} pounds</td>
                 <td>{{adjunct.Name}}</td>
             </tr>
         {% endfor %}
@@ -188,19 +188,22 @@
 
 <h2>Mash Profile</h2>
 <h3>{{batch.mashProfile.Name}}</h3>
+
+{{batch.mashProfile.Notes|raw}}
+
 <dl class="dl-horizontal">
     <dt>Grain Temperature:</dt>
     <dd>{{batch.mashProfile.GrainTemp}} &deg;F</dd>
     <dt>Sparge Temperature:</dt>
     <dd>{{batch.mashProfile.SpargeTemp}} &deg;F</dd>
     <dt>PPG:</dt>
-    <dd>fnord fnord</dd>
+    <dd>{{batch.PPG}}</dd>
     <dt>Tun Temperature:</dt>
     <dd>{{batch.mashProfile.MashTunTemp}} &deg;F</dd>
     <dt>PH:</dt>
     <dd>{{batch.mashProfile.PH}} &deg;F</dd>
     <dt>Efficiency:</dt>
-    <dd>fnord fnord</dd>
+    <dd>{{batch.equipmentProfile.TypicalEfficiency}}</dd>
 </dl>
 
 <h3>Steps</h3>

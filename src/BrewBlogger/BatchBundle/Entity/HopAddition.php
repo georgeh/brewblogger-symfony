@@ -88,21 +88,20 @@ class HopAddition
      */
     private $batch;
     
+    /**
+     * @var Hops
+     * 
+     * @ORM\ManyToOne(targetEntity="Hops")
+     * @ORM\JoinColumn(name="hops_id", referencedColumnName="id")
+     */
+    private $hop;
+    
     public function getId() {
         return $this->id;
     }
 
     public function setId($id) {
         $this->id = $id;
-        return $this;
-    }
-
-    public function getBrewingID() {
-        return $this->brewingID;
-    }
-
-    public function setBrewingID($brewingID) {
-        $this->brewingID = $brewingID;
         return $this;
     }
 
@@ -169,6 +168,9 @@ class HopAddition
         return $this;
     }
 
+    /**
+     * @return Brewing
+     */
     public function getBatch() {
         return $this->batch;
     }
