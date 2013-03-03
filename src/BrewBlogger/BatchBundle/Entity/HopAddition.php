@@ -69,7 +69,7 @@ class HopAddition
     /**
      * @var string
      *
-     * @ORM\Column(name="use", type="string", length=250, nullable=true)
+     * @ORM\Column(name="added_to", type="string", length=250, nullable=true)
      */
     private $use;
     
@@ -83,7 +83,7 @@ class HopAddition
     /**
      * @var Brewing
      * 
-     * @ORM\ManyToOne(targetEntity="Brewing", inversedBy="hopAdditions")
+     * @ORM\ManyToOne(targetEntity="Brewing", inversedBy="hopAdditions", cascade={"persist"})
      * @ORM\JoinColumn(name="brewing_id", referencedColumnName="id")
      */
     private $batch;
@@ -190,4 +190,8 @@ class HopAddition
         return $this->alphaAcid * $this->weight;
     }
 
+        
+    public function __toString() {
+        return $this->getName() . ' @ ' . $this->getTime() . ' min.';
+    }
 }

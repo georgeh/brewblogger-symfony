@@ -10,7 +10,12 @@ class GrainAdditionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('weight');
+        $builder->add('weight', 'number', array(
+            'attr' => array(
+                'class'        => 'span2',
+                'append_input' => 'lbs.'
+            ),
+        ));
         $builder->add('name');
 //        $builder->add('malt', 'entity', array(
 //            'class'    => 'BrewBloggerBatchBundle:Malt',

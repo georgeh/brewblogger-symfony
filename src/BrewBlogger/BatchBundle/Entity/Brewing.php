@@ -53,7 +53,7 @@ class Brewing
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="brewDate", type="date", nullable=false)
+     * @ORM\Column(name="brewDate", type="date", nullable=true)
      */
     private $brewdate;
 
@@ -464,7 +464,7 @@ class Brewing
     
     /**
      * 
-     * @ORM\OneToMany(targetEntity="HopAddition", mappedBy="batch")
+     * @ORM\OneToMany(targetEntity="HopAddition", mappedBy="batch", cascade={"persist"})
      *
      * @var Doctrine\Common\Collections\Collection
      */

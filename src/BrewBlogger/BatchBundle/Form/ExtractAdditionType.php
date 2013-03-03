@@ -14,8 +14,9 @@ class ExtractAdditionType extends AbstractType
             'class'    => 'BrewBloggerBatchBundle:EquipProfiles',
             'property' => 'extract',
         ));
-        $builder->add('weight', 'number');        
-        ;
+        $builder->add('weight', 'number', array(
+            'attr' => array('append_input'  => 'lbs.'),
+        ));
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)

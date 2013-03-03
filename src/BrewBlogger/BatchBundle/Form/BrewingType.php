@@ -10,7 +10,9 @@ class BrewingType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-            $builder->add('name');
+            $builder->add('name', 'text', array(
+                'attr' => array('class' => 'span3'),
+            ));
             
             $builder->add('batchnum', 'text', array(
                 'label' => 'Batch No',
@@ -19,16 +21,17 @@ class BrewingType extends AbstractType
             $builder->add('featured', 'choice', array(
                 'choices'  => array('Y' => 'Yes', 'N' => 'No'),
                 'expanded' => TRUE,
-                'attr'     => array('help'  => 'Selecting "Yes" will place this log into the "Featured" list at the top of the BrewBlogs list display.'),
+                'attr'     => array('help_block'  => 'Selecting "Yes" will place this log into the "Featured" list at the top of the BrewBlogs list display.'),
             ));
             
             $builder->add('archive', 'choice', array(
                 'choices'  => array('Yes' => 'Yes', 'No' => 'No'),
                 'expanded' => TRUE,
-                'attr'     => array('help'  => 'Selecting "Yes" will place this log into your archive list. It will not be displayed on the "public" areas of the site.'),
+                'attr'     => array('help_block'  => 'Selecting "Yes" will place this log into your archive list. It will not be displayed on the "public" areas of the site.'),
             ));
             
             $builder->add('style');
+            // Needs a db change to normalize style against the table before we can use this
             // $builder->add('style', 'entity', array(
             //     'class'    => 'BrewBloggerBatchBundle:Styles',
             // ));
@@ -81,22 +84,25 @@ class BrewingType extends AbstractType
                 'label' => 'Tap Date',
             ));
             
-            $builder->add('info', 'textarea');
+            $builder->add('info', 'textarea', array(
+                'required' => false,
+            ));
             
-            $builder->add('comments', 'textarea');
-            
-            /** Ingredients go here **/
+            $builder->add('comments', 'textarea', array(
+                'required' => false,
+            ));
             
             $builder->add('extracts', 'collection', array('type' => new ExtractAdditionType()));
             $builder->add('grains', 'collection', array('type' => new GrainAdditionType()));
             $builder->add('adjuncts', 'collection', array('type' => new AdjunctAdditionType()));
             $builder->add('MiscIngredients', 'collection', array('type' => new MiscAdditionType()));
-            $builder->add('Hops', 'collection', array('type' => new HopAdditionType()));
+            $builder->add('Hops', 'collection', array(
+                'type'         => new HopAdditionType(),
+                'allow_add'    => TRUE,
+                'allow_delete' => TRUE,
+                'prototype'    => TRUE,
+            ));
 
-             
-             
-            /** Ingredients go above here **/
-            
             $builder->add('bitterness');
             
             $builder->add('ibuformula', 'choice', array(
@@ -112,6 +118,7 @@ class BrewingType extends AbstractType
             $builder->add('lovibond', 'text', array(
                 'label' => 'Color',
             ));
+            
             $builder->add('colorformula', 'choice', array(
                 'label'   => 'Color Formula',
                 'choices' => array(
@@ -125,12 +132,18 @@ class BrewingType extends AbstractType
                 'class'    => 'BrewBloggerBatchBundle:WaterProfiles',
                 'property' => 'name',
                 'label'    => 'Water Profile',
+                'attr'     => array(
+                    'class' => 'input-xlarge'
+                ),
             ));
             
             $builder->add('EquipmentProfile', 'entity', array(
                 'class'    => 'BrewBloggerBatchBundle:EquipProfiles',
                 'property' => 'name',
                 'label'    => 'Equipment Profile',
+                'attr'     => array(
+                    'class' => 'input-xxlarge'
+                ),
             ));
             
             
@@ -139,6 +152,9 @@ class BrewingType extends AbstractType
                 'class'    => 'BrewBloggerBatchBundle:MashProfiles',
                 'property' => 'name',
                 'label'    => 'Mash Profile',
+                'attr'     => array(
+                    'class' => 'input-xxlarge'
+                ),                
             ));
             $builder->add('waterratio', 'number', array(
                 'label' => 'Mash Thickness',
@@ -146,7 +162,7 @@ class BrewingType extends AbstractType
             $builder->add('preboilamt', 'number', array(
                 'label' => 'Pre-boil Wort Amount',
             ));
-            $builder->add('mashgravity', 'number', array(
+            $builder->add('mashgravity', new GravityType(), array(
                 'label' => 'Pre-boil Gravity',
             ));
             
@@ -157,6 +173,9 @@ class BrewingType extends AbstractType
             $builder->add('yeastProfile', 'entity', array(
                 'class'    => 'BrewBloggerBatchBundle:YeastProfiles',
                 'label'    => 'Yeast Name',
+                'attr'     => array(
+                    'class' => 'input-xxlarge'
+                ),
             ));
             $builder->add('yeastamount', 'text', array(
                 'label' => 'Amount',
@@ -165,37 +184,47 @@ class BrewingType extends AbstractType
             
             /** Gravity **/
             $builder->add('og', new GravityType(), array(
-                'label'     => 'OG',
+                'label' => 'OG',                
             ));
             $builder->add('targetog', new GravityType(), array(
-                'label'     => 'Target OG',
+                'label' => 'Target OG',
             ));            
             $builder->add('gravity1', new GravityType(), array(
-                'label'     => 'Reading 1',
+                'label' => 'Reading 1',
             ));
             $builder->add('gravity1days', 'number', array(
-                'label'     => 'Reading 1 Days',
+                'label' => 'Reading 1',
+                'attr'  => array(
+                    'class' => 'span1',
+                    'append_input' => 'days',
+                )
             ));
             $builder->add('gravity2', new GravityType(), array(
-                'label'     => 'Reading 2',
+                'label' => 'Reading 2',
             ));
             $builder->add('gravity2days', 'number', array(
-                'label'     => 'Reading 2 Days',
+                'label' => 'Reading 2',
+                'attr'  => array(
+                    'class' => 'span1',
+                    'append_input' => 'days',
+                )
             ));
             $builder->add('fg', new GravityType(), array(
-                'label'     => 'FG',
+                'label' => 'FG',
             ));
             $builder->add('targetfg', new GravityType(), array(
-                'label'     => 'Target FG',
+                'label' => 'Target FG'
             ));
             
             
             $builder->add('procedure', 'textarea', array(
-                'label' => 'Step By Step Instructions',
+                'label'    => 'Step By Step Instructions',
+                'required' => FALSE,
             ));
             
             $builder->add('specialprocedure', 'textarea', array(
-                'label' => 'Special Procedures'
+                'label'    => 'Special Procedures',
+                'required' => FALSE,
             ));
             
             
@@ -215,17 +244,21 @@ class BrewingType extends AbstractType
             ));
             
             $builder->add('tertiarydays', 'number', array(
-                'label' => 'Tertiary Days',
+                'label'    => 'Tertiary Days',
+                'required' => FALSE,
             ));
             $builder->add('tertiarytemp', 'number', array(
                 'label' => 'Tertiary Temperature',
+                'required' => FALSE,
             ));
             
             $builder->add('lagerdays', 'number', array(
-                'label' => 'Lager Days',
+                'label'    => 'Lager Days',
+                'required' => FALSE,
             ));
             $builder->add('lagertemp', 'number', array(
-                'label' => 'Lager Temperature',
+                'label'    => 'Lager Temperature',
+                'required' => FALSE,
             ));
             
             $builder->add('agedays', 'number', array(
@@ -238,20 +271,24 @@ class BrewingType extends AbstractType
             $builder->add('labelimage');
                         
             $builder->add('link1name', 'text', array(
-                'label' => 'Link 1 Name'
+                'label'    => 'Link 1 Name',
+                'required' => FALSE,
             ));
             $builder->add('link1', 'url', array(
-                'label' => 'Link 1 URL'
+                'label' => 'Link 1 URL',
+                'required' => FALSE,
             ));
 
             $builder->add('link2name', 'text', array(
-                'label' => 'Link 2 Name'
+                'label' => 'Link 2 Name',
+                'required' => FALSE,
             ));
             $builder->add('link2', 'url', array(
-                'label' => 'Link 2 URL'
+                'label' => 'Link 2 URL',
+                'required' => FALSE,
             ));
             
-            /** Unused fields? **/
+            /** Unused fields? Generated? **/
             
             // $builder->add('mashtype');
             // $builder->add('mashgrainweight');

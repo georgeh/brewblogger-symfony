@@ -11,6 +11,9 @@ class GravityType extends AbstractType
     {
         $resolver->setDefaults(array(
             'precision' => '3',
+            'attr' => array(
+                'class' => 'span1',
+            )
         ));
     }
 
