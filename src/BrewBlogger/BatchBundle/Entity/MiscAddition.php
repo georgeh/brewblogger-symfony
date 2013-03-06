@@ -49,7 +49,7 @@ class MiscAddition
     /**
      * @var string
      *
-     * @ORM\Column(name="use", type="string", length=250, nullable=true)
+     * @ORM\Column(name="used_for", type="string", length=250, nullable=true)
      */
     private $use;
     

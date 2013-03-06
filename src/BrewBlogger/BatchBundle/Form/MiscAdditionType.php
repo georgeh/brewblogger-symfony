@@ -10,11 +10,17 @@ class MiscAdditionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('name');
-        $builder->add('type');
-        $builder->add('use');
-        $builder->add('time');
-        $builder->add('amount');
+        $builder->add('name', 'text', array(
+            'attr' => array('class' => 'span4'),
+        ));
+//        $builder->add('type');
+//        $builder->add('use');
+        $builder->add('time', 'text', array(
+            'attr' => array('class' => 'span2')
+        ));
+        $builder->add('amount', 'text', array(
+            'attr' => array('class' => 'span2')
+        ));
     }
 
     public function setDefaultOptions(OptionsResolverInterface $resolver)

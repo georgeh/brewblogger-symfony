@@ -473,7 +473,7 @@ class Brewing
     
     /**
      * 
-     * @ORM\OneToMany(targetEntity="GrainAddition", mappedBy="batch")
+     * @ORM\OneToMany(targetEntity="GrainAddition", mappedBy="batch", cascade={"persist"})
      *
      * @var Doctrine\Common\Collections\Collection
      */
@@ -481,7 +481,7 @@ class Brewing
     
     /**
      * 
-     * @ORM\OneToMany(targetEntity="ExtractAddition", mappedBy="batch")
+     * @ORM\OneToMany(targetEntity="ExtractAddition", mappedBy="batch", cascade={"persist"})
      *
      * @var Doctrine\Common\Collections\Collection
      */
@@ -489,7 +489,7 @@ class Brewing
     
     /**
      * 
-     * @ORM\OneToMany(targetEntity="AdjunctAddition", mappedBy="batch")
+     * @ORM\OneToMany(targetEntity="AdjunctAddition", mappedBy="batch", cascade={"persist"})
      *
      * @var Doctrine\Common\Collections\Collection
      */
@@ -497,7 +497,7 @@ class Brewing
     
     /**
      * 
-     * @ORM\OneToMany(targetEntity="MiscAddition", mappedBy="batch")
+     * @ORM\OneToMany(targetEntity="MiscAddition", mappedBy="batch", cascade={"persist"})
      *
      * @var Doctrine\Common\Collections\Collection
      */
@@ -1921,10 +1921,10 @@ class Brewing
      */   
     public function getGrainAdditions()
     {
-        if (!isset($this->grain_addition)) {
-            $this->grain_addition = new ArrayCollection();
+        if (!isset($this->grainAdditions)) {
+            $this->grainAdditions = new ArrayCollection();
         }
-        return $this->grain_addition;
+        return $this->grainAdditions;
     }
     
     /**

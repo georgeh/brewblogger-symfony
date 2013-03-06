@@ -10,10 +10,13 @@ class AdjunctAdditionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('name');
+        $builder->add('name', 'text', array(
+            'attr' => array('class' => 'span4'),
+        ));
         $builder->add('weight', 'number', array(
             'attr' => array(
                 'append_input' => 'lbs.',
+                'class'        => 'span1',
             )
         ));
     }

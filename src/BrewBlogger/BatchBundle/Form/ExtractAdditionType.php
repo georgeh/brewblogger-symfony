@@ -10,12 +10,20 @@ class ExtractAdditionType extends AbstractType
 {
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
-        $builder->add('extract', 'entity', array(
-            'class'    => 'BrewBloggerBatchBundle:EquipProfiles',
-            'property' => 'extract',
+//        $builder->add('extract', 'entity', array(
+//            'class'    => 'BrewBloggerBatchBundle:EquipProfiles',
+//            'property' => 'extract',
+//        ));
+        $builder->add('name', 'text', array(
+            'attr' => array(
+                'class' => 'span4',
+            ),
         ));
         $builder->add('weight', 'number', array(
-            'attr' => array('append_input'  => 'lbs.'),
+            'attr' => array(
+                'append_input'  => 'lbs.',
+                'class'         => 'span1',
+            ),
         ));
     }
 

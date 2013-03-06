@@ -12,11 +12,13 @@ class GrainAdditionType extends AbstractType
     {
         $builder->add('weight', 'number', array(
             'attr' => array(
-                'class'        => 'span2',
+                'class'        => 'span1',
                 'append_input' => 'lbs.'
             ),
         ));
-        $builder->add('name');
+        $builder->add('name', 'text', array(
+            'attr' => array('class' => 'span4'),
+        ));
 //        $builder->add('malt', 'entity', array(
 //            'class'    => 'BrewBloggerBatchBundle:Malt',
 //            'property' => 'name',

@@ -33,38 +33,17 @@ class DefaultController extends Controller
             ->getRepository('BrewBloggerBatchBundle:Brewing')
             ->find($id);
         
+        $originalBatch = clone $batch;
         $form = $this->createForm(new BrewingType(), $batch);
         
         $request = $this->getRequest();
         if ($request->isMethod('POST')) {
             $em = $this->getDoctrine()->getManager();
 
-            // Plan on deleting all hops, except for the ones that have been submitted
-            $hopsToDelete = array();
-            foreach ($batch->getHops() as $hop) {
-                $hopsToDelete[] = $hop;
-            }
-            
             $form->bind($request);
             if ($form->isValid()) {
-                foreach ($batch->getHops() as $hop) {
-                    // Persist new hop additions
-                    if (!$hop->getBatch()) {
-                        $hop->setBatch($batch);
-                    }
-                    
-                    // Find out which hops have been removed
-                    foreach ($hopsToDelete as $key => $toDel) {
-                        if ($toDel->getId() == $hop->getId()) {
-                            unset($hopsToDelete[$key]);
-                            break;
-                        }
-                    }
-                }
+                $this->updateAssociations($originalBatch, $batch, $em);
                 
-                foreach ($hopsToDelete as $hop) {
-                    $em->remove($hop);
-                }
                 $em->persist($batch);
                 $em->flush();
                 
@@ -79,4 +58,40 @@ class DefaultController extends Controller
                              ));
     }
     
+    /**
+     * 
+     * @param \BrewBlogger\BatchBundle\Entity\Brewing $originalBrewing
+     * @param \BrewBlogger\BatchBundle\Entity\Brewing $updatedBrewing
+     * @param \Doctrine\ORM\EntityManager $em
+     */
+    protected function updateAssociations($originalBrewing, $updatedBrewing, $em)
+    {
+        $collections = array('Extracts', 'Grains', 'Adjuncts', 'MiscIngredients', 'Hops');
+        foreach ($collections as $type) {
+            // Plan on deleting all hops, except for the ones that have been submitted
+            $itemsToDelete = array();
+            foreach ($originalBrewing->{'get' . $type}() as $item) {
+                $itemsToDelete[] = $item;
+            }
+
+            foreach ($updatedBrewing->{'get' . $type}() as $item) {
+                // Persist new hop additions
+                if (!$item->getBatch()) {
+                    $item->setBatch($updatedBrewing);
+                }
+
+                // Find out which hops have been removed
+                foreach ($itemsToDelete as $key => $toDel) {
+                    if ($toDel->getId() == $item->getId()) {
+                        unset($itemsToDelete[$key]);
+                        break;
+                    }
+                }
+            }
+
+            foreach ($itemsToDelete as $item) {
+                $em->remove($item);
+            }
+        }
+    }
 }

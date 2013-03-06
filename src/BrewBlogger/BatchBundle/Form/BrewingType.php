@@ -92,10 +92,32 @@ class BrewingType extends AbstractType
                 'required' => false,
             ));
             
-            $builder->add('extracts', 'collection', array('type' => new ExtractAdditionType()));
-            $builder->add('grains', 'collection', array('type' => new GrainAdditionType()));
-            $builder->add('adjuncts', 'collection', array('type' => new AdjunctAdditionType()));
-            $builder->add('MiscIngredients', 'collection', array('type' => new MiscAdditionType()));
+            $builder->add('extracts', 'collection', array(
+                'type'         => new ExtractAdditionType(),
+                'allow_add'    => TRUE,
+                'allow_delete' => TRUE,
+                'prototype'    => TRUE,));
+
+            $builder->add('grains', 'collection', array(
+                'type'         => new GrainAdditionType(),
+                'allow_add'    => TRUE,
+                'allow_delete' => TRUE,
+                'prototype'    => TRUE,));
+
+            $builder->add('adjuncts', 'collection', array(
+                'type' => new AdjunctAdditionType(),
+                'allow_add'    => TRUE,
+                'allow_delete' => TRUE,
+                'prototype'    => TRUE,
+            ));
+
+            $builder->add('MiscIngredients', 'collection', array(
+                'type' => new MiscAdditionType(),
+                'allow_add'    => TRUE,
+                'allow_delete' => TRUE,
+                'prototype'    => TRUE,
+            ));
+
             $builder->add('Hops', 'collection', array(
                 'type'         => new HopAdditionType(),
                 'allow_add'    => TRUE,

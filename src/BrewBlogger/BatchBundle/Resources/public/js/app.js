@@ -3,46 +3,60 @@
         init : function()
         {
             var $this = $(this);
-                data  = $this.data('collectionManager');
-            
-            if (!data) {
-                $this.data('collectionManager', {
-                    'count': $('.collection-item').length,
-                    'prototype': $this.attr('data-prototype')
+            ($this).each(function(i, manager) {
+                var $manager = $(manager),
+                    data     = $manager.data('collectionManager');
+
+                if (!data) {
+                    $manager.data('collectionManager', {
+                        'count': $manager.find('.collection-item').length,
+                        'prototype': $manager.attr('data-prototype')
+                    });
+                }
+                $manager.find('.collection-add').on('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    methods.add(event);
                 });
-            }
-            $('.collection-add').bind('click', function(event) { methods.add(event, $this); return false; });
-            $('.collection-remove').bind('click', function(event) { methods.remove(event, $this); return false; });
+                $manager.find('.collection-remove').on('click', function(event) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                    methods.remove(event);
+                });
+            })
         },
-        
-        add : function(event, manager)
+
+        add : function(event)
         {
             var $this     = $(this),
-                data      = manager.data('collectionManager'),
-                newWidget = data.prototype;
+                $target   = $(event.target),
+                $manager  = $target.closest('.collection-manager').first(),
+                data      = $manager.data('collectionManager'),
+                newWidget = data.prototype.replace(/__name__/g, data.count);
 
-            newWidget = newWidget.replace(/__name__/g, data.count);
             data.count++;
-            
+
             var newDiv = $('<div></div>').html(newWidget);
-            $(event.target).before(newDiv);
-            $('.collection-remove').bind('click', function(event) { methods.remove(event, manager); return false; });
-            
+            $target.before(newDiv);
+            $('.collection-remove').bind('click', function(event) { methods.remove(event, $manager); return false; });
+
             return $this;
         },
-        
-        remove : function(event, manager)
+
+        remove : function(event)
         {
             var $this     = $(this),
-                data      = manager.data('collectionManager');
-            
-            $(event.target).parents('.collection-item').remove();
+                $target   = $(event.target),
+                $manager  = $target.closest('.collection-manager').first(),
+                data      = $manager.data('collectionManager');
+
+            $target.parents('.collection-item').remove();
             data.count--;
-            
+
             return $this;
         }
     };
-    
+
     $.fn.collectionManager = function( method ) {
         if ( methods[method] ) {
             return methods[method].apply( this, Array.prototype.slice.call( arguments, 1 ));

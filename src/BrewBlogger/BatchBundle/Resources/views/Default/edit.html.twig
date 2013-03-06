@@ -33,60 +33,41 @@ Edit {{batch.Name}}
         {{ form_row(form.info) }}
         {{ form_row(form.comments) }}
     </fieldset>
-    <fieldset class="form-inline">
+    <fieldset class="collection-manager" data-prototype="{% filter escape() %}{{ include('BrewBloggerBatchBundle:Default:form-extract.html.twig', {'extract' : form.extracts.vars.prototype}) }}{% endfilter %}">
         <legend>Malt Extracts</legend>
+        <div class="collection-container">
         {% for extract in form.extracts %}
-        <div class="span12">
-        <div class="span4">
-            {{ form_row(extract.name) }}
-        </div>
-        <div class="span2">
-            {{ form_row(extract.weight) }}
-        </div>
-        </div>
+        {% include 'BrewBloggerBatchBundle:Default:form-extract.html.twig' %}
         {% endfor %}
+        </div>
+        <button class="btn btn-success pull-right collection-add"><i class="icon-plus icon-white"></i>Add Extract</button>
     </fieldset>
-    <fieldset>
+    <fieldset class="collection-manager" data-prototype="{% filter escape() %}{{ include('BrewBloggerBatchBundle:Default:form-grains.html.twig', {'grain' : form.grains.vars.prototype}) }}{% endfilter %}">
         <legend>Grains</legend>
+        <div class="collection-container">
         {% for grain in form.grains %}
-        <div class="span12">
-        <div class="span4">
-            {{ form_row(grain.name) }}
-        </div>
-        <div class="span2">
-            {{ form_row(grain.weight) }}
-        </div>
-        </div>
+        {% include 'BrewBloggerBatchBundle:Default:form-grains.html.twig' %}
         {% endfor %}
+        </div>
+        <button class="btn btn-success pull-right collection-add"><i class="icon-plus icon-white"></i>Add Grain</button>
     </fieldset>
-    <fieldset>
+    <fieldset class="collection-manager" data-prototype="{% filter escape() %}{{ include('BrewBloggerBatchBundle:Default:form-adjunct.html.twig', {'adjunct' : form.adjuncts.vars.prototype}) }}{% endfilter %}">
         <legend>Adjuncts</legend>
+        <div class="collection-container">
         {% for adjunct in form.adjuncts %}
-        <div class="span12">
-        <div class="span4">
-            {{ form_row(adjunct.name) }}
-        </div>
-        <div class="span2">
-            {{ form_row(adjunct.weight) }}
-        </div>
-        </div>
+        {% include 'BrewBloggerBatchBundle:Default:form-adjunct.html.twig' %}
         {% endfor %}
+        </div>
+        <button class="btn btn-success pull-right collection-add"><i class="icon-plus icon-white"></i>Add Adjunct</button>
     </fieldset>
-    <fieldset>
+    <fieldset class="collection-manager" data-prototype="{% filter escape() %}{{ include('BrewBloggerBatchBundle:Default:form-misc.html.twig', {'misc' : form.MiscIngredients.vars.prototype}) }}{% endfilter %}">
         <legend>Miscellaneous (NON-Fermentable Ingredients)</legend>
+        <div class="collection-container">
         {% for misc in form.MiscIngredients %}
-        <div class="span12">
-        <div class="span4">
-            {{ form_row(misc.name) }}
-        </div>
-        <div class="span2">
-            {{ form_row(misc.weight) }}
-        </div>
-        <div class="span2">
-            {{ form_row(misc.time) }}
-        </div>
-        </div>
+        {% include 'BrewBloggerBatchBundle:Default:form-misc.html.twig' %}
         {% endfor %}
+        </div>
+        <button class="btn btn-success pull-right collection-add"><i class="icon-plus icon-white"></i>Add Miscellaneous</button>
     </fieldset>
         <fieldset class="collection-manager" data-prototype="{% filter escape() %}{{ include('BrewBloggerBatchBundle:Default:form-hops.html.twig', {'hop' : form.Hops.vars.prototype}) }}{% endfilter %}">
         <legend>Hops</legend>
@@ -95,7 +76,7 @@ Edit {{batch.Name}}
         {% include 'BrewBloggerBatchBundle:Default:form-hops.html.twig' %}
         {% endfor %}
         </div>
-        <button class="btn btn-success pull-right collection-add"><i class="icon-plus icon-white"></i>Add Hop Addition</button>
+        <button class="btn btn-success pull-right collection-add"><i class="icon-plus icon-white"></i>Add Hop</button>
     </fieldset>
     <fieldset class="form-inline">
         <legend>Bitterness</legend>
