@@ -15,3 +15,6 @@ app/config/parameters.yml
 # Netbeans Junk
 nbproject/*
 *.php~
+
+#PhpStorm Junk
+.idea/*

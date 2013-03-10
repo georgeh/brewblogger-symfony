@@ -1,5 +1,5 @@
 brew_blogger_batch:
-    resource: "@BrewBloggerBatchBundle/Resources/config/routing.yml"
+    resource: "@BrewBloggerCoreBundle/Resources/config/routing.yml"
     prefix:   /
 
 # Internal routing configuration to handle ESI

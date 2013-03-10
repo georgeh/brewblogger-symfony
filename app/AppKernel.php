@@ -21,7 +21,7 @@ class AppKernel extends Kernel
             new JMS\DiExtraBundle\JMSDiExtraBundle($this),
             new JMS\SecurityExtraBundle\JMSSecurityExtraBundle(),
             new Braincrafted\BootstrapBundle\BraincraftedBootstrapBundle(),
-            new BrewBlogger\BatchBundle\BrewBloggerBatchBundle(),
+            new BrewBlogger\CoreBundle\BrewBloggerCoreBundle(),
         );
 
         if (in_array($this->getEnvironment(), array('dev', 'test'))) {

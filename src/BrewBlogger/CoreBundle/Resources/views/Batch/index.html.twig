@@ -1,0 +1,289 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}
+{{batch.Name}}
+{% endblock %}
+
+{% block body %}
+<h1>{{batch.Name}}</h1>
+
+<dl class="dl-horizontal span5">
+    <dt>Style:</dt>
+    <dd>{{batch.Style}}</dd>
+    <dt>Brew Date:</dt>
+    <dd>{{batch.Date|date('F D,Y')}}</dd>
+    <dt>Tap Date:</dt>
+    <dd>{{batch.TapDate|date('F D,Y')}}</dd>
+    <dt>Yield:</dt>
+    <dd>{{batch.Yield}}</dd>
+    <dt>Bitterness:</dt>
+    <dd>{{batch.Bitterness}}</dd>
+    <dt>BU/GU:</dt>
+    <dd>{{batch.BUGU}}</dd>
+    <dt>Calories:</dt>
+    <dd>{{batch.Calories}}</dd>
+    <dt>ABV:</dt>
+    <dd>{{batch.ABV}}</dd>
+    <dt>ABW:</dt>
+    <dd>{{batch.ABW}}</dd>
+    <dt>Color (SRM):</dt>
+    <dd>{{batch.Lovibond}} ({{batch.Brewcolorformula|default('Formula Unknown')}})</dd>
+</dl>
+<dl class="dl-horizontal span5 offset1">
+    <dt>Target OG:</dt>
+    <dd>{{batch.Targetog}}</dd>
+    <dt>Target FG:</dt>
+    <dd>{{batch.Targetfg}}</dd>
+    <dt>OG:</dt>
+    <dd>{{batch.Og}}</dd>
+    <dt>Reading 1:</dt>
+    <dd>{{batch.Gravity1}} ({{batch.Gravity1days}} days)</dd>
+    <dt>Reading 2:</dt>
+    <dd>{{batch.Gravity2}} ({{batch.Gravity2days}} days)</dd>
+    <dt>FG:</dt>
+    <dd>{{batch.Fg}}</dd>
+    <dt>Real Extract:</dt>
+    <dd>{{batch.RealExtract}}</dd>
+    <dt>Attenuation:</dt>
+    <dd>{{batch.ApparentAttenuation}}% (A) / {{batch.RealAttenuation}}% (R)</dd>
+    <dt>Status:</dt>
+    <dd>{{batch.Status}}</dd>
+    <dt>Conditioning:</dt>
+    <dd>{{batch.Condition}}</dd>
+</dl>
+
+<h2>General Information</h2>
+<dl class="dl-horizontal">
+    <dt>Method:</dt>
+    <dd>{{batch.Method}}</dd>
+    <dt>Cost:</dt>
+    <dd>{{batch.Cost}}</dd>
+</dl>
+
+
+{% if batch.extracts %}
+    <h2>Extracts</h2>
+    <table class="table table-striped">
+        <tbody>
+        {% for extract in batch.extracts %}
+            <tr>
+                <td>{{extract.Weight}} pounds</td>
+                <td>{{extract.Name}}</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endif %}
+
+<h2>Malts and Grains</h2>
+<table class="table table-striped">
+    <tbody>
+        {% for grain in batch.grains %}
+            <tr>
+                <td>{{grain.Weight}} pounds</td>
+                <td>{{grain.Name}}</td>
+                <td>{{'%.2f' | format(grain.GristPercentage * 100)}}% of grist</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>{{batch.TotalGrainWeight}} pounds</td>
+            <td>Total Grain Weight</td>
+            <td>100%</td>
+        </tr>
+    </tfoot>
+</table>
+
+{% if batch.adjuncts %}
+<h2>Adjuncts</h2>
+<table class="table table-striped">
+    <tbody>
+        {% for adjunct in batch.adjuncts %}
+            <tr>
+                <td>{{adjunct.Weight}} pounds</td>
+                <td>{{adjunct.Name}}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endif %}
+
+{% if batch.MiscIngredients %}
+<h2>Non-Fermentables</h2>
+<table class="table table-striped">
+    <tbody>
+        {% for nonferm in batch.MiscIngredients %}
+            <tr>
+                <td>{{nonferm.Amount}}.</td>
+                <td>{{nonferm.Name}} @ {{nonferm.Time}} minutes</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+{% endif %}
+
+<h2>Hops</h2>
+<table class="table table-striped">
+    <tbody>
+        {% for hop in batch.Hops %}
+            <tr>
+                <td>{{hop.weight}} ounces</td>
+                <td>
+                    {{hop.Name}}<br>
+                    {{hop.AlphaAcid}}% {{hop.Form}} @ {{hop.Time}} minutes<br>
+                    Type: {{hop.Purpose}}<br>
+                    Use: {{hop.Use}}
+                </td>
+                <td>{{hop.AAU}} AAUs</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+    <tfoot>
+        <tr>
+            <td>{{batch.TotalHops.Weight}} ounces</td>
+            <td>Total Hop Weight</td>
+            <td>{{batch.TotalHops.AAU}} AAUs</td>                
+        </tr>
+    </tfoot>
+</table>
+
+<h2>Boil</h2>
+<dl class="dl-horizontal">
+    <dt>Total Boil Time:</dt>
+    <dd>{{batch.BoilTime}}</dd>
+</dl>
+
+<h2>Yeast</h2>
+
+<dl class="dl-horizontal">
+    <dt>Name:</dt>
+    <dd>{{batch.YeastProfile.Name}}</dd>
+    <dt>Manufacturer:</dt>
+    <dd>{{batch.YeastProfile.Name}}</dd>
+    <dt>Product ID:</dt>
+    <dd>{{batch.YeastProfile.ProdID}}</dd>
+    <dt>Type:</dt>
+    <dd>{{batch.YeastProfile.Type}}</dd>
+    <dt>Flocculation:</dt>
+    <dd>{{batch.YeastProfile.Floc}}</dd>
+    <dt>Attenuation:</dt>
+    <dd>{{batch.YeastProfile.Atten}}%</dd>
+    <dt>Temperature Range:</dt>
+    <dd>{{batch.YeastProfile.MinTemp}}-{{batch.YeastProfile.MaxTemp}}&deg;F</dd>
+    <dt>Amount:</dt>
+    <dd>{{batch.YeastAmount}}</dd>
+</dl>
+
+<h2>Equipment Profile</h2>
+<h3>{{batch.equipmentProfile.Name}}</h3>
+<dl class="dl-horizontal">
+    <dt>Batch Size:</dt>
+    <dd>{{batch.equipmentProfile.BatchSize}} gallons</dd>
+    <dt>Boil Volume:</dt>
+    <dd>{{batch.equipmentProfile.BoilVolume}} gallons</dd>
+    <dt>Evaporation Rate:</dt>
+    <dd>{{batch.equipmentProfile.EvapRate}}% per hour</dd>
+    <dt>Mash Tun Dead Space:</dt>
+    <dd>{{batch.equipmentProfile.MashTunDeadspace}} gallons</dd>
+    <dt>Efficiency:</dt>
+    <dd>{{batch.equipmentProfile.TypicalEfficiency}}%</dd>
+    <dt>Mash Tun Weight:</dt>
+    <dd>{{batch.equipmentProfile.MashTunWeight}} pounds</dd>
+    <dt>Hop Utilization:</dt>
+    <dd>{{batch.equipmentProfile.HopUtil}}%</dd>	
+    <dt>Mash Tun Volume:</dt>
+    <dd>{{batch.equipmentProfile.MashTunVolume}} gallons</dd>
+    <dt>Loss:</dt>
+    <dd>{{batch.equipmentProfile.Loss}} gallons</dd>	
+    <dt>Mash Tun Specific Heat:</dt>
+    <dd>{{batch.equipmentProfile.MashTunSpecificHeat}} Cal/gram per &deg;C</dd>
+</dl>
+
+<h2>Mash Profile</h2>
+<h3>{{batch.mashProfile.Name}}</h3>
+
+{{batch.mashProfile.Notes|raw}}
+
+<dl class="dl-horizontal">
+    <dt>Grain Temperature:</dt>
+    <dd>{{batch.mashProfile.GrainTemp}} &deg;F</dd>
+    <dt>Sparge Temperature:</dt>
+    <dd>{{batch.mashProfile.SpargeTemp}} &deg;F</dd>
+    <dt>PPG:</dt>
+    <dd>{{batch.PPG}}</dd>
+    <dt>Tun Temperature:</dt>
+    <dd>{{batch.mashProfile.MashTunTemp}} &deg;F</dd>
+    <dt>PH:</dt>
+    <dd>{{batch.mashProfile.PH}} &deg;F</dd>
+    <dt>Efficiency:</dt>
+    <dd>{{batch.equipmentProfile.TypicalEfficiency}}</dd>
+</dl>
+
+<h3>Steps</h3>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Name</th>
+            <th>Type</th>
+            <th>Time</th>
+            <th>Temp</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for step in batch.mashProfile.steps %}
+        <tr>
+            <td>{{step.Number}}</td>
+            <td>{{step.Name}}</td>
+            <td>{{step.Type}}</td>
+            <td>{{step.Time}}</td>
+            <td>{{step.Temp}} &deg;F</td>
+            <td>{{step.Description|raw}}</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
+<h2>Water Profile</h2>
+{% set water = batch.waterProfile %}
+<h3>{{water.Name}}</h3>
+
+<dl class="dl-horizontal">
+    <dt>Calicum:</dt>
+    <dd>{{water.Calcium}} ppm</dd>
+    <dt>Bicarbonate:</dt>
+    <dd>{{water.Bicarbonate}} ppm</dd>
+    <dt>Sulfate:</dt>
+    <dd>{{water.Sulfate}} ppm</dd>
+    <dt>Chloride:</dt>
+    <dd>{{water.Chloride}} ppm</dd>
+    <dt>Sodium:</dt>
+    <dd>{{water.Sodium}} ppm</dd>
+    <dt>Magnesium:</dt>
+    <dd>{{water.Magnesium}} ppm</dd>
+    <dt>PH:</dt>
+    <dd>{{water.PH}}%</dd>
+</dl>
+
+<h2>Fermentation</h2>
+<dl class="dl-horizontal">
+    <dt>Primary:</dt>
+    <dd>{{batch.PrimaryDays}} days @ {{batch.PrimaryTemp}}&deg;F</dd>
+
+    <dt>Secondary:</dt>
+    <dd>{{batch.SecondaryDays}} days @ {{batch.SecondaryTemp}}&deg;F</dd>
+    
+    <dt>Tertiary:</dt>
+    <dd>{{batch.TertiaryDays}} days @ {{batch.TertiaryTemp}}&deg;F</dd>
+    
+    <dt>Lager:</dt>
+    <dd>{{batch.LagerDays}} days @ {{batch.LagerTemp}}&deg;F</dd>
+    
+    <dt>Age:</dt>
+    <dd>{{batch.AgeDays}} days @ {{batch.AgeTemp}}&deg;F</dd>
+</dl>
+
+{% endblock %}
