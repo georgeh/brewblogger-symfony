@@ -1,5 +1,5 @@
-This project does nothing! (yet)
-================================
+This project does very little! (so far)
+=======================================
 
 I am attempting to move [BrewBlogger][1] from it's current state to the Symfony2
 framework. I'm also learning Symfony2 at the same time. This is in no way, shape

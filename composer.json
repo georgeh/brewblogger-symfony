@@ -4,6 +4,19 @@
     "autoload": {
         "psr-0": { "": "src/" }
     },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "jquery/jquery",
+                "version": "1.9.1",
+                "dist": {
+                    "url": "http://code.jquery.com/jquery-1.9.1.js",
+                    "type": "file"
+                }
+            }
+        }
+    ],
     "require": {
         "php": ">=5.3.3",
         "symfony/symfony": "2.1.*",
@@ -21,7 +34,12 @@
         "kriswallsmith/assetic": "1.1.*@dev",
         "doctrine/migrations": "dev-master",
         "doctrine/doctrine-migrations-bundle": "dev-master",
-        "braincrafted/bootstrap-bundle": "dev-master"
+        "twitter/bootstrap": "2.3.*",
+        "braincrafted/bootstrap-bundle": "dev-master",
+        "knplabs/knp-menu": "2.0.*@dev",
+        "knplabs/knp-menu-bundle":"dev-master",
+        "jquery/jquery": "1.9.*",
+        "leafo/lessphp": "dev-master"
     },
     "scripts": {
         "post-install-cmd": [
