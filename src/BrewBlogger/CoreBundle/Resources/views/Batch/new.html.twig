@@ -1,7 +1,7 @@
 {% extends '::base.html.twig' %}
 
 {% block title %}
-Edit {{batch.Name}}
+Create New Batch
 {% endblock %}
 
 {% block javascripts %}
@@ -13,10 +13,10 @@ Edit {{batch.Name}}
 {% endblock %}
 
 {% block body %}
-<h1>Edit Batch</h1>
+<h1>Create Batch</h1>
 <div class="error">{{ form_errors(form) }}</div>
 <form method="post" {{ form_enctype(form) }}>
 {% include 'BrewBloggerCoreBundle:Form:batch.html.twig' %}
-<button class="btn btn-primary">Save</button>
+<button class="btn btn-primary">Create</button>
 </form>
 {% endblock %}

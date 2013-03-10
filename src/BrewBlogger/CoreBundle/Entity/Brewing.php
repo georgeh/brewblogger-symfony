@@ -4,6 +4,8 @@ namespace BrewBlogger\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Doctrine\Common\Collections\ArrayCollection;
+use \BrewBlogger\CoreBundle\Entity\EquipProfiles;
+use \BrewBlogger\CoreBundle\Entity\WaterProfiles;
 
 /**
  * Brewing
@@ -1966,14 +1968,30 @@ class Brewing
     {
         return $this->yeastProfile;
     }
+    
+    public function setYeastProfile(YeastProfiles $yeastProfile) {
+        $this->yeastProfile = $yeastProfile;
+        return $this;
+    }
 
-    /**
+        /**
      * 
      * @return EquipProfiles
      */
     public function getEquipmentProfile()
     {
         return $this->equipmentProfile;
+    }
+    
+    /**
+     * 
+     * @param EquipProfiles $equipmentProfile
+     * @return Brewing
+     */
+    public function setEquipmentProfile(EquipProfiles $equipmentProfile)
+    {
+        $this->equipmentProfile = $equipmentProfile;
+        return $this;
     }
 
     /**
@@ -1987,11 +2005,33 @@ class Brewing
     
     /**
      * 
+     * @param \BrewBlogger\CoreBundle\Entity\MashProfiles $mashProfile
+     * @return Brewing
+     */
+    public function setMashProfile(MashProfiles $mashProfile)
+    {
+        $this->mashProfile = $mashProfile;
+        return $this;
+    }
+    
+    /**
+     * 
      * @return WaterProfiles
      */
     public function getWaterProfile()
     {
         return $this->waterProfile;
+    }
+
+    /**
+     * 
+     * @param WaterProfiles $waterProfile
+     * @return Brewing
+     */
+    public function setWaterProfile(WaterProfiles $waterProfile)
+    {
+        $this->waterProfile = $waterProfile;
+        return $this;
     }
 
 }

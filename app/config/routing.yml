@@ -1,7 +1,7 @@
 brew_blogger_batch:
-    resource: "@BrewBloggerCoreBundle/Resources/config/routing.yml"
-    prefix:   /
-
+    resource: "@BrewBloggerCoreBundle/Controller/BatchController.php"
+    type:     annotation
+    
 # Internal routing configuration to handle ESI
 # ****** WARNING ******
 # This route should be enabled with caution as it can open a security vulnerability

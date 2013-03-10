@@ -3,14 +3,60 @@
 namespace BrewBlogger\CoreBundle\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 use BrewBlogger\CoreBundle\Form\BrewingType;
+use \BrewBlogger\CoreBundle\Entity\Brewing;
 
+
+/**
+ * @Route("/batch")
+ */
 class BatchController extends Controller
 {
     /**
      * 
+     * @Route("/")
+     * @Template()
+     * @return array
+     */
+    public function indexAction()
+    {
+        $batches = $this->getDoctrine()
+                        ->getRepository('BrewBloggerCoreBundle:Brewing')
+                        ->findAll();
+        return array('batches' => $batches);
+    }
+
+    /**
+     * @Template("BrewBloggerCoreBundle:Batch:new.html.twig")
+     * @Route("/new")
+     */
+    public function newAction()
+    {
+        $batch = new Brewing();
+        $form = $this->createForm(new BrewingType(), $batch);
+        
+        $request = $this->getRequest();
+        if ($request->isMethod('POST')) {
+            $form->bind($request);
+            if ($form->isValid()) {
+                $em = $this->getDoctrine()->getManager();
+                $em->persist($batch);
+                $em->flush();
+                $this->get('session')->getFlashBag()->add('notice','Created ' . $batch->getName());
+                return $this->redirect($this->generateUrl('brewblogger_core_batch_show', array('id' => $batch->getId())));
+            }
+        }
+        return array('form' => $form->createView());
+    }
+
+    /**
+     *
+     * @Route("/{id}", requirements={"id" = "\d+"})
+     * @Template()
      * @param string $id
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @return array
      */
     public function showAction($id)
     {
@@ -18,12 +64,12 @@ class BatchController extends Controller
             ->getRepository('BrewBloggerCoreBundle:Brewing')
             ->find($id);
         
-        
-        return $this->render('BrewBloggerCoreBundle:Batch:index.html.twig', array('batch' => $batch));
+        return array('batch' => $batch);
     }
     
     /**
-     * 
+     * @Route("/{id}/edit")
+     * @Template()
      * @param string $id
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -48,14 +94,14 @@ class BatchController extends Controller
                 $em->flush();
                 
                 $this->get('session')->getFlashBag()->add('notice','Updated');
-                return $this->redirect($this->generateUrl('brew_blogger_batch_show', array('id' => $id)));
+                return $this->redirect($this->generateUrl('brewblogger_core_batch_show', array('id' => $id)));
             }
         }
         
-        return $this->render('BrewBloggerCoreBundle:Batch:edit.html.twig',
-                             array('batch' => $batch,
-                                   'form'  => $form->createView(),
-                             ));
+        return array(
+            'batch' => $batch,
+            'form'  => $form->createView(),
+        );
     }
     
     /**
