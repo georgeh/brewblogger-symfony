@@ -28,7 +28,7 @@
 
         add : function (event) {
             var $this     = $(this),
-                $target   = $(event.target),
+                $target   = $(event.target).closest('.collection-add').first(),
                 $manager  = $target.closest('.collection-manager').first(),
                 data      = $manager.data('collectionManager'),
                 newWidget = data.itemTemplate.replace(/__name__/g, data.count),
