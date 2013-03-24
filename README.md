@@ -6,5 +6,7 @@ framework. I'm also learning Symfony2 at the same time. This is in no way, shape
 or form something anyone should use at this point, but if you want to help 
 please get in touch.
 
+I have a kind-of-working demo at http://george.hotelling.net/bb-symfony/web/app.php/batch/
+
 
 [1]: http://brewblogger.net/
