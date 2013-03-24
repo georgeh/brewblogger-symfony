@@ -5,6 +5,7 @@ namespace BrewBlogger\CoreBundle\Controller;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
+use JMS\SecurityExtraBundle\Annotation\Secure;
 use BrewBlogger\CoreBundle\Form\BrewingType;
 use \BrewBlogger\CoreBundle\Entity\Brewing;
 
@@ -15,7 +16,6 @@ use \BrewBlogger\CoreBundle\Entity\Brewing;
 class BatchController extends Controller
 {
     /**
-     * 
      * @Route("/")
      * @Template()
      * @return array
@@ -31,6 +31,7 @@ class BatchController extends Controller
     /**
      * @Template("BrewBloggerCoreBundle:Batch:new.html.twig")
      * @Route("/new")
+     * @Secure(roles="ROLE_USER")
      */
     public function newAction()
     {
@@ -44,8 +45,13 @@ class BatchController extends Controller
                 $em = $this->getDoctrine()->getManager();
                 $em->persist($batch);
                 $em->flush();
-                $this->get('session')->getFlashBag()->add('notice','Created ' . $batch->getName());
-                return $this->redirect($this->generateUrl('brewblogger_core_batch_show', array('id' => $batch->getId())));
+                $this->get('session')
+                     ->getFlashBag()
+                     ->add('notice', 'Created ' . $batch->getName());
+                return $this->redirect(
+                        $this->generateUrl('brewblogger_core_batch_show', 
+                                           array('id' => $batch->getId()))
+                );
             }
         }
         return array('form' => $form->createView());
@@ -70,6 +76,7 @@ class BatchController extends Controller
     /**
      * @Route("/{id}/edit")
      * @Template()
+     * @Secure(roles="ROLE_USER")
      * @param string $id
      * @return \Symfony\Component\HttpFoundation\Response
      */
@@ -93,8 +100,11 @@ class BatchController extends Controller
                 $em->persist($batch);
                 $em->flush();
                 
-                $this->get('session')->getFlashBag()->add('notice','Updated');
-                return $this->redirect($this->generateUrl('brewblogger_core_batch_show', array('id' => $id)));
+                $this->get('session')->getFlashBag()->add('notice', 'Updated');
+                return $this->redirect(
+                        $this->generateUrl('brewblogger_core_batch_show', 
+                                           array('id' => $id))
+                );
             }
         }
         
@@ -107,23 +117,25 @@ class BatchController extends Controller
     /**
      * 
      * @param \BrewBlogger\CoreBundle\Entity\Brewing $originalBrewing
-     * @param \BrewBlogger\CoreBundle\Entity\Brewing $updatedBrewing
+     * @param \BrewBlogger\CoreBundle\Entity\Brewing $newBrewing
      * @param \Doctrine\ORM\EntityManager $em
      */
-    protected function updateAssociations($originalBrewing, $updatedBrewing, $em)
+    protected function updateAssociations($originalBrewing, $newBrewing, $em)
     {
-        $collections = array('Extracts', 'Grains', 'Adjuncts', 'MiscIngredients', 'Hops');
+        
+        $collections = array('Extracts', 'Grains', 'Adjuncts', 
+                             'MiscIngredients', 'Hops');
         foreach ($collections as $type) {
-            // Plan on deleting all hops, except for the ones that have been submitted
+            // Plan on deleting all hops, except for submitted ones
             $itemsToDelete = array();
             foreach ($originalBrewing->{'get' . $type}() as $item) {
                 $itemsToDelete[] = $item;
             }
 
-            foreach ($updatedBrewing->{'get' . $type}() as $item) {
+            foreach ($newBrewing->{'get' . $type}() as $item) {
                 // Persist new hop additions
                 if (!$item->getBatch()) {
-                    $item->setBatch($updatedBrewing);
+                    $item->setBatch($newBrewing);
                 }
 
                 // Find out which hops have been removed

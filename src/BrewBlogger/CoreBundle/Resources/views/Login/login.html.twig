@@ -1,0 +1,19 @@
+{% extends '::base.html.twig' %}
+
+{% block title %}Login{% endblock %}
+
+{% block body %}
+{% if error %}
+    <div class="alert alert-error">{{ error.message }}</div>
+{% endif %}
+
+<form class="form-horizontal" action="{{ path('_security_check') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form, {'form_type': 'horizontal'}) }}
+
+    <div class="control-group">
+        <div class="controls">
+            <button class="btn btn-primary">Log In</button>
+        </div>
+    </div>
+</form>
+{% endblock %}

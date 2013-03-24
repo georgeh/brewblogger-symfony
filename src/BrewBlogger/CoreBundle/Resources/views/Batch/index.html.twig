@@ -27,5 +27,7 @@
         {% endfor %}
     </tbody>
 </table>
+{% if is_granted('ROLE_USER') %}
 <a class="btn pull-right" href="{{ path('brewblogger_core_batch_new') }}"><i class="icon-plus"></i> Create New Batch</a>
+{% endif %}
 {% endblock %}

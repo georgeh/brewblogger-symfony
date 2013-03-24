@@ -3,14 +3,14 @@
 namespace BrewBlogger\CoreBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-
+use Symfony\Component\Security\Core\User\UserInterface;
 /**
  * Users
  *
  * @ORM\Table(name="users")
  * @ORM\Entity
  */
-class Users
+class Users implements UserInterface, \Serializable
 {
     /**
      * @var integer
@@ -129,7 +129,7 @@ class Users
     /**
      * @var \DateTime
      *
-     * @ORM\Column(name="userBrewingSince", type="date", nullable=true)
+     * @ORM\Column(name="userBrewingSince", type="string", nullable=true)
      */
     private $userbrewingsince;
 
@@ -279,9 +279,19 @@ class Users
      * @ORM\Column(name="defaultColorFormula", type="string", length=50, nullable=false)
      */
     private $defaultcolorformula;
+    
+    /**
+     * @var string
+     * @ORM\Column(type="string", length=32)
+     */
+    private $salt;
 
 
-
+    public function __construct()
+    {
+        $this->salt = md5(uniqid(null, true));
+    }
+    
     /**
      * Get id
      *
@@ -1141,5 +1151,53 @@ class Users
     public function getDefaultColorFormula()
     {
         return $this->defaultcolorformula;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function eraseCredentials()
+    {
+        
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function getRoles() 
+    {
+        $roles = array('ROLE_USER');
+        if (1 == $this->userlevel) {
+            $roles[] = 'ROLE_ADMIN';
+        }
+        return $roles;
+    }
+    
+    /**
+     * {@inheritdoc}
+     */
+    public function getSalt()
+    {
+        return '';
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function serialize()
+    {
+        return serialize(array(
+            $this->id,
+        ));
+    }
+
+    /**
+     * {@inheritdoc}
+     */
+    public function unserialize($serialized)
+    {
+        list (
+            $this->id,
+        ) = unserialize($serialized);
     }
 }
